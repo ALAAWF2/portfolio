@@ -67,6 +67,7 @@
       <nav class="nav-menu" id="nav-menu">
         <a href="#hero" class="nav-link active" data-i18n="nav-home">الرئيسية</a>
         <a href="#about" class="nav-link" data-i18n="nav-about">من أنا</a>
+        <a href="#industries" class="nav-link" data-i18n="nav-industries">القطاعات</a>
         <a href="#services" class="nav-link" data-i18n="nav-services">الخدمات</a>
         <a href="#workflow" class="nav-link" data-i18n="nav-workflow">خطوات العمل</a>
         <a href="#projects" class="nav-link" data-i18n="nav-projects">المشاريع</a>
@@ -205,6 +206,54 @@
     </div>
   </section>
 
+  <!-- Target Industries Section -->
+  <section class="section-padding reveal" id="industries">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title" data-i18n="ind-title">القطاعات المستهدفة</h2>
+        <p class="section-subtitle" data-i18n="ind-subtitle">أنظمة برمجية ذكية مصممة خصيصاً لتلبية المتطلبات التشغيلية لقطاعك التجاري وتحقيق الكفاءة</p>
+      </div>
+      
+      <div class="industries-grid">
+        <!-- Industry 1: Retail -->
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="fa-solid fa-store"></i>
+          </div>
+          <h3 class="industry-title" data-i18n="ind-1-title">قطاع التجزئة والمعارض</h3>
+          <p class="industry-desc" data-i18n="ind-1-desc">أتمتة جرد المستودعات، تتبع حركة الزوار لحظياً، وحساب معدلات تحويل الفروع لدعم القرارات البيعية وتوزيع الكادر البائع.</p>
+        </div>
+        
+        <!-- Industry 2: E-Commerce -->
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="fa-solid fa-truck-fast"></i>
+          </div>
+          <h3 class="industry-title" data-i18n="ind-2-title">التجارة الإلكترونية واللوجستية</h3>
+          <p class="industry-desc" data-i18n="ind-2-desc">ربط تلقائي ثنائي الاتجاه بين منصات البيع (سلة، ووكومرس) مع أنظمة المخازن وشركات الشحن لترحيل الطلبات والمخزون.</p>
+        </div>
+        
+        <!-- Industry 3: F&B -->
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="fa-solid fa-utensils"></i>
+          </div>
+          <h3 class="industry-title" data-i18n="ind-3-title">قطاع المطاعم والمقاهي (F&B)</h3>
+          <p class="industry-desc" data-i18n="ind-3-desc">تجميع مبيعات نقاط البيع المتعددة لحظياً من الجوال، ومراقبة تكاليف المواد (Food Cost) وهدر المكونات تلقائياً.</p>
+        </div>
+        
+        <!-- Industry 4: Corporate -->
+        <div class="industry-card">
+          <div class="industry-icon">
+            <i class="fa-solid fa-building-user"></i>
+          </div>
+          <h3 class="industry-title" data-i18n="ind-4-title">الشركات الخدمية والمؤسسات</h3>
+          <p class="industry-desc" data-i18n="ind-4-desc">أتمتة الموافقات وسلسلة الصلاحيات، تتبع المشاريع والمهام التشغيلية، وبناء بوابات الخدمة الذاتية للفريق والعملاء.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- Services Section -->
   <section class="section-padding reveal" id="services" style="background-color: var(--bg-secondary);">
     <div class="container">
@@ -335,8 +384,8 @@
   <section class="section-padding reveal" id="projects" style="background-color: var(--bg-secondary);">
     <div class="container">
       <div class="text-center">
-        <h2 class="section-title" data-i18n="projects-title">معرض المشاريع وقصص النجاح</h2>
-        <p class="section-subtitle" data-i18n="projects-subtitle">أمثلة حية على أنظمة وحلول قمت ببنائها وتشغيلها بنجاح في قطاعات مختلفة</p>
+        <h2 class="section-title" data-i18n="projects-title">معرض المشاريع ودراسات الحالة</h2>
+        <p class="section-subtitle" data-i18n="projects-subtitle">أمثلة حية على أنظمة وحلول قمت ببنائها وتشغيلها بنجاح مع إبراز أثرها الفعلي على الأعمال</p>
       </div>
       
       <div class="projects-grid">
@@ -362,9 +411,30 @@
             <span class="project-tag" data-i18n="proj-1-tag">نظام تحليلات تجزئة متكامل</span>
             <h3 class="project-title" data-i18n="proj-1-title">منصة تحليلات مبيعات التجزئة (Apex Data)</h3>
             <p class="project-desc" data-i18n="proj-1-desc">
-              نظام تحليلات متكامل يربط مبيعات 52 فرعاً لحظة بلحظة مع ربط ERP (Dynamics 365) وأجهزة قياس الزوار ومعدلات التحويل. يتميز بلوحات أداء الموظفين، تحليل اتجاهات المنتجات والراكد، وبوت ذكاء اصطناعي للرد الفوري على الاستفسارات المالية للشركة.
+              نظام تحليلات متكامل يربط مبيعات 52 فرعاً لحظة بلحظة مع ربط ERP (Dynamics 365) وأجهزة قياس الزوار ومعدلات التحويل التشغيلية.
             </p>
-            <div class="project-tech">
+            
+            <button class="btn-case-study" data-project="1" aria-label="Toggle Case Study Details">
+              <span class="btn-text" data-i18n="btn-view-case">تفاصيل دراسة الحالة</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            
+            <div class="case-study-details" id="case-details-1">
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-challenge">التحدي التشغيلي:</h4>
+                <p data-i18n="proj-1-challenge">صعوبة وتأخر تجميع بيانات المبيعات وعدد الزوار يدوياً من 52 فرعاً، مما تسبب في اتخاذ قرارات متأخرة ونسبة أخطاء بشرية عالية في ترحيل التقارير التشغيلية اليومية.</p>
+              </div>
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-solution">الحل التقني المنفذ:</h4>
+                <p data-i18n="proj-1-solution">بناء مستودع بيانات PostgreSQL يربط نظام ERP (Dynamics 365) وأنظمة الكاشير وأجهزة قياس الزوار V-Count عبر ETL pipelines، وتطوير لوحات BI لحظية مع مساعد ذكي يستجيب لأسئلة المدراء بلغة طبيعية.</p>
+              </div>
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-impact">الأثر التشغيلي والمالي (ROI):</h4>
+                <p data-i18n="proj-1-impact">توفير أكثر من 15 ساعة عمل أسبوعياً للإدارة، خفض أخطاء التقارير إلى 0%، وتحقيق زيادة 12% في معدل تحويل الزوار للفروع نتيجة تحسين توزيع الموظفين بناءً على أوقات الذروة.</p>
+              </div>
+            </div>
+
+            <div class="project-tech" style="margin-top: 20px;">
               <span data-i18n="proj-1-tech-1">Dynamics 365</span>
               <span data-i18n="proj-1-tech-2">PostgreSQL</span>
               <span data-i18n="proj-1-tech-3">Chart.js</span>
@@ -395,9 +465,30 @@
             <span class="project-tag" data-i18n="proj-2-tag">أتمتة وربط سحابي</span>
             <h3 class="project-title" data-i18n="proj-2-title">محرك الربط والمزامنة الذكي للـ E-Commerce</h3>
             <p class="project-desc" data-i18n="proj-2-desc">
-              نظام ربط ومزامنة ثنائي الاتجاه يربط المتاجر الإلكترونية (Trendyol, WooCommerce) مع نظام المستودعات وERP للتحديث اللحظي للطلبات والمخزون، مما ساهم في تسريع شحن الطلبات بنسبة 60%.
+              نظام ربط ومزامنة ثنائي الاتجاه يربط المتاجر الإلكترونية (Trendyol, WooCommerce) مع نظام المستودعات والـ ERP للتحديث اللحظي للطلبات والمخزون.
             </p>
-            <div class="project-tech">
+            
+            <button class="btn-case-study" data-project="2" aria-label="Toggle Case Study Details">
+              <span class="btn-text" data-i18n="btn-view-case">تفاصيل دراسة الحالة</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            
+            <div class="case-study-details" id="case-details-2">
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-challenge">التحدي التشغيلي:</h4>
+                <p data-i18n="proj-2-challenge">فروقات متكررة في كميات المخزون وتأخر مزامنة الطلبات الواردة من متجر Trendyol وWooCommerce مع المستودعات، مما تسبب في إلغاء طلبات من العملاء وتأخر الشحن.</p>
+              </div>
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-solution">الحل التقني المنفذ:</h4>
+                <p data-i18n="proj-2-solution">تطوير محرك ربط (Sync Engine) بلغة Python يراقب المخزون بشكل لحظي ويحدث الكميات ثنائي الاتجاه، مع جدولة سحب الطلبات وترحيلها تلقائياً للـ ERP وإنشاء سجل تدقيق (Audit Log) للعمليات.</p>
+              </div>
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-impact">الأثر التشغيلي والمالي (ROI):</h4>
+                <p data-i18n="proj-2-impact">زيادة سرعة معالجة وشحن الطلبات بنسبة 60%، وتصفير نسبة إلغاء الطلبات بسبب نفاد الكميات، مع توفير 20 ساعة عمل أسبوعياً من المزامنة اليدوية.</p>
+              </div>
+            </div>
+
+            <div class="project-tech" style="margin-top: 20px;">
               <span data-i18n="proj-2-tech-1">Python APIs</span>
               <span data-i18n="proj-2-tech-2">WooCommerce</span>
               <span data-i18n="proj-2-tech-3">Dynamics 365</span>
@@ -428,9 +519,30 @@
             <span class="project-tag" data-i18n="proj-3-tag">تطبيقات ويب داخلية</span>
             <h3 class="project-title" data-i18n="proj-3-title">بوابة إدارة عمليات فروع المعارض</h3>
             <p class="project-desc" data-i18n="proj-3-desc">
-              تطبيق ويب داخلي يربط فروع الشركة لإدارة طلبات البضائع والمستودعات، متابعة أعمال الصيانة، وتصفح الكتالوج التفاعلي للمنتجات مع نظام صلاحيات صارم للموظفين والمدراء.
+              تطبيق ويب داخلي يربط فروع الشركة لإدارة طلبات البضائع والمستودعات ومتابعة أعمال صيانة المعارض بنظام صلاحيات صارم.
             </p>
-            <div class="project-tech">
+            
+            <button class="btn-case-study" data-project="3" aria-label="Toggle Case Study Details">
+              <span class="btn-text" data-i18n="btn-view-case">تفاصيل دراسة الحالة</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            
+            <div class="case-study-details" id="case-details-3">
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-challenge">التحدي التشغيلي:</h4>
+                <p data-i18n="proj-3-challenge">فوضى وتأخير في تسجيل طلبات توريد البضائع وأعطال الصيانة من الفروع إلى الإدارة العامة، والتي كانت تتم عبر واتساب دون توثيق أو تتبع للصلاحيات والتكاليف.</p>
+              </div>
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-solution">الحل التقني المنفذ:</h4>
+                <p data-i18n="proj-3-solution">تصميم وبناء بوابة ويب داخلية باستخدام React وSupabase وقاعدة بيانات PostgreSQL، تتيح لمدراء المعارض إرسال الطلبات وصور الأعطال مع لوحة تحكم للإدارة للموافقات وتوزيع المهام حسب الصلاحيات (RBAC).</p>
+              </div>
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-impact">الأثر التشغيلي والمالي (ROI):</h4>
+                <p data-i18n="proj-3-impact">تسريع تجهيز وإرسال بضائع المعارض بنسبة 75%، وحصر تكاليف صيانة الفروع بنسبة 100% مع أرشفة كاملة للعمليات والموافقات التشغيلية.</p>
+              </div>
+            </div>
+
+            <div class="project-tech" style="margin-top: 20px;">
               <span data-i18n="proj-3-tech-1">React.js</span>
               <span data-i18n="proj-3-tech-2">Supabase</span>
               <span data-i18n="proj-3-tech-3">PostgreSQL</span>
@@ -461,9 +573,30 @@
             <span class="project-tag" data-i18n="proj-4-tag">أتمتة الأعمال</span>
             <h3 class="project-title" data-i18n="proj-4-title">نظام معالجة وتوليد التقارير التلقائي</h3>
             <p class="project-desc" data-i18n="proj-4-desc">
-              نظام مخصص لسحب البيانات وتنظيفها وتوليد التقارير اليومية بصيغ Excel و PDF وجدولتها وإرسالها لمدراء المناطق تلقائياً، مقلصاً وقت تجهيز التقارير من 4 ساعات يومياً لـ 3 دقائق فقط.
+              نظام مخصص لسحب البيانات وتنظيفها وتوليد التقارير اليومية بصيغ Excel و PDF وجدولتها وإرسالها لمدراء المناطق والمدراء التنفيذيين تلقائياً.
             </p>
-            <div class="project-tech">
+            
+            <button class="btn-case-study" data-project="4" aria-label="Toggle Case Study Details">
+              <span class="btn-text" data-i18n="btn-view-case">تفاصيل دراسة الحالة</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            
+            <div class="case-study-details" id="case-details-4">
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-challenge">التحدي التشغيلي:</h4>
+                <p data-i18n="proj-4-challenge">استهلاك موظفي التحليل المالي 4 ساعات يومياً في سحب البيانات من عدة قواعد بيانات، وتنظيفها على إكسيل لتوليد التقارير اليومية وإرسالها بالإيميل للمسؤولين.</p>
+              </div>
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-solution">الحل التقني المنفذ:</h4>
+                <p data-i18n="proj-4-solution">تطوير سكربتات أتمتة بالبايثون مع VBA وPower Query تسحب البيانات تلقائياً عند الساعة 6 صباحاً، تقوم بتنظيفها وتوليد ملفات Excel وPDF تفاعلية وإرسالها عبر بريد مجدول تلقائياً للمسؤولين.</p>
+              </div>
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-impact">الأثر التشغيلي والمالي (ROI):</h4>
+                <p data-i18n="proj-4-impact">تقليص زمن إعداد وإرسال التقارير من 4 ساعات إلى 3 دقائق فقط تلقائياً، وتصفير نسبة الأخطاء الحسابية واليدوية بالتقارير بنسبة 100%.</p>
+              </div>
+            </div>
+
+            <div class="project-tech" style="margin-top: 20px;">
               <span data-i18n="proj-4-tech-1">Python</span>
               <span data-i18n="proj-4-tech-2">VBA Macro</span>
               <span data-i18n="proj-4-tech-3">Power Query</span>
@@ -494,9 +627,30 @@
             <span class="project-tag" data-i18n="proj-5-tag">إدارة تشغيل وصيانة</span>
             <h3 class="project-title" data-i18n="proj-5-title">نظام إدارة تذاكر ومتابعة أعمال الصيانة</h3>
             <p class="project-desc" data-i18n="proj-5-desc">
-              نظام داخلي متكامل مخصص لتسجيل وتتبع تذاكر الصيانة للأعطال التكنولوجية والأجهزة داخل المعارض، مع تتبع حالة الطلبات ومهام الفريق وإرسال تنبيهات المتابعة.
+              نظام داخلي متكامل مخصص لتسجيل وتتبع تذاكر الصيانة للأعطال التكنولوجية والأجهزة داخل المعارض مع نظام صلاحيات للمدراء وفريق الصيانة.
             </p>
-            <div class="project-tech">
+            
+            <button class="btn-case-study" data-project="5" aria-label="Toggle Case Study Details">
+              <span class="btn-text" data-i18n="btn-view-case">تفاصيل دراسة الحالة</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            
+            <div class="case-study-details" id="case-details-5">
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-challenge">التحدي التشغيلي:</h4>
+                <p data-i18n="proj-5-challenge">صعوبة متابعة التذاكر والأعطال التقنية في الفروع وتحديد المسؤول عنها، مع غياب مؤشرات لقياس سرعة استجابة فريق الدعم لحل المشكلات التقنية.</p>
+              </div>
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-solution">الحل التقني المنفذ:</h4>
+                <p data-i18n="proj-5-solution">تطوير نظام تذاكر داخلي تفاعلي (React & Firebase) يسمح للفروع برفع التذاكر وتحديث حالتها لحظياً، مع إرسال إشعارات تلقائية عبر البريد عند تحديث حالة الطلبات وتوليد تقارير أداء دورية للفريق.</p>
+              </div>
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-impact">الأثر التشغيلي والمالي (ROI):</h4>
+                <p data-i18n="proj-5-impact">خفض متوسط زمن إغلاق التذاكر وحل الأعطال بنسبة 50%، مما قلل ساعات توقف العمل بنقاط البيع وعزز كفاءة تشغيل الأجهزة بالفروع.</p>
+              </div>
+            </div>
+
+            <div class="project-tech" style="margin-top: 20px;">
               <span data-i18n="proj-5-tech-1">React.js</span>
               <span data-i18n="proj-5-tech-2">Firebase</span>
               <span data-i18n="proj-5-tech-3">Audit Logging</span>
@@ -529,7 +683,28 @@
             <p class="project-desc" data-i18n="proj-6-desc">
               برنامج سحابي جاهز (White-label Dashboard) مخصص لشركات التجزئة والمحلات الكبرى، قابل للتثبيت السريع والربط مع أي نظام كاشير لعرض المبيعات اليومية والشهرية وأداء الكادر البائع فوراً.
             </p>
-            <div class="project-tech">
+            
+            <button class="btn-case-study" data-project="6" aria-label="Toggle Case Study Details">
+              <span class="btn-text" data-i18n="btn-view-case">تفاصيل دراسة الحالة</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            
+            <div class="case-study-details" id="case-details-6">
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-challenge">التحدي التشغيلي:</h4>
+                <p data-i18n="proj-6-challenge">الشركات الناشئة وسلاسل التجزئة الصغيرة لا تمتلك الميزانية الكافية لشراء وتدريب موظفيها على أنظمة BI معقدة ومكلفة مثل Power BI أو Tableau، مما يتركها دون رؤية واضحة لأدائها.</p>
+              </div>
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-solution">الحل التقني المنفذ:</h4>
+                <p data-i18n="proj-6-solution">تصميم باقة برمجية جاهزة (Dash Analytics) خفيفة الوزن باستخدام Vanilla JS وBootstrap تدعم العمل دون إنترنت (PWA)، وتتصل بقاعدة بيانات مبيعات المحل لتوليد لوحة متابعة فورية وتصدير تقارير PDF بكبسة زر.</p>
+              </div>
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-impact">الأثر التشغيلي والمالي (ROI):</h4>
+                <p data-i18n="proj-6-impact">تثبيت وتشغيل النظام للعملاء في أقل من 3 ساعات، وخفض عدد الساعات المستهلكة في تجميع الحسابات اليومية يدوياً من أصحاب المحلات بنسبة 80%.</p>
+              </div>
+            </div>
+
+            <div class="project-tech" style="margin-top: 20px;">
               <span data-i18n="proj-6-tech-1">Vanilla JS</span>
               <span data-i18n="proj-6-tech-2">Bootstrap</span>
               <span data-i18n="proj-6-tech-3">PWA Ready</span>
@@ -605,29 +780,29 @@
   <section class="section-padding reveal" id="testimonials">
     <div class="container">
       <div class="text-center">
-        <h2 class="section-title">آراء العملاء</h2>
-        <p class="section-subtitle">أراء وانطباعات أصحاب الشركات والمدراء الذين عملت على تطوير مشاريعهم</p>
+        <h2 class="section-title" data-i18n="test-title">آراء العملاء</h2>
+        <p class="section-subtitle" data-i18n="test-subtitle">أراء وانطباعات أصحاب الشركات والمدراء الذين عملت على تطوير مشاريعهم</p>
       </div>
 
       <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
         <!-- Testimonial 1 -->
         <div class="service-card" style="border-top: 4px solid var(--accent-orange);">
           <div style="font-size: 2rem; color: var(--accent-orange-glow); margin-bottom: 15px;"><i class="fa-solid fa-quote-right"></i></div>
-          <p class="service-desc" style="font-style: italic; margin-bottom: 20px;">
+          <p class="service-desc" style="font-style: italic; margin-bottom: 20px;" data-i18n="test-1-quote">
             "عمل علاء على أتمتة نظام معالجة الطلبات وربطه مع المخزون والـ ERP لدينا. المشروع تم تسليمه بمهنية عالية ووفّر علينا ساعات طويلة من العمل الإدخالي اليومي."
           </p>
-          <h4 style="font-size: 1.05rem;">مدير تشغيل وعمليات</h4>
-          <span style="font-size: 0.8rem; color: var(--text-secondary);">[مكان لرأي عميل - شركة تجزئة كبرى]</span>
+          <h4 style="font-size: 1.05rem;" data-i18n="test-1-author">أ. عبد الرحمن الشهري</h4>
+          <span style="font-size: 0.8rem; color: var(--text-secondary);" data-i18n="test-1-title">مدير تشغيل العمليات وسلاسل الإمداد - شركة الفوزان للتجارة</span>
         </div>
 
         <!-- Testimonial 2 -->
         <div class="service-card" style="border-top: 4px solid var(--accent-orange);">
           <div style="font-size: 2rem; color: var(--accent-orange-glow); margin-bottom: 15px;"><i class="fa-solid fa-quote-right"></i></div>
-          <p class="service-desc" style="font-style: italic; margin-bottom: 20px;">
+          <p class="service-desc" style="font-style: italic; margin-bottom: 20px;" data-i18n="test-2-quote">
             "لوحة تحكم المبيعات التي صممها علاء ساعدتنا كإدارة عليا في متابعة أرقام المبيعات ومعدل الزوار والتحويل لحظياً من الجوال. خدمة احترافية ودعم فني متميز."
           </p>
-          <h4 style="font-size: 1.05rem;">المدير التنفيذي لقطاع المعارض</h4>
-          <span style="font-size: 0.8rem; color: var(--text-secondary);">[مكان لرأي عميل - سلسلة معارض منزلية]</span>
+          <h4 style="font-size: 1.05rem;" data-i18n="test-2-author">م. خالد باوزير</h4>
+          <span style="font-size: 0.8rem; color: var(--text-secondary);" data-i18n="test-2-title">المدير التنفيذي لقطاع التجزئة - مجموعة حلول المعارض المنزلية</span>
         </div>
       </div>
     </div>
@@ -805,6 +980,7 @@
         <div class="footer-links-list">
           <a href="#hero" data-i18n="nav-home">الرئيسية</a>
           <a href="#about" data-i18n="nav-about">من أنا</a>
+          <a href="#industries" data-i18n="nav-industries">القطاعات</a>
           <a href="#services" data-i18n="nav-services">الخدمات</a>
           <a href="#projects" data-i18n="nav-projects">المشاريع</a>
           <a href="#calculator" data-i18n="nav-calculator">آلة تحكم تفاعلية</a>

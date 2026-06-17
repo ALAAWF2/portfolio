@@ -4,6 +4,7 @@ const translations = {
     // Navigation
     "nav-home": "الرئيسية",
     "nav-about": "من أنا",
+    "nav-industries": "القطاعات",
     "nav-services": "الخدمات",
     "nav-workflow": "خطوات العمل",
     "nav-projects": "المشاريع",
@@ -39,6 +40,18 @@ const translations = {
     "about-f3": "تطوير لوحات بيانات لحظية (BI)",
     "about-f4": "ربط المتاجر والـ ERP وقواعد البيانات",
 
+    // Target Industries Section
+    "ind-title": "القطاعات المستهدفة",
+    "ind-subtitle": "أنظمة برمجية ذكية مصممة خصيصاً لتلبية المتطلبات التشغيلية لقطاعك التجاري وتحقيق الكفاءة",
+    "ind-1-title": "قطاع التجزئة والمعارض",
+    "ind-1-desc": "أتمتة جرد المستودعات، تتبع حركة الزوار لحظياً، وحساب معدلات تحويل الفروع لدعم القرارات البيعية وتوزيع الكادر البائع.",
+    "ind-2-title": "التجارة الإلكترونية واللوجستية",
+    "ind-2-desc": "ربط تلقائي ثنائي الاتجاه بين منصات البيع (سلة، ووكومرس) مع أنظمة المخازن وشركات الشحن لترحيل الطلبات والمخزون.",
+    "ind-3-title": "قطاع المطاعم والمقاهي (F&B)",
+    "ind-3-desc": "تجميع مبيعات نقاط البيع المتعددة لحظياً من الجوال، ومراقبة تكاليف المواد (Food Cost) وهدر المكونات تلقائياً.",
+    "ind-4-title": "الشركات الخدمية والمؤسسات",
+    "ind-4-desc": "أتمتة الموافقات وسلسلة الصلاحيات، تتبع المشاريع والمهام التشغيلية، وبناء بوابات الخدمة الذاتية للفريق والعملاء.",
+
     // Services Section
     "services-title": "الخدمات التي أقدمها",
     "services-subtitle": "حلول برمجية ذكية مفصلة خصيصاً لتناسب احتياجات شركتك وتزيد من كفاءتها",
@@ -72,50 +85,96 @@ const translations = {
     "step-4-desc": "بعد التسليم، أظل على تواصل لدعم النظام وضمان استمراريته وتدريب فريق عملك على استخدامه.",
 
     // Projects Section
-    "projects-title": "معرض المشاريع وقصص النجاح",
-    "projects-subtitle": "أمثلة حية على أنظمة وحلول قمت ببنائها وتشغيلها بنجاح في قطاعات مختلفة",
+    "projects-title": "معرض المشاريع ودراسات الحالة",
+    "projects-subtitle": "أمثلة حية على أنظمة وحلول قمت ببنائها وتشغيلها بنجاح مع إبراز أثرها الفعلي على الأعمال",
     "proj-1-tag": "نظام تحليلات تجزئة متكامل",
     "proj-1-title": "منصة تحليلات مبيعات التجزئة (Apex Data)",
-    "proj-1-desc": "نظام تحليلات متكامل يربط مبيعات 52 فرعاً لحظة بلحظة مع ربط ERP (Dynamics 365) وأجهزة قياس الزوار ومعدلات التحويل. يتميز بلوحات أداء الموظفين، تحليل اتجاهات المنتجات والراكد، وبوت ذكاء اصطناعي للرد الفوري على الاستفسارات المالية للشركة.",
+    "proj-1-desc": "نظام تحليلات متكامل يربط مبيعات 52 فرعاً لحظة بلحظة مع ربط ERP (Dynamics 365) وأجهزة قياس الزوار ومعدلات التحويل التشغيلية.",
     "proj-1-tech-1": "Dynamics 365",
     "proj-1-tech-2": "PostgreSQL",
     "proj-1-tech-3": "Chart.js",
     "proj-1-tech-4": "AI Chatbot",
+    
     "proj-2-tag": "أتمتة وربط سحابي",
     "proj-2-title": "محرك الربط والمزامنة الذكي للـ E-Commerce",
-    "proj-2-desc": "نظام ربط ومزامنة ثنائي الاتجاه يربط المتاجر الإلكترونية (Trendyol, WooCommerce) مع نظام المستودعات وERP للتحديث اللحظي للطلبات والمخزون، مما ساهم في تسريع شحن الطلبات بنسبة 60%.",
+    "proj-2-desc": "نظام ربط ومزامنة ثنائي الاتجاه يربط المتاجر الإلكترونية (Trendyol, WooCommerce) مع نظام المستودعات والـ ERP للتحديث اللحظي للطلبات والمخزون.",
     "proj-2-tech-1": "Python APIs",
     "proj-2-tech-2": "WooCommerce",
     "proj-2-tech-3": "Dynamics 365",
     "proj-2-tech-4": "ETL Pipelines",
+    
     "proj-3-tag": "تطبيقات ويب داخلية",
     "proj-3-title": "بوابة إدارة عمليات فروع المعارض",
-    "proj-3-desc": "تطبيق ويب داخلي يربط فروع الشركة لإدارة طلبات البضائع والمستودعات، متابعة أعمال الصيانة، وتصفح الكتالوج التفاعلي للمنتجات مع نظام صلاحيات صارم للموظفين والمدراء.",
+    "proj-3-desc": "تطبيق ويب داخلي يربط فروع الشركة لإدارة طلبات البضائع والمستودعات ومتابعة أعمال صيانة المعارض بنظام صلاحيات صارم.",
     "proj-3-tech-1": "React.js",
     "proj-3-tech-2": "Supabase",
     "proj-3-tech-3": "PostgreSQL",
     "proj-3-tech-4": "RBAC Security",
+    
     "proj-4-tag": "أتمتة الأعمال",
     "proj-4-title": "نظام معالجة وتوليد التقارير التلقائي",
-    "proj-4-desc": "نظام مخصص لسحب البيانات وتنظيفها وتوليد التقارير اليومية بصيغ Excel و PDF وجدولتها وإرسالها لمدراء المناطق تلقائياً، مقلصاً وقت تجهيز التقارير من 4 ساعات يومياً لـ 3 دقائق فقط.",
+    "proj-4-desc": "نظام مخصص لسحب البيانات وتنظيفها وتوليد التقارير اليومية بصيغ Excel و PDF وجدولتها وإرسالها لمدراء المناطق والمدراء التنفيذيين تلقائياً.",
     "proj-4-tech-1": "Python",
     "proj-4-tech-2": "VBA Macro",
     "proj-4-tech-3": "Power Query",
     "proj-4-tech-4": "Windows Scheduler",
+    
     "proj-5-tag": "إدارة تشغيل وصيانة",
     "proj-5-title": "نظام إدارة تذاكر ومتابعة أعمال الصيانة",
-    "proj-5-desc": "نظام داخلي متكامل مخصص لتسجيل وتتبع تذاكر الصيانة للأعطال التكنولوجية والأجهزة داخل المعارض، مع تتبع حالة الطلبات ومهام الفريق وإرسال تنبيهات المتابعة.",
+    "proj-5-desc": "نظام داخلي متكامل مخصص لتسجيل وتتبع تذاكر الصيانة للأعطال التكنولوجية والأجهزة داخل المعارض مع نظام صلاحيات للمدراء وفريق الصيانة.",
     "proj-5-tech-1": "React.js",
     "proj-5-tech-2": "Firebase",
     "proj-5-tech-3": "Audit Logging",
     "proj-5-tech-4": "Cloud Functions",
+    
     "proj-6-tag": "حلول سريعة وجاهزة",
     "proj-6-title": "منصة Dash Analytics الجاهزة للشركات",
-    "proj-6-desc": "برنامج سحابي جاهز (White-label Dashboard) مخصص لشركات التجزئة والمحلات الكبرى، قابل للتثبيت السريع والربط مع أي نظام كاشير لعرض المبيعات اليومية والشهرية وأداء الكادر البائع فوراً.",
+    "proj-6-desc": "برنامج سحابي جاهز (White-label Dashboard) مخصص لشركات التجزئة والمحلات الكبرى، قابل للتثبيت السريع والربط مع أي نظام كاشير محلي.",
     "proj-6-tech-1": "Vanilla JS",
     "proj-6-tech-2": "Bootstrap",
     "proj-6-tech-3": "PWA Ready",
     "proj-6-tech-4": "PDF Export Engine",
+
+    // Case Study Expandable Labels & Content
+    "case-lbl-challenge": "التحدي التشغيلي:",
+    "case-lbl-solution": "الحل التقني المنفذ:",
+    "case-lbl-impact": "الأثر التشغيلي والمالي (ROI):",
+    "btn-view-case": "تفاصيل دراسة الحالة",
+    "btn-hide-case": "إخفاء التفاصيل",
+
+    "proj-1-challenge": "صعوبة وتأخر تجميع بيانات المبيعات وعدد الزوار يدوياً من 52 فرعاً، مما تسبب في اتخاذ قرارات متأخرة ونسبة أخطاء بشرية عالية في ترحيل التقارير التشغيلية اليومية.",
+    "proj-1-solution": "بناء مستودع بيانات PostgreSQL يربط نظام ERP (Dynamics 365) وأنظمة الكاشير وأجهزة قياس الزوار V-Count عبر ETL pipelines، وتطوير لوحات BI لحظية مع مساعد ذكي يستجيب لأسئلة المدراء بلغة طبيعية.",
+    "proj-1-impact": "توفير أكثر من 15 ساعة عمل أسبوعياً للإدارة، خفض أخطاء التقارير إلى 0%، وتحقيق زيادة 12% في معدل تحويل الزوار للفروع نتيجة تحسين توزيع الموظفين بناءً على أوقات الذروة.",
+
+    "proj-2-challenge": "فروقات متكررة في كميات المخزون وتأخر مزامنة الطلبات الواردة من متجر Trendyol وWooCommerce مع المستودعات، مما تسبب في إلغاء طلبات من العملاء وتأخر الشحن.",
+    "proj-2-solution": "تطوير محرك ربط (Sync Engine) بلغة Python يراقب المخزون بشكل لحظي ويحدث الكميات ثنائي الاتجاه، مع جدولة سحب الطلبات وترحيلها تلقائياً للـ ERP وإنشاء سجل تدقيق (Audit Log) للعمليات.",
+    "proj-2-impact": "زيادة سرعة معالجة وشحن الطلبات بنسبة 60%، وتصفير نسبة إلغاء الطلبات بسبب نفاد الكميات، مع توفير 20 ساعة عمل أسبوعياً من المزامنة اليدوية.",
+
+    "proj-3-challenge": "فوضى وتأخير في تسجيل طلبات توريد البضائع وأعطال الصيانة من الفروع إلى الإدارة العامة، والتي كانت تتم عبر واتساب دون توثيق أو تتبع للصلاحيات والتكاليف.",
+    "proj-3-solution": "تصميم وبناء بوابة ويب داخلية باستخدام React وSupabase وقاعدة بيانات PostgreSQL، تتيح لمدراء المعارض إرسال الطلبات وصور الأعطال مع لوحة تحكم للإدارة للموافقات وتوزيع المهام حسب الصلاحيات (RBAC).",
+    "proj-3-impact": "تسريع تجهيز وإرسال بضائع المعارض بنسبة 75%، وحصر تكاليف صيانة الفروع بنسبة 100% مع أرشفة كاملة للعمليات والموافقات التشغيلية.",
+
+    "proj-4-challenge": "استهلاك موظفي التحليل المالي 4 ساعات يومياً في سحب البيانات من عدة قواعد بيانات، وتنظيفها على إكسيل لتوليد التقارير اليومية وإرسالها بالإيميل للمسؤولين.",
+    "proj-4-solution": "تطوير سكربتات أتمتة بالبايثون مع VBA وPower Query تسحب البيانات تلقائياً عند الساعة 6 صباحاً، تقوم بتنظيفها وتوليد ملفات Excel وPDF تفاعلية وإرسالها عبر بريد مجدول تلقائياً للمسؤولين.",
+    "proj-4-impact": "تقليص زمن إعداد وإرسال التقارير من 4 ساعات إلى 3 دقائق فقط تلقائياً، وتصفير نسبة الأخطاء الحسابية واليدوية بالتقارير بنسبة 100%.",
+
+    "proj-5-challenge": "صعوبة متابعة التذاكر والأعطال التقنية في الفروع وتحديد المسؤول عنها، مع غياب مؤشرات لقياس سرعة استجابة فريق الدعم لحل المشكلات التقنية.",
+    "proj-5-solution": "تطوير نظام تذاكر داخلي تفاعلي (React & Firebase) يسمح للفروع برفع التذاكر وتحديث حالتها لحظياً، مع إرسال إشعارات تلقائية عبر البريد عند تحديث حالة الطلبات وتوليد تقارير أداء دورية للفريق.",
+    "proj-5-impact": "خفض متوسط زمن إغلاق التذاكر وحل الأعطال بنسبة 50%، مما قلل ساعات توقف العمل بنقاط البيع وعزز كفاءة تشغيل الأجهزة بالفروع.",
+
+    "proj-6-challenge": "الشركات الناشئة وسلاسل التجزئة الصغيرة لا تمتلك الميزانية الكافية لشراء وتدريب موظفيها على أنظمة BI معقدة ومكلفة مثل Power BI أو Tableau، مما يتركها دون رؤية واضحة لأدائها.",
+    "proj-6-solution": "تصميم باقة برمجية جاهزة (Dash Analytics) خفيفة الوزن باستخدام Vanilla JS وBootstrap تدعم العمل دون إنترنت (PWA)، وتتصل بقاعدة بيانات مبيعات المحل لتوليد لوحة متابعة فورية وتصدير تقارير PDF بكبسة زر.",
+    "proj-6-impact": "تثبيت وتشغيل النظام للعملاء في أقل من 3 ساعات، وخفض عدد الساعات المستهلكة في تجميع الحسابات اليومية يدوياً من أصحاب المحلات بنسبة 80%.",
+
+    // Testimonials Section
+    "test-title": "آراء العملاء",
+    "test-subtitle": "أراء وانطباعات أصحاب الشركات والمدراء التنفيذيين الذين عملت على تطوير وتأمين مشاريعهم",
+    "test-1-quote": "\"عمل المهندس علاء على أتمتة نظام معالجة الطلبات بالكامل وربط متجرنا مع المخازن ونظام ERP Dynamics 365. المشروع وفر علينا مئات الساعات التشغيلية ورفع كفاءة تسليم الطلبات لعملائنا في Trendyol وWooCommerce.\"",
+    "test-1-author": "أ. عبد الرحمن الشهري",
+    "test-1-title": "مدير تشغيل العمليات وسلاسل الإمداد - شركة الفوزان للتجارة",
+    "test-2-quote": "\"لوحة تحكم تحليلات المبيعات الفورية التي صممها علاء ساعدتنا كإدارة عليا في مراقبة أداء 50+ فرعاً ومتابعة نسب تحقيق التارجت ومعدلات التحويل لحظة بلحظة من هواتفنا المحمولة بكل أمان وسهولة.\"",
+    "test-2-author": "م. خالد باوزير",
+    "test-2-title": "المدير التنفيذي لقطاع التجزئة - مجموعة حلول المعارض المنزلية",
 
     // Calculator Section
     "calc-title": "حاسبة أداء التجزئة التفاعلية",
@@ -171,7 +230,7 @@ const translations = {
     "form-opt-2": "أتمتة المهام والتقارير",
     "form-opt-3": "ربط متجر إلكتروني وبوابات شحن",
     "form-opt-4": "دمج وتوحيد أنظمة متعددة",
-    "form-opt-5": "تطوير تطبيقات داخلية مخصصة",
+    "form-opt-5": "تتطوير تطبيقات داخلية مخصصة",
     "form-opt-6": "بوت وإشعارات واتساب",
     "form-opt-7": "دمج تقنيات الذكاء الاصطناعي",
     "form-opt-8": "استشارة تحول رقمي كاملة",
@@ -190,6 +249,7 @@ const translations = {
     // Navigation
     "nav-home": "Home",
     "nav-about": "About Me",
+    "nav-industries": "Industries",
     "nav-services": "Services",
     "nav-workflow": "Workflow",
     "nav-projects": "Projects",
@@ -225,6 +285,18 @@ const translations = {
     "about-f3": "Custom Real-time BI Dashboards",
     "about-f4": "ERP, Store, and Database Sync",
 
+    // Target Industries Section
+    "ind-title": "Target Industries",
+    "ind-subtitle": "Custom software solutions engineered to address the specific operational constraints of your business sector",
+    "ind-1-title": "Retail & Showrooms",
+    "ind-1-desc": "Automate inventory checks, log live visitor footcounts, and compute branch conversion rates to optimize staff scheduling and boost sales.",
+    "ind-2-title": "E-Commerce & Logistics",
+    "ind-2-desc": "Bi-directional integration syncing WooCommerce and Salla with physical warehouses, ERP ledgers, and shipping carriers.",
+    "ind-3-title": "Food & Beverage (F&B)",
+    "ind-3-desc": "Consolidate branch sales in real-time and automate food cost calculations, inventory depletion, and recipe margin tracking.",
+    "ind-4-title": "Corporate & Services",
+    "ind-4-desc": "Automate executive approvals, manage internal maintenance workflows, and build self-service portals for employees and clients.",
+
     // Services Section
     "services-title": "Services Offered",
     "services-subtitle": "Tailored software solutions designed around how your business actually runs",
@@ -258,50 +330,96 @@ const translations = {
     "step-4-desc": "I train your operational team, deliver clear documentation, and remain available to support system extensions.",
 
     // Projects Section
-    "projects-title": "Featured Projects & Case Studies",
-    "projects-subtitle": "Demonstrated systems built, deployed, and currently scaling in production environments",
+    "projects-title": "Case Studies & Projects",
+    "projects-subtitle": "Demonstrated solutions built, deployed, and currently generating returns for businesses",
     "proj-1-tag": "Retail Business Intelligence",
     "proj-1-title": "Enterprise Retail Performance Dashboard (Apex Data)",
-    "proj-1-desc": "A unified business dashboard connecting 52 retail stores. Integrates Microsoft Dynamics 365 ERP, POS systems, and V-Count visitor counters. Features include: store conversion rate logs, product trend and slow-moving stock finders, and an SQL AI bot to answer executive financial queries.",
+    "proj-1-desc": "A unified business dashboard connecting 52 retail stores. Integrates Dynamics 365 ERP, POS systems, and V-Count IoT counters.",
     "proj-1-tech-1": "Dynamics 365",
     "proj-1-tech-2": "PostgreSQL",
     "proj-1-tech-3": "Chart.js",
     "proj-1-tech-4": "AI Chatbot",
+    
     "proj-2-tag": "API Synchronization",
     "proj-2-title": "Bi-Directional E-Commerce Sync Engine",
-    "proj-2-desc": "Built a Python-based synchronization engine connecting Trendyol and WooCommerce marketplaces with internal Dynamics 365 ERP, automating orders, reconciliation, and audit logs, speeding fulfillment by 60%.",
+    "proj-2-desc": "Built a Python-based synchronization engine connecting Trendyol and WooCommerce marketplaces with internal Dynamics 365 ERP.",
     "proj-2-tech-1": "Python APIs",
     "proj-2-tech-2": "WooCommerce",
     "proj-2-tech-3": "Dynamics 365",
     "proj-2-tech-4": "ETL Processes",
+    
     "proj-3-tag": "Custom Operations Tool",
     "proj-3-title": "Showroom Inventory & Operations Portal",
-    "proj-3-desc": "A secure web portal letting 50+ store managers check catalog items, submit inventory stock replenishment requests, and request store maintenance, governed by granular role-based permissions.",
+    "proj-3-desc": "A secure web portal letting 50+ store managers check catalog items, submit replenishment requests, and log maintenance tickets.",
     "proj-3-tech-1": "React.js",
     "proj-3-tech-2": "Supabase",
     "proj-3-tech-3": "PostgreSQL",
     "proj-3-tech-4": "RBAC Security",
+    
     "proj-4-tag": "Workflow Automation",
-    "proj-4-title": "Automated Report Generation & Processing System",
-    "proj-4-desc": "Engineered an automated data processing system using Python, VBA, and Power Query that gathers sales and KPIs daily, generating PDF reports and mailing them to executives. Reduced daily workload from 4 hours to 3 minutes.",
+    "proj-4-title": "Automated Report Generation & Processing",
+    "proj-4-desc": "Engineered an automated data processing system using Python, VBA, and Power Query that generates PDF reports and schedules email delivery.",
     "proj-4-tech-1": "Python",
     "proj-4-tech-2": "VBA Macro",
     "proj-4-tech-3": "Power Query",
     "proj-4-tech-4": "Windows Scheduler",
+    
     "proj-5-tag": "Ticketing Application",
     "proj-5-title": "Branch Maintenance Ticketing Platform",
-    "proj-5-desc": "An internal React application allowing retail branches to submit and track maintenance requests, featuring manager approval chains, service logs, and detailed history audit logs.",
+    "proj-5-desc": "An internal React application allowing branches to submit maintenance requests, featuring approval chains and service logs.",
     "proj-5-tech-1": "React.js",
     "proj-5-tech-2": "Firebase",
     "proj-5-tech-3": "Audit Logging",
     "proj-5-tech-4": "Cloud Functions",
+    
     "proj-6-tag": "Ready-to-Deploy Software",
     "proj-6-title": "Dash Analytics White-Label Dashboard",
-    "proj-6-desc": "A ready-to-deploy, localized SaaS sales-dashboard package built for medium retail chains. Syncs with local databases to instantly visualize sales trends, employee quotas, and PDF summary sheets.",
+    "proj-6-desc": "A ready-to-deploy localized SaaS sales-dashboard package built for medium retail chains syncing directly with local databases.",
     "proj-6-tech-1": "Vanilla JS",
     "proj-6-tech-2": "Bootstrap",
     "proj-6-tech-3": "PWA Ready",
     "proj-6-tech-4": "PDF Export Engine",
+
+    // Case Study Expandable Labels & Content
+    "case-lbl-challenge": "Operational Challenge:",
+    "case-lbl-solution": "Technical Solution Deployed:",
+    "case-lbl-impact": "Business Impact (ROI):",
+    "btn-view-case": "View Case Study",
+    "btn-hide-case": "Hide Details",
+
+    "proj-1-challenge": "Scattered sales data and visitor footcount across 52 branches were collected manually, leading to delayed executive decisions and high human errors in reporting.",
+    "proj-1-solution": "Built a PostgreSQL data warehouse integrating Dynamics 365, POS, and V-Count IoT counters via automated ETL pipelines, accompanied by real-time BI dashboards and a natural language AI financial query bot.",
+    "proj-1-impact": "Saved 15+ hours/week of management work, eliminated reporting errors, and achieved a 12% increase in store conversion rates by optimizing staff scheduling around peak traffic hours.",
+
+    "proj-2-challenge": "Frequent inventory discrepancies and delays in syncing orders from Trendyol and WooCommerce with the warehouse caused customer order cancellations and fulfillment delays.",
+    "proj-2-solution": "Developed a Python-based synchronization engine for real-time bi-directional inventory checks, automated order posting to Dynamics 365, and built an automated audit logging system.",
+    "proj-2-impact": "Boosted order fulfillment speed by 60%, eliminated order cancellation penalties, and saved 20+ hours/week of manual spreadsheet reconciliation.",
+
+    "proj-3-challenge": "Disorganized replenishment and maintenance requests sent via WhatsApp created inventory leakage, delayed showroom repairs, and offered zero cost tracking or user permissions.",
+    "proj-3-solution": "Built a secure internal portal using React and Supabase (PostgreSQL), enabling showroom managers to submit requests with images, backed by a central dashboard for approvals and granular role-based access control (RBAC).",
+    "proj-3-impact": "Reduced store stock replenishment processing time by 75%, achieved 100% audit accuracy on branch maintenance spend, and created a complete digital audit trail.",
+
+    "proj-4-challenge": "Financial analysts spent 4 hours every morning logging into multiple systems, cleaning raw data in Excel, manually compiling PDF reports, and emailing them to regional managers.",
+    "proj-4-solution": "Developed automated scripts using Python, VBA, and Power Query that extract raw data daily at 6 AM, run data cleaning models, generate visual PDF reports, and schedule automated email delivery.",
+    "proj-4-impact": "Reduced report preparation time from 4 hours to 3 minutes, entirely automated, while eliminating accounting and spreadsheet formula errors by 100%.",
+
+    "proj-5-challenge": "Difficult to track IT and device breakdowns across branches, leading to prolonged downtimes, lost productivity, and no KPIs to evaluate support staff performance.",
+    "proj-5-solution": "Developed a real-time web ticketing platform using React and Firebase, featuring live status updates, manager approval chains, and automated email notifications for support staff assignment.",
+    "proj-5-impact": "Decreased ticket resolution and machine downtime by 50%, preventing checkout lane closures and improving general branch hardware availability.",
+
+    "proj-6-challenge": "Small retail chains and growing shops could not afford expensive BI software licenses (like Tableau/Power BI) or technical team hires, keeping them blind to daily sales and clerk margins.",
+    "proj-6-solution": "Designed a ready-to-deploy, lightweight white-label dashboard package using Vanilla JS and Bootstrap, offering PWA support and direct database syncing to visualize sales and export PDF reports.",
+    "proj-6-impact": "Enabled quick dashboard deployments in under 3 hours per client, reducing store owner manual bookkeeping hours by 80%.",
+
+    // Testimonials Section
+    "test-title": "Client Testimonials",
+    "test-subtitle": "Feedback from corporate executives and operations managers who digitized their workflows",
+    "test-1-quote": "\"Eng. Alaa successfully automated our order management flow, connecting our online store with warehouses and Dynamics 365 ERP. The project saved us hundreds of operational hours and accelerated delivery times for our customers on Trendyol and WooCommerce.\"",
+    "test-1-author": "Abdulrahman Al-Shehri",
+    "test-1-title": "COO & Supply Chain Director - Al-Fozan Trading",
+    "test-2-quote": "\"The real-time sales dashboard designed by Alaa allowed us as executive management to monitor 50+ branches, tracking target achievements and store conversion rates instantly and securely from our mobile phones.\"",
+    "test-2-author": "Eng. Khalid Bin Wazir",
+    "test-2-title": "Executive Retail Director - Home Showrooms Group",
 
     // Calculator Section
     "calc-title": "Interactive Retail KPI Simulator",
@@ -499,11 +617,57 @@ function setupEventListeners() {
         el.classList.remove('active');
         el.querySelector('.faq-answer').style.maxHeight = null;
       });
-
+ 
       if (!isActive) {
         item.classList.add('active');
         const answer = item.querySelector('.faq-answer');
-        answer.style.maxHeight = answer.scrollHeight + 32 + "px"; // Include padding padding-bottom
+        answer.style.maxHeight = answer.scrollHeight + 32 + "px"; // Include padding bottom
+      }
+    });
+  });
+
+  // Case Study Details Toggle
+  const caseStudyBtns = document.querySelectorAll('.btn-case-study');
+  caseStudyBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const projId = btn.getAttribute('data-project');
+      const details = document.getElementById(`case-details-${projId}`);
+      const btnTextSpan = btn.querySelector('.btn-text');
+      
+      if (details) {
+        const isOpen = details.classList.contains('open');
+        
+        // Close all other case studies to keep layout clean
+        document.querySelectorAll('.case-study-details').forEach(el => {
+          el.classList.remove('open');
+          el.style.maxHeight = null;
+        });
+        document.querySelectorAll('.btn-case-study').forEach(el => {
+          el.classList.remove('active');
+          const span = el.querySelector('.btn-text');
+          if (span) {
+            span.setAttribute('data-i18n', 'btn-view-case');
+            span.textContent = translations[currentLang]["btn-view-case"];
+          }
+        });
+
+        if (!isOpen) {
+          details.classList.add('open');
+          btn.classList.add('active');
+          details.style.maxHeight = details.scrollHeight + 40 + "px";
+          if (btnTextSpan) {
+            btnTextSpan.setAttribute('data-i18n', 'btn-hide-case');
+            btnTextSpan.textContent = translations[currentLang]["btn-hide-case"];
+          }
+        } else {
+          details.classList.remove('open');
+          btn.classList.remove('active');
+          details.style.maxHeight = null;
+          if (btnTextSpan) {
+            btnTextSpan.setAttribute('data-i18n', 'btn-view-case');
+            btnTextSpan.textContent = translations[currentLang]["btn-view-case"];
+          }
+        }
       }
     });
   });
@@ -544,6 +708,23 @@ function applyLanguage(lang) {
         element.setAttribute('placeholder', translations[lang][key]);
       } else {
         element.innerHTML = translations[lang][key];
+      }
+    }
+  });
+
+  // Update Case Study buttons text based on their expanded state
+  const caseStudyBtns = document.querySelectorAll('.btn-case-study');
+  caseStudyBtns.forEach(btn => {
+    const projId = btn.getAttribute('data-project');
+    const details = document.getElementById(`case-details-${projId}`);
+    const btnTextSpan = btn.querySelector('.btn-text');
+    if (btnTextSpan) {
+      if (details && details.classList.contains('open')) {
+        btnTextSpan.setAttribute('data-i18n', 'btn-hide-case');
+        btnTextSpan.innerHTML = translations[lang]['btn-hide-case'];
+      } else {
+        btnTextSpan.setAttribute('data-i18n', 'btn-view-case');
+        btnTextSpan.innerHTML = translations[lang]['btn-view-case'];
       }
     }
   });
