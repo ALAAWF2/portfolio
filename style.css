@@ -1726,7 +1726,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 80px;
   }
   .nav-menu {
-    display: none;
+    display: flex;
     position: absolute;
     top: 80px;
     left: 0;
@@ -1738,15 +1738,46 @@ h1, h2, h3, h4, h5, h6 {
     align-items: flex-start;
     gap: 24px;
     box-shadow: 0 10px 20px var(--shadow-color);
+    
+    /* Elegant transition */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.3s var(--ease-custom), transform 0.3s var(--ease-custom), visibility 0.3s;
+    pointer-events: none;
   }
   .nav-menu.open {
-    display: flex;
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+    pointer-events: auto;
   }
   .menu-btn {
     display: flex;
   }
-  .form-row, .calc-form, .workflow-steps {
+  .form-row, .calc-form, .workflow-steps, .calc-results {
     grid-template-columns: 1fr;
+  }
+  .calc-results {
+    gap: 16px;
+  }
+  .calc-container {
+    padding: 24px 16px;
+  }
+  .calc-kpi-card {
+    padding: 16px;
+  }
+  .contact-info-card, .contact-form-container {
+    padding: 30px 20px;
+  }
+  .hero-title {
+    font-size: 2.2rem;
+  }
+  .hero-desc {
+    font-size: 0.95rem;
+  }
+  .section-title {
+    font-size: 2rem;
   }
   .footer-bottom {
     flex-direction: column;
