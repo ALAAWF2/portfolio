@@ -171,10 +171,10 @@ const translations = {
     "test-subtitle": "أراء وانطباعات أصحاب الشركات والمدراء التنفيذيين الذين عملت على تطوير وتأمين مشاريعهم",
     "test-1-quote": "\"عمل المهندس علاء على أتمتة نظام معالجة الطلبات بالكامل وربط متجرنا مع المخازن ونظام ERP Dynamics 365. المشروع وفر علينا مئات الساعات التشغيلية ورفع كفاءة تسليم الطلبات لعملائنا في Trendyol وWooCommerce.\"",
     "test-1-author": "أ. عبد الرحمن الشهري",
-    "test-1-title": "مدير تشغيل العمليات وسلاسل الإمداد - شركة الفوزان للتجارة",
+    "test-1-title": "مدير تشغيل العمليات وسلاسل الإمداد",
     "test-2-quote": "\"لوحة تحكم تحليلات المبيعات الفورية التي صممها علاء ساعدتنا كإدارة عليا في مراقبة أداء 50+ فرعاً ومتابعة نسب تحقيق التارجت ومعدلات التحويل لحظة بلحظة من هواتفنا المحمولة بكل أمان وسهولة.\"",
     "test-2-author": "م. خالد باوزير",
-    "test-2-title": "المدير التنفيذي لقطاع التجزئة - مجموعة حلول المعارض المنزلية",
+    "test-2-title": "المدير التنفيذي لقطاع التجزئة",
 
     // Calculator Section
     "calc-title": "حاسبة أداء التجزئة التفاعلية",
@@ -416,10 +416,10 @@ const translations = {
     "test-subtitle": "Feedback from corporate executives and operations managers who digitized their workflows",
     "test-1-quote": "\"Eng. Alaa successfully automated our order management flow, connecting our online store with warehouses and Dynamics 365 ERP. The project saved us hundreds of operational hours and accelerated delivery times for our customers on Trendyol and WooCommerce.\"",
     "test-1-author": "Abdulrahman Al-Shehri",
-    "test-1-title": "COO & Supply Chain Director - Al-Fozan Trading",
+    "test-1-title": "COO & Supply Chain Director",
     "test-2-quote": "\"The real-time sales dashboard designed by Alaa allowed us as executive management to monitor 50+ branches, tracking target achievements and store conversion rates instantly and securely from our mobile phones.\"",
     "test-2-author": "Eng. Khalid Bin Wazir",
-    "test-2-title": "Executive Retail Director - Home Showrooms Group",
+    "test-2-title": "Executive Retail Director",
 
     // Calculator Section
     "calc-title": "Interactive Retail KPI Simulator",
