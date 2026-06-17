@@ -1,0 +1,22 @@
+{
+  "name": "Alaa Wafaie - Systems & Automation Architect",
+  "short_name": "Alaa Wafaie",
+  "description": "Enterprise Systems & Automation Architect Portfolio and Freelance Services.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1a1a2e",
+  "theme_color": "#fe7900",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "./assets/images/icon-192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "./assets/images/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

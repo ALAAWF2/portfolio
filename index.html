@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>علاء وفائي | مهندس أنظمة مؤسسية وأتمتة</title>
+  <meta name="description" content="أحوّل عمليات شركتك اليدوية والمبعثرة إلى أنظمة تلقائية ولوحات متابعة لحظية تساعدك على توفير الوقت، تقليل الأخطاء، ورؤية الأرقام واضحة بمكان واحد.">
+  <meta name="keywords" content="أتمتة العمليات, لوحات أداء مبيعات, ربط المتاجر الإلكترونية, أتمتة التقارير, ذكاء اصطناعي للشركات, علاء وفائي, Alaa Wafaie, Systems Architect, Automation Engineer">
+  <meta name="author" content="علاء وفائي">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wa.me/966553377408">
+  <meta property="og:title" content="علاء وفائي | مهندس أنظمة مؤسسية وأتمتة">
+  <meta property="og:description" content="أحوّل عمليات شركتك اليدوية والمبعثرة إلى أنظمة تلقائية ولوحات متابعة لحظية تساعدك على توفير الوقت وتقليل الأخطاء.">
+  <meta property="og:image" content="./assets/images/dashboard_preview.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="علاء وفائي | مهندس أنظمة مؤسسية وأتمتة">
+  <meta property="twitter:description" content="أحوّل عمليات شركتك اليدوية والمبعثرة إلى أنظمة تلقائية ولوحات متابعة لحظية تساعدك على توفير الوقت وتقليل الأخطاء.">
+  <meta property="twitter:image" content="./assets/images/dashboard_preview.png">
+
+  <!-- PWA Support -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#fe7900">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <link rel="apple-touch-icon" href="./assets/images/icon-192.png">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="light-theme">
+
+  <!-- Floating WhatsApp Action -->
+  <a href="https://wa.me/966553377408?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B9%D9%84%D8%A7%D8%A1%D8%8C%20%D8%B4%D9%81%D8%AA%20%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D9%85%D9%88%D9%82%D8%B9%D9%83%20%D9%88%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83" 
+     class="whatsapp-floating" target="_blank" aria-label="Chat on WhatsApp" id="floating-wa-btn">
+    <i class="fa-brands fa-whatsapp"></i>
+  </a>
+
+  <!-- Header & Navigation -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <div class="logo-wrapper">
+        <a href="#hero" class="logo" id="nav-logo">
+          <div class="logo-icon"></div>
+          <div class="logo-text">علاء <span>وفائي</span></div>
+        </a>
+        <div class="status-badge">
+          <span class="status-dot"></span>
+          <span class="status-lbl">ONLINE</span>
+        </div>
+      </div>
+      
+      <nav class="nav-menu" id="nav-menu">
+        <a href="#hero" class="nav-link active" data-i18n="nav-home">الرئيسية</a>
+        <a href="#about" class="nav-link" data-i18n="nav-about">من أنا</a>
+        <a href="#services" class="nav-link" data-i18n="nav-services">الخدمات</a>
+        <a href="#workflow" class="nav-link" data-i18n="nav-workflow">خطوات العمل</a>
+        <a href="#projects" class="nav-link" data-i18n="nav-projects">المشاريع</a>
+        <a href="#calculator" class="nav-link" data-i18n="nav-calculator">آلة تحكم تفاعلية</a>
+        <a href="#faq" class="nav-link" data-i18n="nav-faq">الأسئلة الشائعة</a>
+        <a href="#contact" class="nav-link" data-i18n="nav-contact">تواصل معي</a>
+      </nav>
+
+      <div class="nav-actions">
+        <!-- Language Switcher -->
+        <button class="lang-toggle" id="lang-toggle" aria-label="Switch Language">English</button>
+        <!-- Light/Dark Toggle -->
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <!-- Mobile Menu trigger -->
+        <button class="menu-btn" id="menu-btn" aria-label="Toggle Menu">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tagline">
+          <i class="fa-solid fa-gears"></i>
+          <span data-i18n="hero-tag">مهندس أنظمة مؤسسية وأتمتة</span>
+        </div>
+        <h1 class="hero-title" id="hero-main-title">
+          <span data-i18n="hero-title-1">أحوّل عمليات شركتك اليدوية إلى </span>
+          <span data-i18n="hero-title-span">أنظمة ذكية مؤتمتة</span>
+          <span data-i18n="hero-title-2"> ولوحات متابعة لحظية</span>
+        </h1>
+        <p class="hero-desc" data-i18n="hero-desc">
+          بصفتي مهندس حلول أتمتة وتحليلات أعمال، أساعد الشركات الكبرى والمتوسطة على توفير الوقت، تقليص الأخطاء التشغيلية بنسبة 85%، ورؤية الأرقام لحظة بلحظة لدعم اتخاذ القرار المناسب.
+        </p>
+        <div class="hero-btns">
+          <a href="https://wa.me/966553377408?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D9%85%D9%87%D9%86%D8%AF%D8%B3%20%D8%B9%D9%84%D8%A7%D8%A1%D8%8C%20%D8%A3%D8%B1%D8%BA%D8%A8%20%D9%81%D9%8A%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83" 
+             class="btn btn-primary" target="_blank" id="hero-cta-wa">
+            <i class="fa-brands fa-whatsapp"></i>
+            <span data-i18n="btn-whatsapp">تواصل عبر واتساب</span>
+          </a>
+          <a href="#projects" class="btn btn-secondary">
+            <span data-i18n="btn-portfolio">عرض المشاريع</span>
+          </a>
+        </div>
+      </div>
+      
+      <div class="hero-visual">
+        <div class="hero-blob"></div>
+        <div class="hero-card">
+          <div class="hero-card-header">
+            <div class="hero-card-dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="hero-card-title">Live Sales Pipeline</div>
+          </div>
+          <div class="hero-card-kpi">
+            <div class="hero-card-kpi-val" id="hero-card-val">80%</div>
+            <div class="hero-card-kpi-lbl" data-i18n="stat-manual">تقليص العمل اليدوي 80%</div>
+          </div>
+          <div class="hero-card-chart">
+            <div class="hero-card-bar" style="--val: 35%"></div>
+            <div class="hero-card-bar" style="--val: 50%"></div>
+            <div class="hero-card-bar" style="--val: 45%"></div>
+            <div class="hero-card-bar" style="--val: 70%"></div>
+            <div class="hero-card-bar" style="--val: 90%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats / Trust Bar -->
+  <section class="stats-bar reveal" id="stats">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <div class="stat-val" id="counter-exp">0+</div>
+        <div class="stat-lbl" data-i18n="stat-exp">4+ سنوات خبرة</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val" id="counter-branches">0+</div>
+        <div class="stat-lbl" data-i18n="stat-branches">ربط +50 فرعاً</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val" id="counter-manual">0%</div>
+        <div class="stat-lbl" data-i18n="stat-manual">تقليص العمل اليدوي 80%</div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-val" id="counter-speed">0%</div>
+        <div class="stat-lbl" data-i18n="stat-speed">60% تنفيذ أسرع</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section class="section-padding reveal" id="about">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title" data-i18n="about-title">من أنا</h2>
+        <p class="section-subtitle" data-i18n="about-subtitle">مهندس حلول تقنية متخصص في ربط الأنظمة وأتمتة العمليات للمؤسسات الكبرى</p>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-img-container">
+          <div class="about-shape"></div>
+          <div class="about-visual-box">
+            <div class="about-profile-header">
+              <div class="about-avatar-placeholder">
+                <i class="fa-solid fa-user-tie"></i>
+              </div>
+              <div class="about-profile-info">
+                <h3>علاء وفائي</h3>
+                <p>Alaa Wafaie</p>
+              </div>
+            </div>
+            <p class="about-profile-quote" data-i18n="about-profile-quote">
+              «التقنية ليست لاستعراض العضلات البرمجية، بل هي وسيلة لتحقيق أرقام أفضل، توفير الوقت، وتقليل الصداع التشغيلي لأصحاب الأعمال.»
+            </p>
+          </div>
+        </div>
+        
+        <div class="about-content">
+          <h3 data-i18n="about-heading">أبني الجسور بين التكنولوجيا وأهداف الأعمال التجارية</h3>
+          <p data-i18n="about-p1">
+            أهلاً بك، أنا علاء وفائي. على مدار أكثر من 4 سنوات، تخصصت في قيادة التحول الرقمي وتصميم البنى التحتية البرمجية للأعمال في قطاع التجزئة والمبيعات المتعددة. شغفي هو أتمتة المهام المعقدة والمملة وحلها برمجياً لتحدث تلقائياً.
+          </p>
+          <p data-i18n="about-p2">
+            ركزت خلال مسيرتي على تطوير أدوات التحليلات الفورية ولوحات التحكم التي تربط أنظمة المخازن وERP والـ POS وأجهزة قياس الزوار، مما يعطي الإدارة رؤية شفافة تمكنها من زيادة الأرباح وتخفيض التكاليف التشغيلية.
+          </p>
+          
+          <div class="about-features">
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="about-f1">تصميم خطوط نقل البيانات (ETL) ومعالجتها</span>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="about-f2">أتمتة العمليات التشغيلية بالكامل</span>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="about-f3">تطوير لوحات بيانات لحظية (BI)</span>
+            </div>
+            <div class="about-feature-item">
+              <i class="fa-solid fa-circle-check"></i>
+              <span data-i18n="about-f4">ربط المتاجر والـ ERP وقواعد البيانات</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section-padding reveal" id="services" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title" data-i18n="services-title">الخدمات التي أقدمها</h2>
+        <p class="section-subtitle" data-i18n="services-subtitle">حلول برمجية ذكية مفصلة خصيصاً لتناسب احتياجات شركتك وتزيد من كفاءتها</p>
+      </div>
+      
+      <div class="services-grid">
+        <!-- Service 1 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-chart-line"></i>
+          </div>
+          <h3 class="service-title" data-i18n="srv-1-title">لوحات متابعة الأداء اللحظية (BI)</h3>
+          <p class="service-desc" data-i18n="srv-1-desc">
+            شاشة تحكم واحدة تجمع مبيعات فروعك، أداء موظفيك، وأعداد الزوار لحظة بلحظة، بدلاً من تجميعها يدوياً من ملفات متعددة.
+          </p>
+        </div>
+        <!-- Service 2 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-arrows-rotate"></i>
+          </div>
+          <h3 class="service-title" data-i18n="srv-2-title">أتمتة المهام والتقارير اليومية</h3>
+          <p class="service-desc" data-i18n="srv-2-desc">
+            أتمتة التقارير الدورية (مبيعات، مخزون، تشغيل) لتصلك في دقائق معدودة بدلاً من ساعات عمل طويلة ومملة خالية من الأخطاء.
+          </p>
+        </div>
+        <!-- Service 3 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-store"></i>
+          </div>
+          <h3 class="service-title" data-i18n="srv-3-title">ربط المتجر الإلكتروني بالمخازن</h3>
+          <p class="service-desc" data-i18n="srv-3-desc">
+            ربط متجرك (سلة، ووكومرس، ترينديول) بنظام المستودعات وERP لتحديث المخزون والطلبات تلقائياً ومنع البيع بالخطأ.
+          </p>
+        </div>
+        <!-- Service 4 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-network-wired"></i>
+          </div>
+          <h3 class="service-title" data-i18n="srv-4-title">دمج وتوحيد الأنظمة (Integrations)</h3>
+          <p class="service-desc" data-i18n="srv-4-desc">
+            جعل أنظمتك المختلفة (ERP Dynamics 365, POS, GoFrugal) تتحدث مع بعضها كأنها نظام واحد دون تكرار لإدخال البيانات.
+          </p>
+        </div>
+        <!-- Service 5 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+          <h3 class="service-title" data-i18n="srv-5-title">أنظمة وتطبيقات داخلية مخصصة</h3>
+          <p class="service-desc" data-i18n="srv-5-desc">
+            بناء أدوات داخلية لطلب البضائع للفروع، طلبات الصيانة، تتبع المهام، وإدارة الموافقات حسب صلاحيات كل موظف.
+          </p>
+        </div>
+        <!-- Service 6 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <h3 class="service-title" data-i18n="srv-6-title">بوتات وإشعارات واتساب التلقائية</h3>
+          <p class="service-desc" data-i18n="srv-6-desc">
+            إرسال إشعارات تلقائية عبر واتساب لفريقك أو عملائك: تأكيد طلب، تنبيه انخفاض مخزون، أو تقارير مبيعات سريعة.
+          </p>
+        </div>
+        <!-- Service 7 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <h3 class="service-title" data-i18n="srv-7-title">دمج الذكاء الاصطناعي بالأعمال</h3>
+          <p class="service-desc" data-i18n="srv-7-desc">
+            تزويد نظامك بمساعد ذكي يجيب على أسئلة المدراء حول أرقام المبيعات والتقارير بلغة طبيعية، مع استخلاص البيانات فوراً.
+          </p>
+        </div>
+        <!-- Service 8 -->
+        <div class="service-card">
+          <div class="service-icon">
+            <i class="fa-solid fa-handshake-angle"></i>
+          </div>
+          <h3 class="service-title" data-i18n="srv-8-title">استشارات التحول الرقمي</h3>
+          <p class="service-desc" data-i18n="srv-8-desc">
+            تقييم الوضع التقني الحالي لشركتك، ووضع خطة عملية خطوة بخطوة للبدء في رقمنة وأتمتة العمليات بنجاح وبأقل التكاليف.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Workflow Section -->
+  <section class="section-padding reveal" id="workflow">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title" data-i18n="workflow-title">كيف أعمل معك؟</h2>
+        <p class="section-subtitle" data-i18n="workflow-subtitle">منهجية واضحة ومباشرة تضمن الحصول على أفضل النتائج بأقصى سرعة</p>
+      </div>
+      
+      <div class="workflow-steps">
+        <div class="workflow-step">
+          <div class="workflow-step-num">01</div>
+          <h3 data-i18n="step-1-title">1. فهم المشكلة والتحليل</h3>
+          <p data-i18n="step-1-desc">نجلس معاً لنفهم طبيعة عملك الحالي والعقبات التي تبطئ تشغيلك وتكلفك وقتاً وجهداً.</p>
+        </div>
+        <div class="workflow-step">
+          <div class="workflow-step-num">02</div>
+          <h3 data-i18n="step-2-title">2. اقتراح الحل المناسب</h3>
+          <p data-i18n="step-2-desc">أقوم بتصميم وتخطيط بنية النظام المقترح وعرض الفوائد والنتائج المتوقعة بالأرقام والوقت.</p>
+        </div>
+        <div class="workflow-step">
+          <div class="workflow-step-num">03</div>
+          <h3 data-i18n="step-3-title">3. التنفيذ والربط الفعلي</h3>
+          <p data-i18n="step-3-desc">أقوم بكتابة الأكواد والربط بين قواعد البيانات والأنظمة الحالية بدقة وأمان تام.</p>
+        </div>
+        <div class="workflow-step">
+          <div class="workflow-step-num">04</div>
+          <h3 data-i18n="step-4-title">4. الدعم والمتابعة المستمرة</h3>
+          <p data-i18n="step-4-desc">بعد التسليم، أظل على تواصل لدعم النظام وضمان استمراريته وتدريب فريق عملك على استخدامه.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase Section -->
+  <section class="section-padding reveal" id="projects" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title" data-i18n="projects-title">معرض المشاريع وقصص النجاح</h2>
+        <p class="section-subtitle" data-i18n="projects-subtitle">أمثلة حية على أنظمة وحلول قمت ببنائها وتشغيلها بنجاح في قطاعات مختلفة</p>
+      </div>
+      
+      <div class="projects-grid">
+        <!-- Project 1 (Apex Data Showcase) -->
+        <div class="project-card">
+          <div class="project-image-box">
+            <div class="laptop-mockup">
+              <div class="laptop-frame">
+                <div class="laptop-top-bar">
+                  <div class="hero-card-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="hero-card-title" style="font-size: 0.65rem;">Retail Analytics Cockpit</div>
+                  <div></div>
+                </div>
+                <img src="./assets/images/dashboard_preview.png" alt="Apex Data Dashboard Preview" class="laptop-preview-img" id="project-img-preview-1">
+              </div>
+            </div>
+          </div>
+          <div class="project-details">
+            <span class="project-tag" data-i18n="proj-1-tag">نظام تحليلات تجزئة متكامل</span>
+            <h3 class="project-title" data-i18n="proj-1-title">منصة تحليلات مبيعات التجزئة (Apex Data)</h3>
+            <p class="project-desc" data-i18n="proj-1-desc">
+              نظام تحليلات متكامل يربط مبيعات 52 فرعاً لحظة بلحظة مع ربط ERP (Dynamics 365) وأجهزة قياس الزوار ومعدلات التحويل. يتميز بلوحات أداء الموظفين، تحليل اتجاهات المنتجات والراكد، وبوت ذكاء اصطناعي للرد الفوري على الاستفسارات المالية للشركة.
+            </p>
+            <div class="project-tech">
+              <span data-i18n="proj-1-tech-1">Dynamics 365</span>
+              <span data-i18n="proj-1-tech-2">PostgreSQL</span>
+              <span data-i18n="proj-1-tech-3">Chart.js</span>
+              <span data-i18n="proj-1-tech-4">AI Chatbot</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card">
+          <div class="project-image-box">
+            <div class="laptop-mockup">
+              <div class="laptop-frame">
+                <div class="laptop-top-bar">
+                  <div class="hero-card-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="hero-card-title" style="font-size: 0.65rem;">E-Commerce Sync Status</div>
+                  <div></div>
+                </div>
+                <img src="./assets/images/ecommerce_sync.png" alt="E-Commerce Sync Preview" class="laptop-preview-img" id="project-img-preview-2">
+              </div>
+            </div>
+          </div>
+          <div class="project-details">
+            <span class="project-tag" data-i18n="proj-2-tag">أتمتة وربط سحابي</span>
+            <h3 class="project-title" data-i18n="proj-2-title">محرك الربط والمزامنة الذكي للـ E-Commerce</h3>
+            <p class="project-desc" data-i18n="proj-2-desc">
+              نظام ربط ومزامنة ثنائي الاتجاه يربط المتاجر الإلكترونية (Trendyol, WooCommerce) مع نظام المستودعات وERP للتحديث اللحظي للطلبات والمخزون، مما ساهم في تسريع شحن الطلبات بنسبة 60%.
+            </p>
+            <div class="project-tech">
+              <span data-i18n="proj-2-tech-1">Python APIs</span>
+              <span data-i18n="proj-2-tech-2">WooCommerce</span>
+              <span data-i18n="proj-2-tech-3">Dynamics 365</span>
+              <span data-i18n="proj-2-tech-4">ETL Pipelines</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card">
+          <div class="project-image-box">
+            <div class="laptop-mockup">
+              <div class="laptop-frame">
+                <div class="laptop-top-bar">
+                  <div class="hero-card-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="hero-card-title" style="font-size: 0.65rem;">Showroom Management Portal</div>
+                  <div></div>
+                </div>
+                <img src="./assets/images/showroom_portal.png" alt="Showroom Operations Portal Preview" class="laptop-preview-img" id="project-img-preview-3">
+              </div>
+            </div>
+          </div>
+          <div class="project-details">
+            <span class="project-tag" data-i18n="proj-3-tag">تطبيقات ويب داخلية</span>
+            <h3 class="project-title" data-i18n="proj-3-title">بوابة إدارة عمليات فروع المعارض</h3>
+            <p class="project-desc" data-i18n="proj-3-desc">
+              تطبيق ويب داخلي يربط فروع الشركة لإدارة طلبات البضائع والمستودعات، متابعة أعمال الصيانة، وتصفح الكتالوج التفاعلي للمنتجات مع نظام صلاحيات صارم للموظفين والمدراء.
+            </p>
+            <div class="project-tech">
+              <span data-i18n="proj-3-tech-1">React.js</span>
+              <span data-i18n="proj-3-tech-2">Supabase</span>
+              <span data-i18n="proj-3-tech-3">PostgreSQL</span>
+              <span data-i18n="proj-3-tech-4">RBAC Security</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card">
+          <div class="project-image-box">
+            <div class="laptop-mockup">
+              <div class="laptop-frame">
+                <div class="laptop-top-bar">
+                  <div class="hero-card-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="hero-card-title" style="font-size: 0.65rem;">Report Generator Engine</div>
+                  <div></div>
+                </div>
+                <img src="./assets/images/reporting_pipeline.png" alt="Reporting Data Pipeline Preview" class="laptop-preview-img" id="project-img-preview-4">
+              </div>
+            </div>
+          </div>
+          <div class="project-details">
+            <span class="project-tag" data-i18n="proj-4-tag">أتمتة الأعمال</span>
+            <h3 class="project-title" data-i18n="proj-4-title">نظام معالجة وتوليد التقارير التلقائي</h3>
+            <p class="project-desc" data-i18n="proj-4-desc">
+              نظام مخصص لسحب البيانات وتنظيفها وتوليد التقارير اليومية بصيغ Excel و PDF وجدولتها وإرسالها لمدراء المناطق تلقائياً، مقلصاً وقت تجهيز التقارير من 4 ساعات يومياً لـ 3 دقائق فقط.
+            </p>
+            <div class="project-tech">
+              <span data-i18n="proj-4-tech-1">Python</span>
+              <span data-i18n="proj-4-tech-2">VBA Macro</span>
+              <span data-i18n="proj-4-tech-3">Power Query</span>
+              <span data-i18n="proj-4-tech-4">Windows Scheduler</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card">
+          <div class="project-image-box">
+            <div class="laptop-mockup">
+              <div class="laptop-frame">
+                <div class="laptop-top-bar">
+                  <div class="hero-card-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="hero-card-title" style="font-size: 0.65rem;">Maintenance Ticketing App</div>
+                  <div></div>
+                </div>
+                <img src="./assets/images/maintenance_ticketing.png" alt="Maintenance Ticketing Preview" class="laptop-preview-img" id="project-img-preview-5">
+              </div>
+            </div>
+          </div>
+          <div class="project-details">
+            <span class="project-tag" data-i18n="proj-5-tag">إدارة تشغيل وصيانة</span>
+            <h3 class="project-title" data-i18n="proj-5-title">نظام إدارة تذاكر ومتابعة أعمال الصيانة</h3>
+            <p class="project-desc" data-i18n="proj-5-desc">
+              نظام داخلي متكامل مخصص لتسجيل وتتبع تذاكر الصيانة للأعطال التكنولوجية والأجهزة داخل المعارض، مع تتبع حالة الطلبات ومهام الفريق وإرسال تنبيهات المتابعة.
+            </p>
+            <div class="project-tech">
+              <span data-i18n="proj-5-tech-1">React.js</span>
+              <span data-i18n="proj-5-tech-2">Firebase</span>
+              <span data-i18n="proj-5-tech-3">Audit Logging</span>
+              <span data-i18n="proj-5-tech-4">Cloud Functions</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card">
+          <div class="project-image-box">
+            <div class="laptop-mockup">
+              <div class="laptop-frame">
+                <div class="laptop-top-bar">
+                  <div class="hero-card-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="hero-card-title" style="font-size: 0.65rem;">White-Label Dashboard Portal</div>
+                  <div></div>
+                </div>
+                <img src="./assets/images/dash_analytics.png" alt="Dash Analytics Preview" class="laptop-preview-img" id="project-img-preview-6">
+              </div>
+            </div>
+          </div>
+          <div class="project-details">
+            <span class="project-tag" data-i18n="proj-6-tag">حلول سريعة وجاهزة</span>
+            <h3 class="project-title" data-i18n="proj-6-title">منصة Dash Analytics الجاهزة للشركات</h3>
+            <p class="project-desc" data-i18n="proj-6-desc">
+              برنامج سحابي جاهز (White-label Dashboard) مخصص لشركات التجزئة والمحلات الكبرى، قابل للتثبيت السريع والربط مع أي نظام كاشير لعرض المبيعات اليومية والشهرية وأداء الكادر البائع فوراً.
+            </p>
+            <div class="project-tech">
+              <span data-i18n="proj-6-tech-1">Vanilla JS</span>
+              <span data-i18n="proj-6-tech-2">Bootstrap</span>
+              <span data-i18n="proj-6-tech-3">PWA Ready</span>
+              <span data-i18n="proj-6-tech-4">PDF Export Engine</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive ROI/Retail Calculator Section -->
+  <section class="section-padding reveal" id="calculator">
+    <div class="container calc-grid">
+      <div class="calc-intro">
+        <h2 class="section-title" data-i18n="calc-title">حاسبة أداء التجزئة التفاعلية</h2>
+        <p class="section-subtitle" data-i18n="calc-subtitle" style="margin-bottom: 24px;">Experience how analytics dashboards calculate growth, conversion, and targets dynamically to drive decisions</p>
+        <h3 data-i18n="calc-heading">لوحة مؤشرات أداء افتراضية</h3>
+        <p data-i18n="calc-desc">
+          هذه الآلة الحاسبة التفاعلية مبنية على المعادلات والمنطق البرمجي الذي قمت بتصميمه في مشاريع لوحات التحكم الكبرى. أدخل أرقاماً افتراضية لترى كيف تترجم البيانات التشغيلية لمؤشرات واضحة تمكنك من متابعة تحقيق أهدافك بدقة.
+        </p>
+      </div>
+
+      <div class="calc-container">
+        <div class="calc-header">
+          <h4 data-i18n="calc-tab-title">مركز عمليات المبيعات</h4>
+          <span class="calc-badge">Simulator v2.6</span>
+        </div>
+        <div class="calc-form">
+          <div class="calc-input-group">
+            <label for="calc-sales" data-i18n="calc-lbl-sales">المبيعات الحالية هذا الشهر (ريال):</label>
+            <input type="number" id="calc-sales" value="480000">
+          </div>
+          <div class="calc-input-group">
+            <label for="calc-target" data-i18n="calc-lbl-target">التارجت المستهدف للمبيعات (ريال):</label>
+            <input type="number" id="calc-target" value="600000">
+          </div>
+          <div class="calc-input-group">
+            <label for="calc-prev" data-i18n="calc-lbl-prev">مبيعات نفس الفترة العام الماضي (ريال):</label>
+            <input type="number" id="calc-prev" value="400000">
+          </div>
+          <div class="calc-input-group">
+            <label for="calc-visitors" data-i18n="calc-lbl-visitors">إجمالي عدد زوار الفروع:</label>
+            <input type="number" id="calc-visitors" value="25000">
+          </div>
+        </div>
+
+        <div class="calc-results">
+          <div class="calc-kpi-card">
+            <div class="calc-kpi-lbl" data-i18n="calc-res-ach">نسبة تحقيق التارجت</div>
+            <div class="calc-kpi-val" id="res-achievement">80%</div>
+          </div>
+          <div class="calc-kpi-card">
+            <div class="calc-kpi-lbl" data-i18n="calc-res-growth">معدل النمو السنوي YoY</div>
+            <div class="calc-kpi-val" id="res-growth">+20%</div>
+          </div>
+          <div class="calc-kpi-card">
+            <div class="calc-kpi-lbl" data-i18n="calc-res-daily">المبيعات اليومية المطلوبة</div>
+            <div class="calc-kpi-val" id="res-daily">8,000 SAR</div>
+            <div class="calc-kpi-sub" id="sub-daily-text" data-i18n="calc-res-daily-sub">لتحقيق الهدف في 15 يوماً متبقية</div>
+          </div>
+          <div class="calc-kpi-card">
+            <div class="calc-kpi-lbl" data-i18n="calc-res-conv">معدل تحويل الزوار لمشترين</div>
+            <div class="calc-kpi-val" id="res-conversion">6.40%</div>
+            <div class="calc-kpi-sub" data-i18n="calc-sub-conv">بناءً على متوسط الفاتورة (300 ريال)</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section-padding reveal" id="testimonials">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title">آراء العملاء</h2>
+        <p class="section-subtitle">أراء وانطباعات أصحاب الشركات والمدراء الذين عملت على تطوير مشاريعهم</p>
+      </div>
+
+      <div class="services-grid" style="grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));">
+        <!-- Testimonial 1 -->
+        <div class="service-card" style="border-top: 4px solid var(--accent-orange);">
+          <div style="font-size: 2rem; color: var(--accent-orange-glow); margin-bottom: 15px;"><i class="fa-solid fa-quote-right"></i></div>
+          <p class="service-desc" style="font-style: italic; margin-bottom: 20px;">
+            "عمل علاء على أتمتة نظام معالجة الطلبات وربطه مع المخزون والـ ERP لدينا. المشروع تم تسليمه بمهنية عالية ووفّر علينا ساعات طويلة من العمل الإدخالي اليومي."
+          </p>
+          <h4 style="font-size: 1.05rem;">مدير تشغيل وعمليات</h4>
+          <span style="font-size: 0.8rem; color: var(--text-secondary);">[مكان لرأي عميل - شركة تجزئة كبرى]</span>
+        </div>
+
+        <!-- Testimonial 2 -->
+        <div class="service-card" style="border-top: 4px solid var(--accent-orange);">
+          <div style="font-size: 2rem; color: var(--accent-orange-glow); margin-bottom: 15px;"><i class="fa-solid fa-quote-right"></i></div>
+          <p class="service-desc" style="font-style: italic; margin-bottom: 20px;">
+            "لوحة تحكم المبيعات التي صممها علاء ساعدتنا كإدارة عليا في متابعة أرقام المبيعات ومعدل الزوار والتحويل لحظياً من الجوال. خدمة احترافية ودعم فني متميز."
+          </p>
+          <h4 style="font-size: 1.05rem;">المدير التنفيذي لقطاع المعارض</h4>
+          <span style="font-size: 0.8rem; color: var(--text-secondary);">[مكان لرأي عميل - سلسلة معارض منزلية]</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="section-padding reveal" id="faq" style="background-color: var(--bg-secondary);">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title" data-i18n="faq-title">الأسئلة الشائعة</h2>
+        <p class="section-subtitle" data-i18n="faq-subtitle">إجابات واضحة ومباشرة على استفسارات أصحاب الشركات والمدراء التنفيذيين</p>
+      </div>
+
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-question">
+            <span data-i18n="faq-q1">كم تكلفة بناء نظام أتمتة أو لوحة تحكم لشركتي؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer" data-i18n="faq-a1">
+            التكلفة تعتمد بالكامل على حجم مشروعك، عدد الأنظمة المراد ربطها، وما إذا كنت تريد لوحة تحكم متكاملة أو سكربت أتمتة بسيط. سنحدد التكلفة الدقيقة بعد جلسة الاستشارة الأولى وفهم طبيعة واحتياجات عملك، وبما يضمن لك عائد استثماري مجزٍ لتوفير وقت موظفيك.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span data-i18n="faq-q2">كم من الوقت يستغرق تنفيذ المشروع؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer" data-i18n="faq-a2">
+            المشاريع الصغيرة مثل أتمتة تقرير معين أو بناء بوت واتساب تأخذ بين 5 إلى 10 أيام. أما لوحات التحكم المتكاملة للمبيعات والربط الشامل للـ ERP فستستغرق بين 3 إلى 6 أسابيع حسب حجم البيانات وتعقيد الأنظمة المستخدمة.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span data-i18n="faq-q3">شركتي صغيرة وتستخدم نظام كاشير بسيط، هل يمكنني الاستفادة من خدماتك؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer" data-i18n="faq-a3">
+            بكل تأكيد! الخدمات ليست حكراً على الشركات العملاقة فقط. يمكننا بناء لوحة تحكم بسيطة جداً وسريعة ومربوطة بأي كاشير محلي أو متجر سلة/ووكومرس، لتتمكن من رؤية مبيعاتك وأرباحك من هاتفك وتوفير ساعات من الحسابات اليدوية.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span data-i18n="faq-q4">هل بيانات مبيعات وعملاء شركتي ستكون بأمان تام؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer" data-i18n="faq-a4">
+            الأمان والسرية هما ركيزة عملي الأساسية. جميع عمليات الربط وقواعد البيانات يتم بناؤها وفق بروتوكولات حماية وتشفير متكاملة، ويتم استضافة البيانات على خوادمك الخاصة أو منصات سحابية آمنة (مثل Supabase أو Google Cloud) ويكون لك كامل التحكم الحصري بكلمات المرور والمفاتيح التقنية.
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <div class="faq-question">
+            <span data-i18n="faq-q5">هل أحتاج لخبرة تقنية لمتابعة عملك أو استخدام الأنظمة؟</span>
+            <i class="fa-solid fa-chevron-down faq-icon"></i>
+          </div>
+          <div class="faq-answer" data-i18n="faq-a5">
+            لا على الإطلاق! دوري هو إزالة التعقيد التقني وتقديم لوحة تحكم وأزرار واضحة ومفهومة باللغة العربية أو الإنجليزية. سأقوم بتدريبك وتدريب فريق عملك على تشغيل واستخدام النظام، وسأكون متواجداً لدعمك وحل أي مشكلة تقنية قد تظهر بعد التسليم.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section-padding reveal" id="contact">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="section-title" data-i18n="contact-title">ابدأ رحلة الأتمتة والتحليلات اليوم</h2>
+        <p class="section-subtitle" data-i18n="contact-subtitle">أرسل تفاصيل مشروعك أو حدد موعد استشارة مجانية وسأتواصل معك في أقرب وقت</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <div class="contact-info-title">
+            <h3 data-i18n="contact-info-head">معلومات الاتصال المباشر</h3>
+            <p data-i18n="contact-info-sub">إذا كنت تفضل التواصل السريع والمباشر، يمكنك استخدام القنوات التالية:</p>
+          </div>
+          <div class="contact-details-list">
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="contact-detail-content">
+                <p data-i18n="contact-lbl-loc">الموقع الحالي:</p>
+                <span data-i18n="contact-val-loc">جدة، المملكة العربية السعودية</span>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="contact-detail-content">
+                <p data-i18n="contact-lbl-email">البريد الإلكتروني:</p>
+                <a href="mailto:wafaiealaa@gmail.com">wafaiealaa@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-detail-item">
+              <div class="contact-detail-icon"><i class="fa-brands fa-linkedin-in"></i></div>
+              <div class="contact-detail-content">
+                <p data-i18n="contact-lbl-in">لينكد إن:</p>
+                <a href="https://linkedin.com/in/alaa-wafaie" target="_blank">linkedin.com/in/alaa-wafaie</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-container">
+          <h3 data-i18n="contact-form-head" style="margin-bottom: 24px;">أرسل طلباً مخصصاً للمشروع</h3>
+          <form class="contact-form" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="contact-name" data-i18n="form-lbl-name">الاسم الكريم:</label>
+                <input type="text" id="contact-name" data-i18n="form-ph-name" placeholder="أدخل اسمك الكامل" required>
+              </div>
+              <div class="form-group">
+                <label for="contact-email" data-i18n="form-lbl-email">البريد الإلكتروني:</label>
+                <input type="email" id="contact-email" data-i18n="form-ph-email" placeholder="name@company.com" required>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-biz" data-i18n="form-lbl-biz">مجال العمل / الشركة:</label>
+              <input type="text" id="contact-biz" data-i18n="form-ph-biz" placeholder="مثال: تجزئة، متجر إلكتروني، مطاعم" required>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-service" data-i18n="form-lbl-service">الخدمة المطلوبة:</label>
+              <select id="contact-service" required>
+                <option value="" disabled selected data-i18n="form-opt-select">اختر الخدمة الأكثر ملاءمة...</option>
+                <option value="1" data-i18n="form-opt-1">لوحة تحكم وتحليلات فورية</option>
+                <option value="2" data-i18n="form-opt-2">أتمتة المهام والتقارير</option>
+                <option value="3" data-i18n="form-opt-3">ربط متجر إلكتروني وبوابات شحن</option>
+                <option value="4" data-i18n="form-opt-4">دمج وتوحيد أنظمة متعددة</option>
+                <option value="5" data-i18n="form-opt-5">تطوير تطبيقات داخلية مخصصة</option>
+                <option value="6" data-i18n="form-opt-6">بوت وإشعارات واتساب</option>
+                <option value="7" data-i18n="form-opt-7">دمج تقنيات الذكاء الاصطناعي</option>
+                <option value="8" data-i18n="form-opt-8">استشارة تحول رقمي كاملة</option>
+              </select>
+            </div>
+            
+            <div class="form-group">
+              <label for="contact-msg" data-i18n="form-lbl-msg">تفاصيل إضافية عن مشروعك:</label>
+              <textarea id="contact-msg" rows="4" data-i18n="form-ph-msg" placeholder="اشرح باختصار مشكلتك التشغيلية أو ما ترغب في إنجازه..." required></textarea>
+            </div>
+            
+            <button type="submit" class="btn btn-primary" id="form-submit-btn">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span data-i18n="form-btn-submit">إرسال وتوليد رسالة واتساب</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Project Image Zoom Modal -->
+  <div id="image-zoom-modal" class="image-modal">
+    <span class="image-modal-close">&times;</span>
+    <img class="image-modal-content" id="modal-img-target" alt="Zoomed Project Preview">
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-about">
+        <div class="logo" style="margin-bottom: 16px;">
+          <div class="logo-icon"></div>
+          <div class="logo-text">علاء <span>وفائي</span></div>
+        </div>
+        <p data-i18n="footer-desc">أساعد الشركات على تحويل الفوضى والعمليات اليدوية المبعثرة إلى أنظمة تلقائية ذكية ولوحات تحكم تفاعلية توفر الوقت وتزيد الكفاءة والوضوح.</p>
+      </div>
+
+      <div class="footer-links">
+        <h4 data-i18n="footer-head-links">روابط سريعة</h4>
+        <div class="footer-links-list">
+          <a href="#hero" data-i18n="nav-home">الرئيسية</a>
+          <a href="#about" data-i18n="nav-about">من أنا</a>
+          <a href="#services" data-i18n="nav-services">الخدمات</a>
+          <a href="#projects" data-i18n="nav-projects">المشاريع</a>
+          <a href="#calculator" data-i18n="nav-calculator">آلة تحكم تفاعلية</a>
+        </div>
+      </div>
+
+      <div class="footer-contact">
+        <h4 data-i18n="footer-head-contact">تواصل فوري</h4>
+        <div class="footer-links-list">
+          <span><i class="fa-solid fa-phone" style="color: var(--accent-orange); margin-left: 8px;"></i> +966 55 337 7408</span>
+          <span><i class="fa-solid fa-envelope" style="color: var(--accent-orange); margin-left: 8px;"></i> wafaiealaa@gmail.com</span>
+          <span><i class="fa-solid fa-location-dot" style="color: var(--accent-orange); margin-left: 8px;"></i> جدة، السعودية</span>
+        </div>
+      </div>
+    </div>
+    
+    <div class="container footer-bottom">
+      <p data-i18n="footer-copyright">© 2026 علاء وفائي. جميع الحقوق محفوظة.</p>
+      <p data-i18n="footer-disclaimer">مطور أنظمة معتمد بشكل فري لانس ومستقل.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
