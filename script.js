@@ -672,7 +672,8 @@ function setupEventListeners() {
     });
   });
 
-  // Header Scroll Shadow
+  // Header Scroll Shadow + Progress Bar
+  const scrollProgress = document.getElementById('scroll-progress');
   window.addEventListener('scroll', () => {
     const header = document.querySelector('.header');
     if (header) {
@@ -682,7 +683,15 @@ function setupEventListeners() {
         header.classList.remove('scrolled');
       }
     }
-    
+
+    // Scroll progress bar
+    if (scrollProgress) {
+      const scrollTop = window.scrollY;
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      const pct = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+      scrollProgress.style.width = pct + '%';
+    }
+
     // Active Navigation Highlight
     highlightActiveSection();
   });
@@ -831,20 +840,27 @@ function animateStatsCounters() {
     const el = document.getElementById(stat.id);
     if (!el) return;
 
-    let start = 0;
     const end = stat.val;
-    const duration = 1500; // ms
-    const increment = end / (duration / 16); // 16ms frame rate
+    const duration = 1600; // ms
+    let startTime = null;
 
-    const timer = setInterval(() => {
-      start += increment;
-      if (start >= end) {
-        clearInterval(timer);
-        el.textContent = Math.round(end) + stat.suffix;
+    // easeOutCubic for a smooth decelerating count-up
+    const easeOutCubic = (t) => 1 - Math.pow(1 - t, 3);
+
+    const step = (timestamp) => {
+      if (!startTime) startTime = timestamp;
+      const progress = Math.min((timestamp - startTime) / duration, 1);
+      const eased = easeOutCubic(progress);
+      const current = Math.round(eased * end);
+      el.textContent = current + stat.suffix;
+      if (progress < 1) {
+        requestAnimationFrame(step);
       } else {
-        el.textContent = Math.round(start) + stat.suffix;
+        el.textContent = end + stat.suffix;
       }
-    }, 16);
+    };
+
+    requestAnimationFrame(step);
   });
 }
 

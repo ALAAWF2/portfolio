@@ -44,6 +44,9 @@
 </head>
 <body class="light-theme">
 
+  <!-- Scroll Progress Indicator -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
   <!-- Floating WhatsApp Action -->
   <a href="https://wa.me/966553377408?text=%D8%A7%D9%84%D8%B3%D9%84%D8%A7%D9%85%20%D8%B9%D9%84%D9%8A%D9%83%D9%85%20%D8%B9%D9%84%D8%A7%D8%A1%D8%8C%20%D8%B4%D9%81%D8%AA%20%D9%85%D9%85%D9%8A%D8%B2%D8%A7%D8%AA%20%D9%85%D9%88%D9%82%D8%B9%D9%83%20%D9%88%D8%AD%D8%A7%D8%A8%D8%A8%20%D8%A3%D8%B3%D8%AA%D9%81%D8%B3%D8%B1%20%D8%B9%D9%86%20%D8%AE%D8%AF%D9%85%D8%A7%D8%AA%D9%83" 
      class="whatsapp-floating" target="_blank" aria-label="Chat on WhatsApp" id="floating-wa-btn">
@@ -121,6 +124,40 @@
       
       <div class="hero-visual">
         <div class="hero-blob"></div>
+        <div class="system-terminal hero-terminal">
+          <div class="hero-card-header">
+            <div class="hero-card-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="hero-card-title">alaa@systems: ~</div>
+          </div>
+          <div class="terminal-body">
+            <div class="terminal-row">
+              <span class="terminal-cmd">$ sync branches</span>
+              <span class="terminal-status">ONLINE</span>
+            </div>
+            <div class="terminal-row">
+              <span class="terminal-cmd">active_stores</span>
+              <span class="terminal-val">52</span>
+            </div>
+            <div class="terminal-progress-container">
+              <div class="terminal-progress-bar" style="width: 86%"></div>
+            </div>
+            <div class="terminal-row">
+              <span class="terminal-cmd">manual_hours</span>
+              <span class="terminal-val">-80%</span>
+            </div>
+            <div class="terminal-row">
+              <span class="terminal-cmd">report_errors</span>
+              <span class="terminal-status">0</span>
+            </div>
+            <div class="terminal-log">
+              <p>&gt; ETL pipeline: OK</p>
+              <p>&gt; ERP sync: complete</p>
+              <p>&gt; dashboards live_</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -990,9 +1027,9 @@
       <div class="footer-contact">
         <h4 data-i18n="footer-head-contact">تواصل فوري</h4>
         <div class="footer-links-list">
-          <span><i class="fa-solid fa-phone" style="color: var(--accent-orange); margin-left: 8px;"></i> +966 55 337 7408</span>
-          <span><i class="fa-solid fa-envelope" style="color: var(--accent-orange); margin-left: 8px;"></i> wafaiealaa@gmail.com</span>
-          <span><i class="fa-solid fa-location-dot" style="color: var(--accent-orange); margin-left: 8px;"></i> جدة، السعودية</span>
+          <span><i class="fa-solid fa-phone"></i> +966 55 337 7408</span>
+          <span><i class="fa-solid fa-envelope"></i> wafaiealaa@gmail.com</span>
+          <span><i class="fa-solid fa-location-dot"></i> جدة، السعودية</span>
         </div>
       </div>
     </div>
