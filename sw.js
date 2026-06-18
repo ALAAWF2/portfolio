@@ -1,4 +1,4 @@
-const CACHE_NAME = 'alaa-wafaie-portfolio-v1';
+const CACHE_NAME = 'alaa-wafaie-portfolio-v3';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
@@ -7,7 +7,7 @@ const ASSETS_TO_CACHE = [
   './manifest.json',
   './assets/images/icon-192.png',
   './assets/images/icon-512.png',
-  './assets/images/dashboard_preview.png'
+  './assets/images/dashboard_preview.webp'
 ];
 
 self.addEventListener('install', (event) => {

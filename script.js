@@ -6,27 +6,27 @@ const translations = {
     "nav-about": "من أنا",
     "nav-industries": "القطاعات",
     "nav-services": "الخدمات",
-    "nav-workflow": "خطوات العمل",
+    "nav-workflow": "كيف أعمل",
     "nav-projects": "المشاريع",
     "nav-calculator": "آلة تحكم تفاعلية",
     "nav-faq": "الأسئلة الشائعة",
-    "nav-contact": "تواصل معي",
+    "nav-contact": "تواصل",
 
     // Hero Section
-    "hero-tag": "مهندس أنظمة مؤسسية وأتمتة",
-    "hero-title-1": "أحوّل عمليات شركتك اليدوية إلى ",
-    "hero-title-span": "أنظمة ذكية مؤتمتة",
-    "hero-title-2": " ولوحات متابعة لحظية",
-    "hero-desc": "بصفتي مهندس حلول أتمتة وتحليلات أعمال، أساعد الشركات الكبرى والمتوسطة على توفير الوقت، تقليص الأخطاء التشغيلية بنسبة 85%، ورؤية الأرقام لحظة بلحظة لدعم اتخاذ القرار المناسب.",
+    "hero-tag": "أتمتة وتقارير ولوحات بيانات لقطاع التجزئة",
+    "hero-title-1": "أبني أنظمة أتمتة ولوحات بيانات ",
+    "hero-title-span": "لشركات التجزئة متعددة الفروع",
+    "hero-desc": "أساعد الإدارات على ربط المبيعات والمخزون والزوار والتقارير ونظام الـ ERP في نظام واحد واضح، يقلّل العمل اليدوي ويمنح الإدارة رؤية يومية دقيقة لأداء الفروع.",
+    "hero-cta-send": "أرسل لي العملية التي تريد أتمتتها",
     "btn-whatsapp": "تواصل عبر واتساب",
-    "btn-portfolio": "عرض المشاريع",
+    "btn-portfolio": "شاهد مشاريع مشابهة",
 
     // Stats Bar
-    "stat-exp": "+4 سنوات خبرة",
-    "stat-branches": "ربط +50 فرعاً",
-    "stat-manual": "تقليص العمل اليدوي 80%",
-    "stat-speed": "+60% سرعة تنفيذ",
-    "stat-errors": "أخطاء أقل بنسبة 85%",
+    "stat-exp": "سنوات خبرة في قطاع التجزئة",
+    "stat-branches": "فرعاً تم ربطها بالأنظمة",
+    "stat-manual": "تقليل في العمل اليدوي للتقارير",
+    "stat-speed": "تسريع في تجهيز التقارير",
+    "stat-errors": "أخطاء أقل في التقارير",
 
     // About Section
     "about-title": "من أنا",
@@ -36,7 +36,7 @@ const translations = {
     "about-p2": "ركزت خلال مسيرتي على تطوير أدوات التحليلات الفورية ولوحات التحكم التي تربط أنظمة المخازن وERP والـ POS وأجهزة قياس الزوار، مما يعطي الإدارة رؤية شفافة تمكنها من زيادة الأرباح وتخفيض التكاليف التشغيلية.",
     "about-quote": "«التقنية ليست لاستعراض العضلات البرمجية، بل هي وسيلة لتحقيق أرقام أفضل، توفير الوقت، وتقليل الصداع التشغيلي لأصحاب الأعمال.»",
     "about-f1": "تصميم خطوط نقل البيانات (ETL) ومعالجتها",
-    "about-f2": "أتمتة العمليات التشغيلية بالكامل",
+    "about-f2": "أتمتة العمليات التشغيلية المتكررة",
     "about-f3": "تطوير لوحات بيانات لحظية (BI)",
     "about-f4": "ربط المتاجر والـ ERP وقواعد البيانات",
 
@@ -58,9 +58,9 @@ const translations = {
     "srv-1-title": "لوحات متابعة الأداء اللحظية (BI)",
     "srv-1-desc": "شاشة تحكم واحدة تجمع مبيعات فروعك، أداء موظفيك، وأعداد الزوار لحظة بلحظة، بدلاً من تجميعها يدوياً من ملفات متعددة.",
     "srv-2-title": "أتمتة المهام والتقارير اليومية",
-    "srv-2-desc": "أتمتة التقارير الدورية (مبيعات، مخزون، تشغيل) لتصلك في دقائق معدودة بدلاً من ساعات عمل طويلة ومملة خالية من الأخطاء.",
+    "srv-2-desc": "أتمتة التقارير الدورية (مبيعات، مخزون، تشغيل) لتصلك في دقائق معدودة بدلاً من ساعات عمل يدوية، مع تقليل أخطاء النسخ والتجميع.",
     "srv-3-title": "ربط المتجر الإلكتروني بالمخازن",
-    "srv-3-desc": "ربط متجرك (سلة، ووكومرس، ترينديول) بنظام المستودعات وERP لتحديث المخزون والطلبات تلقائياً ومنع البيع بالخطأ.",
+    "srv-3-desc": "ربط متجرك (سلة، ووكومرس، ترينديول) بنظام المستودعات وERP لتحديث المخزون والطلبات تلقائياً وتقليل البيع بالخطأ.",
     "srv-4-title": "دمج وتوحيد الأنظمة (Integrations)",
     "srv-4-desc": "جعل أنظمتك المختلفة (ERP Dynamics 365, POS, GoFrugal) تتحدث مع بعضها كأنها نظام واحد دون تكرار لإدخال البيانات.",
     "srv-5-title": "أنظمة وتطبيقات داخلية مخصصة",
@@ -80,7 +80,7 @@ const translations = {
     "step-2-title": "2. اقتراح الحل المناسب",
     "step-2-desc": "أقوم بتصميم وتخطيط بنية النظام المقترح وعرض الفوائد والنتائج المتوقعة بالأرقام والوقت.",
     "step-3-title": "3. التنفيذ والربط الفعلي",
-    "step-3-desc": "أقوم بكتابة الأكواد والربط بين قواعد البيانات والأنظمة الحالية بدقة وأمان تام.",
+    "step-3-desc": "أكتب الأكواد وأربط قواعد البيانات بأنظمتك الحالية بدقة ومع مراعاة أمان البيانات والخصوصية.",
     "step-4-title": "4. الدعم والمتابعة المستمرة",
     "step-4-desc": "بعد التسليم، أظل على تواصل لدعم النظام وضمان استمراريته وتدريب فريق عملك على استخدامه.",
 
@@ -138,43 +138,61 @@ const translations = {
     // Case Study Expandable Labels & Content
     "case-lbl-challenge": "التحدي التشغيلي:",
     "case-lbl-solution": "الحل التقني المنفذ:",
-    "case-lbl-impact": "الأثر التشغيلي والمالي (ROI):",
+    "case-lbl-impact": "الأثر التشغيلي:",
+    "case-lbl-before": "قبل",
+    "case-lbl-after": "بعد",
     "btn-view-case": "تفاصيل دراسة الحالة",
     "btn-hide-case": "إخفاء التفاصيل",
 
     "proj-1-challenge": "صعوبة وتأخر تجميع بيانات المبيعات وعدد الزوار يدوياً من 52 فرعاً، مما تسبب في اتخاذ قرارات متأخرة ونسبة أخطاء بشرية عالية في ترحيل التقارير التشغيلية اليومية.",
     "proj-1-solution": "بناء مستودع بيانات PostgreSQL يربط نظام ERP (Dynamics 365) وأنظمة الكاشير وأجهزة قياس الزوار V-Count عبر ETL pipelines، وتطوير لوحات BI لحظية مع مساعد ذكي يستجيب لأسئلة المدراء بلغة طبيعية.",
-    "proj-1-impact": "توفير أكثر من 15 ساعة عمل أسبوعياً للإدارة، خفض أخطاء التقارير إلى 0%، وتحقيق زيادة 12% في معدل تحويل الزوار للفروع نتيجة تحسين توزيع الموظفين بناءً على أوقات الذروة.",
+    "proj-1-impact": "توفير ما يقارب 15 ساعة عمل أسبوعياً للإدارة في تجميع التقارير، وانخفاض ملحوظ في أخطاء الترحيل اليدوي، مع تحسّن في معدل تحويل الزوار نتيجة توزيع الكادر بناءً على أوقات الذروة.",
+    "proj-1-before": "تجميع بيانات 52 فرعاً يدوياً، وتأخر في القرار.",
+    "proj-1-after": "لوحة واحدة لحظية لكل الفروع تدعم القرار اليومي.",
 
     "proj-2-challenge": "فروقات متكررة في كميات المخزون وتأخر مزامنة الطلبات الواردة من متجر Trendyol وWooCommerce مع المستودعات، مما تسبب في إلغاء طلبات من العملاء وتأخر الشحن.",
     "proj-2-solution": "تطوير محرك ربط (Sync Engine) بلغة Python يراقب المخزون بشكل لحظي ويحدث الكميات ثنائي الاتجاه، مع جدولة سحب الطلبات وترحيلها تلقائياً للـ ERP وإنشاء سجل تدقيق (Audit Log) للعمليات.",
-    "proj-2-impact": "زيادة سرعة معالجة وشحن الطلبات بنسبة 60%، وتصفير نسبة إلغاء الطلبات بسبب نفاد الكميات، مع توفير 20 ساعة عمل أسبوعياً من المزامنة اليدوية.",
+    "proj-2-impact": "تسريع معالجة وشحن الطلبات بحدود 60%، وانخفاض كبير في إلغاء الطلبات بسبب نفاد الكميات، مع توفير ما يقارب 20 ساعة عمل أسبوعياً من المزامنة اليدوية.",
+    "proj-2-before": "فروقات مخزون متكررة وإلغاء طلبات وتأخر شحن.",
+    "proj-2-after": "مزامنة تلقائية ثنائية الاتجاه بين المتجر والمخزون.",
 
     "proj-3-challenge": "فوضى وتأخير في تسجيل طلبات توريد البضائع وأعطال الصيانة من الفروع إلى الإدارة العامة، والتي كانت تتم عبر واتساب دون توثيق أو تتبع للصلاحيات والتكاليف.",
     "proj-3-solution": "تصميم وبناء بوابة ويب داخلية باستخدام React وSupabase وقاعدة بيانات PostgreSQL، تتيح لمدراء المعارض إرسال الطلبات وصور الأعطال مع لوحة تحكم للإدارة للموافقات وتوزيع المهام حسب الصلاحيات (RBAC).",
-    "proj-3-impact": "تسريع تجهيز وإرسال بضائع المعارض بنسبة 75%، وحصر تكاليف صيانة الفروع بنسبة 100% مع أرشفة كاملة للعمليات والموافقات التشغيلية.",
+    "proj-3-impact": "تسريع تجهيز وإرسال بضائع المعارض بحدود 75%، وتوثيق طلبات وتكاليف صيانة الفروع في مكان واحد مع سجل كامل للموافقات التشغيلية.",
+    "proj-3-before": "طلبات وأعطال عبر واتساب دون توثيق أو صلاحيات.",
+    "proj-3-after": "بوابة موحّدة بطلبات موثّقة وصلاحيات واضحة.",
 
     "proj-4-challenge": "استهلاك موظفي التحليل المالي 4 ساعات يومياً في سحب البيانات من عدة قواعد بيانات، وتنظيفها على إكسيل لتوليد التقارير اليومية وإرسالها بالإيميل للمسؤولين.",
     "proj-4-solution": "تطوير سكربتات أتمتة بالبايثون مع VBA وPower Query تسحب البيانات تلقائياً عند الساعة 6 صباحاً، تقوم بتنظيفها وتوليد ملفات Excel وPDF تفاعلية وإرسالها عبر بريد مجدول تلقائياً للمسؤولين.",
-    "proj-4-impact": "تقليص زمن إعداد وإرسال التقارير من 4 ساعات إلى 3 دقائق فقط تلقائياً، وتصفير نسبة الأخطاء الحسابية واليدوية بالتقارير بنسبة 100%.",
+    "proj-4-impact": "تقليص زمن إعداد وإرسال التقارير من حوالي 4 ساعات إلى دقائق معدودة تلقائياً، وتقليل واضح في أخطاء النسخ والحساب اليدوي.",
+    "proj-4-before": "4 ساعات يومياً في سحب البيانات وتجهيز التقرير.",
+    "proj-4-after": "تقرير جاهز ومُرسل تلقائياً خلال دقائق.",
 
     "proj-5-challenge": "صعوبة متابعة التذاكر والأعطال التقنية في الفروع وتحديد المسؤول عنها، مع غياب مؤشرات لقياس سرعة استجابة فريق الدعم لحل المشكلات التقنية.",
     "proj-5-solution": "تطوير نظام تذاكر داخلي تفاعلي (React & Firebase) يسمح للفروع برفع التذاكر وتحديث حالتها لحظياً، مع إرسال إشعارات تلقائية عبر البريد عند تحديث حالة الطلبات وتوليد تقارير أداء دورية للفريق.",
-    "proj-5-impact": "خفض متوسط زمن إغلاق التذاكر وحل الأعطال بنسبة 50%، مما قلل ساعات توقف العمل بنقاط البيع وعزز كفاءة تشغيل الأجهزة بالفروع.",
+    "proj-5-impact": "خفض متوسط زمن إغلاق التذاكر وحل الأعطال بحدود 50%، مما قلّل ساعات توقف العمل في نقاط البيع وحسّن متابعة أداء فريق الصيانة.",
+    "proj-5-before": "أعطال بلا تتبع ولا مؤشرات لسرعة الاستجابة.",
+    "proj-5-after": "تذاكر مُتتبَّعة بحالة ومسؤول ومؤشرات أداء.",
 
     "proj-6-challenge": "الشركات الناشئة وسلاسل التجزئة الصغيرة لا تمتلك الميزانية الكافية لشراء وتدريب موظفيها على أنظمة BI معقدة ومكلفة مثل Power BI أو Tableau، مما يتركها دون رؤية واضحة لأدائها.",
     "proj-6-solution": "تصميم باقة برمجية جاهزة (Dash Analytics) خفيفة الوزن باستخدام Vanilla JS وBootstrap تدعم العمل دون إنترنت (PWA)، وتتصل بقاعدة بيانات مبيعات المحل لتوليد لوحة متابعة فورية وتصدير تقارير PDF بكبسة زر.",
-    "proj-6-impact": "تثبيت وتشغيل النظام للعملاء في أقل من 3 ساعات، وخفض عدد الساعات المستهلكة في تجميع الحسابات اليومية يدوياً من أصحاب المحلات بنسبة 80%.",
+    "proj-6-impact": "تثبيت وتشغيل النظام للعميل خلال ساعات قليلة، وتقليل كبير في الوقت المستهلك يومياً في تجميع الحسابات يدوياً من صاحب المحل.",
+    "proj-6-before": "لا رؤية واضحة للمبيعات بدون أنظمة BI مكلفة.",
+    "proj-6-after": "لوحة جاهزة خفيفة تعرض المبيعات والأداء فوراً.",
 
     // Testimonials Section
     "test-title": "آراء العملاء",
-    "test-subtitle": "أراء وانطباعات أصحاب الشركات والمدراء التنفيذيين الذين عملت على تطوير وتأمين مشاريعهم",
-    "test-1-quote": "\"عمل المهندس علاء على أتمتة نظام معالجة الطلبات بالكامل وربط متجرنا مع المخازن ونظام ERP Dynamics 365. المشروع وفر علينا مئات الساعات التشغيلية ورفع كفاءة تسليم الطلبات لعملائنا في Trendyol وWooCommerce.\"",
-    "test-1-author": "أ. عبد الرحمن الشهري",
-    "test-1-title": "مدير تشغيل العمليات وسلاسل الإمداد",
-    "test-2-quote": "\"لوحة تحكم تحليلات المبيعات الفورية التي صممها علاء ساعدتنا كإدارة عليا في مراقبة أداء 50+ فرعاً ومتابعة نسب تحقيق التارجت ومعدلات التحويل لحظة بلحظة من هواتفنا المحمولة بكل أمان وسهولة.\"",
-    "test-2-author": "م. خالد باوزير",
-    "test-2-title": "المدير التنفيذي لقطاع التجزئة",
+    "test-subtitle": "انطباعات أصحاب القرار من المدراء الذين عملت على تطوير أنظمتهم",
+    "test-note": "* مسميات وظيفية لأصحاب القرار الذين عملت معهم، مع الحفاظ على خصوصية الشركات.",
+    "test-1-quote": "\"ربط المهندس علاء متجرنا مع المخازن ونظام ERP وأتمت معالجة الطلبات. وفّر علينا وقتاً تشغيلياً كبيراً وقلّل أخطاء تجهيز الطلبات.\"",
+    "test-1-author": "مدير عمليات",
+    "test-1-title": "شركة تجزئة متعددة الفروع",
+    "test-2-quote": "\"لوحة المبيعات التي بناها أتاحت لنا متابعة أداء الفروع ونِسب تحقيق التارجت من الجوال، بدل انتظار تقارير نهاية اليوم.\"",
+    "test-2-author": "مدير منطقة",
+    "test-2-title": "قطاع التجزئة",
+    "test-3-quote": "\"بوابة طلبات الفروع نظّمت توريد البضائع، وصار كل طلب موثّقاً وله حالة واضحة، بدل رسائل الواتساب المتفرقة.\"",
+    "test-3-author": "مسؤول مستودع",
+    "test-3-title": "شركة تشغيل وفروع",
 
     // Calculator Section
     "calc-title": "حاسبة أداء التجزئة التفاعلية",
@@ -203,8 +221,8 @@ const translations = {
     "faq-a2": "المشاريع الصغيرة مثل أتمتة تقرير معين أو بناء بوت واتساب تأخذ بين 5 إلى 10 أيام. أما لوحات التحكم المتكاملة للمبيعات والربط الشامل للـ ERP فستستغرق بين 3 إلى 6 أسابيع حسب حجم البيانات وتعقيد الأنظمة المستخدمة.",
     "faq-q3": "شركتي صغيرة وتستخدم نظام كاشير بسيط، هل يمكنني الاستفادة من خدماتك؟",
     "faq-a3": "بكل تأكيد! الخدمات ليست حكراً على الشركات العملاقة فقط. يمكننا بناء لوحة تحكم بسيطة جداً وسريعة ومربوطة بأي كاشير محلي أو متجر سلة/ووكومرس، لتتمكن من رؤية مبيعاتك وأرباحك من هاتفك وتوفير ساعات من الحسابات اليدوية.",
-    "faq-q4": "هل بيانات مبيعات وعملاء شركتي ستكون بأمان تام؟",
-    "faq-a4": "الأمان والسرية هما ركيزة عملي الأساسية. جميع عمليات الربط وقواعد البيانات يتم بناؤها وفق بروتوكولات حماية وتشفير متكاملة، ويتم استضافة البيانات على خوادمك الخاصة أو منصات سحابية آمنة (مثل Supabase أو Google Cloud) ويكون لك كامل التحكم الحصري بكلمات المرور والمفاتيح التقنية.",
+    "faq-q4": "هل بيانات مبيعات وعملاء شركتي ستكون بأمان؟",
+    "faq-a4": "أتعامل مع أمان البيانات والخصوصية كأولوية في كل مشروع. عمليات الربط وقواعد البيانات تُبنى وفق ممارسات حماية وتشفير معتمدة، وتُستضاف البيانات على خوادمك الخاصة أو منصات سحابية موثوقة (مثل Supabase أو Google Cloud)، وتبقى صلاحيات الدخول والمفاتيح التقنية تحت تحكمك أنت.",
     "faq-q5": "هل أحتاج لخبرة تقنية لمتابعة عملك أو استخدام الأنظمة؟",
     "faq-a5": "لا على الإطلاق! دوري هو إزالة التعقيد التقني وتقديم لوحة تحكم وأزرار واضحة ومفهومة باللغة العربية أو الإنجليزية. سأقوم بتدريبك وتدريب فريق عملك على تشغيل واستخدام النظام، وسأكون متواجداً لدعمك وحل أي مشكلة تقنية قد تظهر بعد التسليم.",
 
@@ -236,14 +254,52 @@ const translations = {
     "form-opt-8": "استشارة تحول رقمي كاملة",
     "form-lbl-msg": "تفاصيل إضافية عن مشروعك:",
     "form-ph-msg": "اشرح باختصار مشكلتك التشغيلية أو ما ترغب في إنجازه...",
-    "form-btn-submit": "إرسال وتوليد رسالة واتساب",
+    "form-btn-submit": "إرسال الطلب",
+    "form-status-sending": "جارٍ الإرسال...",
+    "form-status-sent": "تم استلام طلبك، وفتحنا لك واتساب أيضاً. سأرد عليك قريباً.",
+    "form-status-error": "تعذّر الإرسال عبر البريد، لكن يمكنك إكمال المحادثة عبر واتساب.",
+    "form-status-wa": "فتحنا لك واتساب لإرسال طلبك مباشرة.",
 
     // Footer
     "footer-desc": "أساعد الشركات على تحويل الفوضى والعمليات اليدوية المبعثرة إلى أنظمة تلقائية ذكية ولوحات تحكم تفاعلية توفر الوقت وتزيد الكفاءة والوضوح.",
     "footer-head-links": "روابط سريعة",
     "footer-head-contact": "تواصل فوري",
     "footer-copyright": "© 2026 علاء وفائي. جميع الحقوق محفوظة.",
-    "footer-disclaimer": "مطور أنظمة معتمد بشكل فري لانس ومستقل."
+    "footer-disclaimer": "مطور أنظمة معتمد بشكل فري لانس ومستقل.",
+
+    // Built Systems Section
+    "sys-title": "أنظمة بنيتها فعلاً",
+    "sys-subtitle": "أنظمة جاهزة قابلة للتكييف مع شركتك، كل واحد منها يحلّ مشكلة تشغيلية متكررة في الفروع",
+    "sys-lbl-what": "ماذا يفعل",
+    "sys-lbl-problem": "المشكلة التي يحلها",
+    "sys-lbl-for": "لمن يناسب",
+    "sys-lbl-output": "المخرجات",
+    "sys-1-name": "Retail Sales Dashboard",
+    "sys-1-what": "يجمع مبيعات الفروع وأداء الكادر وأعداد الزوار في لوحة واحدة محدّثة يومياً.",
+    "sys-1-problem": "تجميع الأرقام يدوياً من عدة ملفات وتأخر وصولها للإدارة.",
+    "sys-1-for": "مدراء التجزئة ومدراء المناطق متعددي الفروع.",
+    "sys-1-output": "لوحة ويب + مؤشرات تحقيق التارجت والتحويل + تصدير PDF.",
+    "sys-2-name": "Daily Reports Automation",
+    "sys-2-what": "يسحب البيانات، ينظّفها، يولّد تقارير Excel/PDF ويرسلها تلقائياً في موعد محدد.",
+    "sys-2-problem": "ساعات يومية تضيع في تجهيز التقارير عبر Excel وواتساب.",
+    "sys-2-for": "فرق التحليل المالي والإدارة التشغيلية.",
+    "sys-2-output": "تقارير مجدولة تصل للبريد أو واتساب دون تدخل يدوي.",
+    "sys-3-name": "Branch Ordering Portal",
+    "sys-3-what": "بوابة يطلب منها الفرع البضائع والاحتياجات، مع موافقات حسب الصلاحيات.",
+    "sys-3-problem": "طلبات الفروع المبعثرة عبر واتساب دون توثيق ولا متابعة.",
+    "sys-3-for": "إدارات المستودعات والتشغيل في الشركات متعددة الفروع.",
+    "sys-3-output": "طلبات موثّقة بحالة وسجل موافقات ولوحة متابعة للإدارة.",
+    "sys-4-name": "Maintenance Ticketing System",
+    "sys-4-what": "يسجّل أعطال الأجهزة والفروع كتذاكر بحالة ومسؤول وزمن استجابة.",
+    "sys-4-problem": "أعطال لا يُعرف من يتابعها ولا كم تأخذ حتى تُحل.",
+    "sys-4-for": "فرق الصيانة والدعم التقني للفروع ونقاط البيع.",
+    "sys-4-output": "نظام تذاكر بإشعارات وتقارير عن سرعة حل الأعطال.",
+
+    // Final CTA Band
+    "cta-band-title": "عندك تقرير يدوي أو عملية متعبة تتكرر يومياً؟",
+    "cta-band-desc": "أرسل لي مثالاً من العملية، وسأعطيك تصوراً عملياً لكيف يمكن تحويلها إلى نظام أو أتمتة.",
+    "cta-band-wa": "تواصل عبر واتساب",
+    "cta-band-email": "أرسل بريداً إلكترونياً"
   },
   en: {
     // Navigation
@@ -251,27 +307,27 @@ const translations = {
     "nav-about": "About Me",
     "nav-industries": "Industries",
     "nav-services": "Services",
-    "nav-workflow": "Workflow",
+    "nav-workflow": "How I Work",
     "nav-projects": "Projects",
     "nav-calculator": "Live Simulator",
     "nav-faq": "FAQ",
     "nav-contact": "Contact",
 
     // Hero Section
-    "hero-tag": "Enterprise Systems & Automation Architect",
-    "hero-title-1": "I transform manual operations into ",
-    "hero-title-span": "smart automated systems",
-    "hero-title-2": " and live dashboards",
-    "hero-desc": "As an automation architect and business analytics specialist, I help enterprise retail and SMB businesses save valuable hours, eliminate operational errors by 85%, and gain real-time visibility over all metrics.",
+    "hero-tag": "Automation, Reports & Dashboards for Retail",
+    "hero-title-1": "I build automation systems & live dashboards ",
+    "hero-title-span": "for multi-branch retail companies",
+    "hero-desc": "I help management connect sales, inventory, footfall, reports, and ERP into one clear system that cuts manual work and gives leadership an accurate daily view of branch performance.",
+    "hero-cta-send": "Send me the process you want to automate",
     "btn-whatsapp": "Chat on WhatsApp",
-    "btn-portfolio": "View Portfolio",
+    "btn-portfolio": "See similar projects",
 
     // Stats Bar
-    "stat-exp": "4+ Years Exp",
-    "stat-branches": "50+ Branches Synced",
-    "stat-manual": "80% Manual Reduction",
-    "stat-speed": "60% Faster Processing",
-    "stat-errors": "85% Fewer Errors",
+    "stat-exp": "Years of retail experience",
+    "stat-branches": "Branches integrated with systems",
+    "stat-manual": "Less manual reporting work",
+    "stat-speed": "Faster report preparation",
+    "stat-errors": "Fewer reporting errors",
 
     // About Section
     "about-title": "About Me",
@@ -303,9 +359,9 @@ const translations = {
     "srv-1-title": "Live Business Dashboards (BI)",
     "srv-1-desc": "One screen showcasing live store sales, branch performance, and visitor conversion rates instead of chasing scattered Excel files.",
     "srv-2-title": "Task & Report Automation",
-    "srv-2-desc": "Repetitive daily, weekly, or monthly sales and operational report runs generated in minutes, completely error-free and scheduled.",
+    "srv-2-desc": "Repetitive daily, weekly, or monthly sales and operational reports generated in minutes and delivered on schedule, with far fewer manual errors.",
     "srv-3-title": "E-Commerce & Inventory Linkage",
-    "srv-3-desc": "Connect your online store (WooCommerce, Trendyol, Salla) with your actual warehouse stock and shipping channels to prevent overselling.",
+    "srv-3-desc": "Connect your online store (WooCommerce, Trendyol, Salla) with your actual warehouse stock and shipping channels to reduce overselling.",
     "srv-4-title": "Systems Integration (API)",
     "srv-4-desc": "Unify your disparate databases, POS systems, and ERPs (Dynamics 365, GoFrugal) so they sync automatically without double entry.",
     "srv-5-title": "Custom Internal Tools",
@@ -383,43 +439,61 @@ const translations = {
     // Case Study Expandable Labels & Content
     "case-lbl-challenge": "Operational Challenge:",
     "case-lbl-solution": "Technical Solution Deployed:",
-    "case-lbl-impact": "Business Impact (ROI):",
+    "case-lbl-impact": "Operational Impact:",
+    "case-lbl-before": "Before",
+    "case-lbl-after": "After",
     "btn-view-case": "View Case Study",
     "btn-hide-case": "Hide Details",
 
     "proj-1-challenge": "Scattered sales data and visitor footcount across 52 branches were collected manually, leading to delayed executive decisions and high human errors in reporting.",
     "proj-1-solution": "Built a PostgreSQL data warehouse integrating Dynamics 365, POS, and V-Count IoT counters via automated ETL pipelines, accompanied by real-time BI dashboards and a natural language AI financial query bot.",
-    "proj-1-impact": "Saved 15+ hours/week of management work, eliminated reporting errors, and achieved a 12% increase in store conversion rates by optimizing staff scheduling around peak traffic hours.",
+    "proj-1-impact": "Saved around 15 hours/week of management reporting work, noticeably reduced manual posting errors, and improved store conversion by scheduling staff around peak traffic hours.",
+    "proj-1-before": "52 branches compiled by hand; decisions arrived late.",
+    "proj-1-after": "One live dashboard for all branches supporting daily decisions.",
 
     "proj-2-challenge": "Frequent inventory discrepancies and delays in syncing orders from Trendyol and WooCommerce with the warehouse caused customer order cancellations and fulfillment delays.",
     "proj-2-solution": "Developed a Python-based synchronization engine for real-time bi-directional inventory checks, automated order posting to Dynamics 365, and built an automated audit logging system.",
-    "proj-2-impact": "Boosted order fulfillment speed by 60%, eliminated order cancellation penalties, and saved 20+ hours/week of manual spreadsheet reconciliation.",
+    "proj-2-impact": "Sped up order fulfillment by roughly 60%, sharply reduced cancellations caused by stockouts, and saved around 20 hours/week of manual reconciliation.",
+    "proj-2-before": "Recurring stock gaps, cancelled orders, delayed shipping.",
+    "proj-2-after": "Automated two-way sync between store and warehouse.",
 
     "proj-3-challenge": "Disorganized replenishment and maintenance requests sent via WhatsApp created inventory leakage, delayed showroom repairs, and offered zero cost tracking or user permissions.",
     "proj-3-solution": "Built a secure internal portal using React and Supabase (PostgreSQL), enabling showroom managers to submit requests with images, backed by a central dashboard for approvals and granular role-based access control (RBAC).",
-    "proj-3-impact": "Reduced store stock replenishment processing time by 75%, achieved 100% audit accuracy on branch maintenance spend, and created a complete digital audit trail.",
+    "proj-3-impact": "Cut showroom replenishment processing time by about 75%, and consolidated branch maintenance requests and costs in one place with a full approval log.",
+    "proj-3-before": "Requests and faults over WhatsApp, no tracking or permissions.",
+    "proj-3-after": "One portal with documented requests and clear permissions.",
 
     "proj-4-challenge": "Financial analysts spent 4 hours every morning logging into multiple systems, cleaning raw data in Excel, manually compiling PDF reports, and emailing them to regional managers.",
     "proj-4-solution": "Developed automated scripts using Python, VBA, and Power Query that extract raw data daily at 6 AM, run data cleaning models, generate visual PDF reports, and schedule automated email delivery.",
-    "proj-4-impact": "Reduced report preparation time from 4 hours to 3 minutes, entirely automated, while eliminating accounting and spreadsheet formula errors by 100%.",
+    "proj-4-impact": "Reduced report preparation from about 4 hours to a few automated minutes, and clearly cut manual copy and calculation errors.",
+    "proj-4-before": "4 hours daily pulling data and preparing the report.",
+    "proj-4-after": "Report generated and emailed automatically in minutes.",
 
     "proj-5-challenge": "Difficult to track IT and device breakdowns across branches, leading to prolonged downtimes, lost productivity, and no KPIs to evaluate support staff performance.",
     "proj-5-solution": "Developed a real-time web ticketing platform using React and Firebase, featuring live status updates, manager approval chains, and automated email notifications for support staff assignment.",
-    "proj-5-impact": "Decreased ticket resolution and machine downtime by 50%, preventing checkout lane closures and improving general branch hardware availability.",
+    "proj-5-impact": "Cut average ticket resolution and downtime by roughly 50%, reducing checkout lane closures and improving visibility into the support team's performance.",
+    "proj-5-before": "Faults with no tracking and no response-time metrics.",
+    "proj-5-after": "Tickets tracked by status, owner, and performance KPIs.",
 
     "proj-6-challenge": "Small retail chains and growing shops could not afford expensive BI software licenses (like Tableau/Power BI) or technical team hires, keeping them blind to daily sales and clerk margins.",
     "proj-6-solution": "Designed a ready-to-deploy, lightweight white-label dashboard package using Vanilla JS and Bootstrap, offering PWA support and direct database syncing to visualize sales and export PDF reports.",
-    "proj-6-impact": "Enabled quick dashboard deployments in under 3 hours per client, reducing store owner manual bookkeeping hours by 80%.",
+    "proj-6-impact": "Enabled quick dashboard deployments within a few hours per client, and significantly reduced the time owners spent on daily manual bookkeeping.",
+    "proj-6-before": "No clear sales visibility without costly BI systems.",
+    "proj-6-after": "A lightweight ready dashboard showing sales and performance instantly.",
 
     // Testimonials Section
     "test-title": "Client Testimonials",
-    "test-subtitle": "Feedback from corporate executives and operations managers who digitized their workflows",
-    "test-1-quote": "\"Eng. Alaa successfully automated our order management flow, connecting our online store with warehouses and Dynamics 365 ERP. The project saved us hundreds of operational hours and accelerated delivery times for our customers on Trendyol and WooCommerce.\"",
-    "test-1-author": "Abdulrahman Al-Shehri",
-    "test-1-title": "COO & Supply Chain Director",
-    "test-2-quote": "\"The real-time sales dashboard designed by Alaa allowed us as executive management to monitor 50+ branches, tracking target achievements and store conversion rates instantly and securely from our mobile phones.\"",
-    "test-2-author": "Eng. Khalid Bin Wazir",
-    "test-2-title": "Executive Retail Director",
+    "test-subtitle": "Feedback from the decision-makers whose systems I helped build",
+    "test-note": "* Job titles of the decision-makers I worked with, with company identities kept private.",
+    "test-1-quote": "\"Eng. Alaa connected our store with the warehouse and ERP and automated order processing. It saved us significant operational time and reduced order-prep errors.\"",
+    "test-1-author": "Operations Manager",
+    "test-1-title": "Multi-branch retail company",
+    "test-2-quote": "\"The sales dashboard he built let us track branch performance and target achievement from our phones, instead of waiting for end-of-day reports.\"",
+    "test-2-author": "Regional Manager",
+    "test-2-title": "Retail sector",
+    "test-3-quote": "\"The branch ordering portal organized our supply requests; every order is now documented with a clear status, instead of scattered WhatsApp messages.\"",
+    "test-3-author": "Warehouse Supervisor",
+    "test-3-title": "Operations & branches company",
 
     // Calculator Section
     "calc-title": "Interactive Retail KPI Simulator",
@@ -481,19 +555,61 @@ const translations = {
     "form-opt-8": "Complete Digital Transformation Consultation",
     "form-lbl-msg": "Tell me about your project needs:",
     "form-ph-msg": "Briefly explain the current operational bottleneck or what you want to achieve...",
-    "form-btn-submit": "Submit & Create WhatsApp Text",
+    "form-btn-submit": "Send Request",
+    "form-status-sending": "Sending...",
+    "form-status-sent": "Your request was received, and WhatsApp was opened too. I'll reply soon.",
+    "form-status-error": "Email delivery failed, but you can continue the chat on WhatsApp.",
+    "form-status-wa": "WhatsApp was opened so you can send your request directly.",
 
     // Footer
     "footer-desc": "Helping businesses replace time-draining manual spreadsheet entry with fast automated databases and live business dashboards.",
     "footer-head-links": "Quick Links",
     "footer-head-contact": "Contact Info",
     "footer-copyright": "© 2026 Alaa Wafaie. All rights reserved.",
-    "footer-disclaimer": "Independent Enterprise Systems & Automation Architect."
+    "footer-disclaimer": "Independent Enterprise Systems & Automation Architect.",
+
+    // Built Systems Section
+    "sys-title": "Systems I've Actually Built",
+    "sys-subtitle": "Ready systems adaptable to your company, each solving a recurring operational problem across branches",
+    "sys-lbl-what": "What it does",
+    "sys-lbl-problem": "Problem it solves",
+    "sys-lbl-for": "Who it's for",
+    "sys-lbl-output": "Outputs",
+    "sys-1-name": "Retail Sales Dashboard",
+    "sys-1-what": "Consolidates branch sales, staff performance, and visitor counts into one daily-updated dashboard.",
+    "sys-1-problem": "Numbers compiled by hand from several files and reaching management late.",
+    "sys-1-for": "Retail and regional managers running multiple branches.",
+    "sys-1-output": "Web dashboard + target & conversion KPIs + PDF export.",
+    "sys-2-name": "Daily Reports Automation",
+    "sys-2-what": "Pulls data, cleans it, generates Excel/PDF reports, and sends them automatically on schedule.",
+    "sys-2-problem": "Daily hours lost preparing reports across Excel and WhatsApp.",
+    "sys-2-for": "Financial analysis teams and operations management.",
+    "sys-2-output": "Scheduled reports delivered to email or WhatsApp, hands-free.",
+    "sys-3-name": "Branch Ordering Portal",
+    "sys-3-what": "A portal where branches request goods and supplies, with approvals based on permissions.",
+    "sys-3-problem": "Scattered branch requests over WhatsApp with no documentation or tracking.",
+    "sys-3-for": "Warehouse and operations teams in multi-branch companies.",
+    "sys-3-output": "Documented requests with status, approval log, and a management view.",
+    "sys-4-name": "Maintenance Ticketing System",
+    "sys-4-what": "Logs device and branch faults as tickets with status, owner, and response time.",
+    "sys-4-problem": "Faults with no clear owner and no idea how long they take to resolve.",
+    "sys-4-for": "Maintenance and technical support teams for branches and POS.",
+    "sys-4-output": "A ticketing system with notifications and resolution-time reports.",
+
+    // Final CTA Band
+    "cta-band-title": "Got a manual report or a tiring process that repeats every day?",
+    "cta-band-desc": "Send me an example of the process, and I'll give you a practical view of how it can become a system or automation.",
+    "cta-band-wa": "Chat on WhatsApp",
+    "cta-band-email": "Send an email"
   }
 };
 
 // State Management
 let currentLang = 'ar';
+
+// Contact form email delivery (Formspree). Replace YOUR_FORM_ID with your real Formspree form id
+// from https://formspree.io to receive submissions by email. Until then, the form falls back to WhatsApp only.
+const FORMSPREE_ENDPOINT = 'https://formspree.io/f/YOUR_FORM_ID';
 
 // Initialize Page
 document.addEventListener('DOMContentLoaded', () => {
@@ -601,7 +717,7 @@ function setupEventListeners() {
   if (contactForm) {
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
-      sendFormToWhatsApp();
+      handleContactSubmit();
     });
   }
 
@@ -920,6 +1036,69 @@ function calculateKPIs() {
       conversionEl.textContent = '0.00%';
     }
   }
+}
+
+// Handle contact form submission:
+// 1) open WhatsApp synchronously (keeps the user gesture, avoids popup blocking)
+// 2) also deliver the message by email via Formspree as a reliable fallback channel
+//    (useful for desktop users without WhatsApp). Falls back to WhatsApp-only until configured.
+function handleContactSubmit() {
+  const statusEl = document.getElementById('form-status');
+
+  // Skip silently if a spam bot filled the honeypot
+  const honeypot = document.getElementById('contact-gotcha');
+  if (honeypot && honeypot.value) return;
+
+  // Primary: open WhatsApp immediately (synchronous, within the click gesture)
+  sendFormToWhatsApp();
+
+  const configured = !FORMSPREE_ENDPOINT.includes('YOUR_FORM_ID');
+  if (!configured) {
+    setFormStatus(statusEl, translations[currentLang]['form-status-wa'], 'success');
+    return;
+  }
+
+  // Secondary: send the same details by email in the background
+  const payload = {
+    name: document.getElementById('contact-name').value,
+    email: document.getElementById('contact-email').value,
+    business: document.getElementById('contact-biz').value,
+    service: getSelectedServiceText(),
+    message: document.getElementById('contact-msg').value,
+    _gotcha: honeypot ? honeypot.value : ''
+  };
+
+  setFormStatus(statusEl, translations[currentLang]['form-status-sending'], '');
+
+  fetch(FORMSPREE_ENDPOINT, {
+    method: 'POST',
+    headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload)
+  }).then((res) => {
+    if (res.ok) {
+      setFormStatus(statusEl, translations[currentLang]['form-status-sent'], 'success');
+      const form = document.getElementById('contact-form');
+      if (form) form.reset();
+    } else {
+      setFormStatus(statusEl, translations[currentLang]['form-status-error'], 'error');
+    }
+  }).catch(() => {
+    setFormStatus(statusEl, translations[currentLang]['form-status-error'], 'error');
+  });
+}
+
+// Helper: render the contact form status message
+function setFormStatus(el, text, type) {
+  if (!el) return;
+  el.textContent = text;
+  el.className = 'form-status' + (type ? ' ' + type : '');
+}
+
+// Helper: readable text of the currently selected service option
+function getSelectedServiceText() {
+  const sel = document.getElementById('contact-service');
+  if (!sel || sel.selectedIndex < 0) return '';
+  return sel.options[sel.selectedIndex].text;
 }
 
 // Create Custom WhatsApp URL and Redirect User

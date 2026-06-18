@@ -1977,3 +1977,222 @@ h1, h2, h3, h4, h5, h6 {
     display: none; /* Hide status badge on small screens to fit toggle buttons */
   }
 }
+
+/* ============================================
+   Built Systems Section ("أنظمة بنيتها فعلاً")
+   ============================================ */
+.systems-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 24px;
+}
+
+.system-card {
+  background-color: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 30px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  transition: all 0.4s var(--ease-custom);
+}
+
+.system-card:hover {
+  transform: translateY(-6px);
+  border-color: var(--card-hover-border);
+  box-shadow: 0 16px 40px var(--shadow-color), 0 0 0 1px var(--card-hover-border);
+}
+
+.system-head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.system-icon {
+  width: 46px;
+  height: 46px;
+  flex-shrink: 0;
+  background-color: var(--accent-orange-light);
+  border: 1px solid var(--border-glow);
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+  color: var(--accent-orange);
+}
+
+.system-name {
+  font-family: var(--font-english);
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  letter-spacing: 0.2px;
+  margin: 0;
+}
+
+.system-row {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.system-lbl {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  color: var(--accent-orange);
+}
+
+.system-row p {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.7;
+  margin: 0;
+}
+
+/* ============================================
+   Before / After block inside case studies
+   ============================================ */
+.case-baf {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px;
+  margin-top: 6px;
+}
+
+.baf-col {
+  background-color: var(--bg-tertiary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  padding: 14px 16px;
+}
+
+.baf-before {
+  border-inline-start: 3px solid var(--text-secondary);
+}
+
+.baf-after {
+  border-inline-start: 3px solid var(--accent-orange);
+}
+
+.baf-tag {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.4px;
+  margin-bottom: 6px;
+  color: var(--text-secondary);
+}
+
+.baf-after .baf-tag {
+  color: var(--accent-orange);
+}
+
+.baf-col p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* ============================================
+   Testimonials privacy note
+   ============================================ */
+.testimonials-note {
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin: -10px auto 30px auto;
+  max-width: 640px;
+}
+
+/* ============================================
+   Final CTA Band
+   ============================================ */
+.cta-band {
+  background: linear-gradient(135deg, var(--accent-orange), var(--accent-orange-hover));
+  padding: 64px 0;
+}
+
+.cta-band-inner {
+  text-align: center;
+}
+
+.cta-band-title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 14px;
+  line-height: 1.45;
+}
+
+.cta-band-desc {
+  font-size: 1.05rem;
+  color: rgba(255, 255, 255, 0.92);
+  max-width: 640px;
+  margin: 0 auto 30px auto;
+  line-height: 1.7;
+}
+
+.cta-band-btns {
+  justify-content: center;
+}
+
+.cta-band .btn-primary {
+  background-color: #ffffff;
+  color: var(--accent-orange);
+  border-color: #ffffff;
+}
+
+.cta-band .btn-primary:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-2px);
+}
+
+.cta-band .btn-secondary {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+.cta-band .btn-secondary:hover {
+  background-color: rgba(255, 255, 255, 0.14);
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .case-baf {
+    grid-template-columns: 1fr;
+  }
+  .cta-band-title {
+    font-size: 1.6rem;
+  }
+  .cta-band-desc {
+    font-size: 0.95rem;
+  }
+}
+
+/* ============================================
+   Contact form status message
+   ============================================ */
+.form-status {
+  margin-top: 16px;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  min-height: 1.2em;
+  color: var(--text-secondary);
+}
+
+.form-status.success {
+  color: #16a34a;
+}
+
+.form-status.error {
+  color: #dc2626;
+}
