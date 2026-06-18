@@ -261,10 +261,11 @@ const translations = {
     "form-status-wa": "فتحنا لك واتساب لإرسال طلبك مباشرة.",
 
     // Footer
+    "logo-text": "وفائي <span>تِك</span>",
     "footer-desc": "أساعد الشركات على تحويل الفوضى والعمليات اليدوية المبعثرة إلى أنظمة تلقائية ذكية ولوحات تحكم تفاعلية توفر الوقت وتزيد الكفاءة والوضوح.",
     "footer-head-links": "روابط سريعة",
     "footer-head-contact": "تواصل فوري",
-    "footer-copyright": "© 2026 علاء وفائي. جميع الحقوق محفوظة.",
+    "footer-copyright": "© 2026 وفائي تِك. جميع الحقوق محفوظة.",
     "footer-disclaimer": "مطور أنظمة معتمد بشكل فري لانس ومستقل.",
 
     // Built Systems Section
@@ -562,10 +563,11 @@ const translations = {
     "form-status-wa": "WhatsApp was opened so you can send your request directly.",
 
     // Footer
+    "logo-text": "Wafaie<span>Tech</span>",
     "footer-desc": "Helping businesses replace time-draining manual spreadsheet entry with fast automated databases and live business dashboards.",
     "footer-head-links": "Quick Links",
     "footer-head-contact": "Contact Info",
-    "footer-copyright": "© 2026 Alaa Wafaie. All rights reserved.",
+    "footer-copyright": "© 2026 WafaieTech. All rights reserved.",
     "footer-disclaimer": "Independent Enterprise Systems & Automation Architect.",
 
     // Built Systems Section
