@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --orange:#ff5c00;
+    --orange-soft:rgba(255,92,0,.10);
+    --ink:#11141a;
+    --muted:#5b6675;
+    --dark:#0d0d15;
+    --dark-2:#15151f;
+    --line:#e7eaf0;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+  @page{size:A4;margin:0;}
+  html,body{font-family:"IBM Plex Sans Arabic","Segoe UI",Tahoma,sans-serif;color:var(--ink);background:#fff;}
+  .page{width:210mm;min-height:297mm;margin:0 auto;background:#fff;display:flex;flex-direction:column;}
+
+  /* HEADER */
+  .hdr{background:var(--dark);color:#fff;padding:26px 34px 22px;position:relative;overflow:hidden;}
+  .hdr::after{content:"";position:absolute;inset-inline-start:0;bottom:0;width:100%;height:5px;
+    background:linear-gradient(90deg,var(--orange),#ff8a3d);}
+  .hdr-top{display:flex;justify-content:space-between;align-items:flex-start;}
+  .logo{font-size:26px;font-weight:700;letter-spacing:.3px;}
+  .logo span{color:var(--orange);}
+  .hdr-contact{font-size:11.5px;color:#aeb7c4;text-align:left;line-height:1.9;}
+  .hdr-contact b{color:#fff;font-weight:600;}
+  .name{margin-top:14px;font-size:15px;color:#cfd6e0;font-weight:500;}
+  .tagline{margin-top:4px;font-size:20px;font-weight:700;line-height:1.4;max-width:78%;}
+  .tagline u{color:var(--orange);text-decoration:none;}
+
+  /* HOOK */
+  .hook{margin:0 34px;margin-top:-1px;background:var(--orange-soft);border-inline-start:4px solid var(--orange);
+    padding:14px 18px;font-size:13.5px;line-height:1.85;color:#2a2f38;font-weight:500;}
+
+  /* BODY */
+  .body{padding:18px 34px 0;flex:1;}
+  .grid{display:grid;grid-template-columns:1fr 1.25fr;gap:22px;}
+  .h{font-size:13px;font-weight:700;color:var(--orange);margin-bottom:9px;display:flex;align-items:center;gap:7px;}
+  .h::before{content:"";width:14px;height:3px;background:var(--orange);border-radius:2px;}
+
+  .prob{list-style:none;display:flex;flex-direction:column;gap:8px;}
+  .prob li{font-size:12px;line-height:1.6;color:#3a414c;padding-inline-start:18px;position:relative;}
+  .prob li::before{content:"✕";position:absolute;inset-inline-start:0;color:#d23b3b;font-size:10px;top:2px;font-weight:700;}
+
+  .srv{display:flex;flex-direction:column;gap:9px;}
+  .srv-item{display:flex;gap:10px;align-items:flex-start;}
+  .srv-ic{flex:0 0 30px;height:30px;border-radius:8px;background:var(--orange-soft);color:var(--orange);
+    display:flex;align-items:center;justify-content:center;font-size:15px;}
+  .srv-tx b{display:block;font-size:12px;color:var(--ink);font-weight:600;margin-bottom:1px;}
+  .srv-tx span{font-size:11px;color:var(--muted);line-height:1.45;}
+
+  /* STATS */
+  .stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:20px 0 4px;}
+  .stat{background:var(--dark);color:#fff;border-radius:12px;padding:14px 10px;text-align:center;}
+  .stat b{display:block;font-size:23px;font-weight:700;color:var(--orange);line-height:1;}
+  .stat span{font-size:10.5px;color:#c3cad4;display:block;margin-top:6px;line-height:1.4;}
+
+  /* RESULTS */
+  .res{margin-top:18px;}
+  .res-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:9px;}
+  .res-card{border:1px solid var(--line);border-radius:12px;padding:13px 14px;background:#fbfcfe;}
+  .res-card .big{font-size:17px;font-weight:700;color:var(--orange);}
+  .res-card p{font-size:11px;color:#444b56;line-height:1.55;margin-top:5px;}
+
+  /* START */
+  .start{margin-top:18px;background:#fbfcfe;border:1px dashed var(--orange);border-radius:12px;
+    padding:14px 18px;display:flex;gap:14px;align-items:center;}
+  .start .step-ic{font-size:22px;}
+  .start p{font-size:12px;line-height:1.7;color:#3a414c;}
+  .start b{color:var(--ink);}
+
+  /* FOOTER */
+  .ftr{margin-top:auto;background:var(--dark);color:#fff;padding:16px 34px;display:flex;
+    justify-content:space-between;align-items:center;}
+  .ftr .cta{font-size:14px;font-weight:600;}
+  .ftr .cta span{color:var(--orange);}
+  .ftr .links{font-size:11.5px;color:#c3cad4;text-align:left;line-height:1.9;}
+  .ftr .links b{color:#fff;}
+</style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- HEADER -->
+    <div class="hdr">
+      <div class="hdr-top">
+        <div class="logo">وفائي <span>تِك</span></div>
+        <div class="hdr-contact">
+          <div>📱 <b>‎+966 55 337 7408</b></div>
+          <div>🌐 alaa-wafaie.com</div>
+        </div>
+      </div>
+      <div class="name">علاء وفائي — مهندس أنظمة وأتمتة لقطاع التجزئة</div>
+      <div class="tagline">أتمتة وتقارير ولوحات بيانات <u>لشركات التجزئة متعددة الفروع</u></div>
+    </div>
+
+    <!-- HOOK -->
+    <div class="hook">
+      بربط مبيعاتك، مخزونك، تقاريرك، ونظام الـ ERP في نظام واحد واضح — يقلّل الشغل اليدوي ويعطي
+      الإدارة رؤية يومية دقيقة عن أداء كل فرع.
+    </div>
+
+    <!-- BODY -->
+    <div class="body">
+      <div class="grid">
+        <!-- PROBLEM -->
+        <div>
+          <div class="h">المشكلة اللي بتواجه الإدارة</div>
+          <ul class="prob">
+            <li>التقارير اليومية بتتجمّع يدوياً من إكسل وواتساب وتاخد ساعات.</li>
+            <li>المبيعات والمخزون مبعثرين على أنظمة ما بتحكي مع بعض.</li>
+            <li>القرارات بتتأخر لأن البيانات بتوصل متأخرة أو فيها أخطاء.</li>
+            <li>طلبات الفروع والصيانة بواتساب بدون توثيق ولا صلاحيات.</li>
+          </ul>
+        </div>
+        <!-- SERVICES -->
+        <div>
+          <div class="h">اللي بقدر أعمله لك</div>
+          <div class="srv">
+            <div class="srv-item"><div class="srv-ic">📊</div><div class="srv-tx"><b>لوحات متابعة لحظية (BI)</b><span>مبيعات الفروع والكادر والزوار بشاشة واحدة.</span></div></div>
+            <div class="srv-item"><div class="srv-ic">⚙️</div><div class="srv-tx"><b>أتمتة التقارير اليومية</b><span>تقريرك جاهز ومُرسل تلقائياً بدل ساعات شغل.</span></div></div>
+            <div class="srv-item"><div class="srv-ic">🔗</div><div class="srv-tx"><b>ربط وتوحيد الأنظمة</b><span>المتجر (سلة/ووكومرس) + المخزون + الـ ERP كنظام واحد.</span></div></div>
+            <div class="srv-item"><div class="srv-ic">🛠️</div><div class="srv-tx"><b>أنظمة داخلية مخصصة</b><span>طلبات الفروع، الصيانة، والموافقات حسب الصلاحيات.</span></div></div>
+            <div class="srv-item"><div class="srv-ic">🤖</div><div class="srv-tx"><b>أتمتة واتساب + دمج AI</b><span>إشعارات تلقائية ومساعد ذكي يجاوب على أرقامك.</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- STATS -->
+      <div class="stats">
+        <div class="stat"><b>+4</b><span>سنوات خبرة في التجزئة</span></div>
+        <div class="stat"><b>+50</b><span>فرعاً تم ربطها بالأنظمة</span></div>
+        <div class="stat"><b>80%</b><span>تقليل في العمل اليدوي للتقارير</span></div>
+      </div>
+
+      <!-- RESULTS -->
+      <div class="res">
+        <div class="h">نتائج فعلية من مشاريع نفّذتها</div>
+        <div class="res-grid">
+          <div class="res-card"><div class="big">52 فرعاً</div><p>مربوطة لحظياً مع Dynamics 365 — وفّرت ~15 ساعة عمل أسبوعياً للإدارة.</p></div>
+          <div class="res-card"><div class="big">60% أسرع</div><p>محرك مزامنة للمتاجر الإلكترونية سرّع معالجة الطلبات وقلّل الإلغاء.</p></div>
+          <div class="res-card"><div class="big">4 ساعات → دقائق</div><p>نظام أتمتة قلّص تجهيز التقرير اليومي من ساعات إلى دقائق معدودة.</p></div>
+        </div>
+      </div>
+
+      <!-- START -->
+      <div class="start">
+        <div class="step-ic">🚀</div>
+        <p>
+          <b>كيف نبدأ — بدون مخاطرة:</b> جلسة قصيرة نحدد فيها أكتر عملية بتاخد وقتك أو بتكلّفك أخطاء،
+          وبقدّملك <b>نطاق بداية صغير محدد التكلفة والمدة</b>. إذا النتيجة عجبتك، نكمّل للباقي.
+        </p>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="ftr">
+      <div class="cta">جاهز نبلّش؟ <span>راسلني على واتساب اليوم.</span></div>
+      <div class="links">
+        <div>📱 <b>‎+966 55 337 7408</b>  ·  🌐 alaa-wafaie.com</div>
+        <div>💼 LinkedIn: alaa-wafaie</div>
+      </div>
+    </div>
+
+  </div>
+</body>
+</html>

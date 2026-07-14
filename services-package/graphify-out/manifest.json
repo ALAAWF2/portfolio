@@ -1,0 +1,167 @@
+{
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\remotion\\package.json": {
+    "mtime": 1783443216.2728617,
+    "ast_hash": "15877ae98f6b32c446e1f948bd9a54a9",
+    "semantic_hash": "15877ae98f6b32c446e1f948bd9a54a9"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\remotion\\remotion.config.ts": {
+    "mtime": 1783443652.2259066,
+    "ast_hash": "9523af652f35536adc08852bca1a184f",
+    "semantic_hash": "9523af652f35536adc08852bca1a184f"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\remotion\\render-all.mjs": {
+    "mtime": 1783443656.1715631,
+    "ast_hash": "6529bb6984b200c2711ce37d76bf9250",
+    "semantic_hash": "6529bb6984b200c2711ce37d76bf9250"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\remotion\\src\\Root.tsx": {
+    "mtime": 1783443649.8830285,
+    "ast_hash": "73a445bfab4cc7d1d15d5619bdcf007d",
+    "semantic_hash": "73a445bfab4cc7d1d15d5619bdcf007d"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\remotion\\src\\ServiceVideo.tsx": {
+    "mtime": 1783443604.3631053,
+    "ast_hash": "4bfbcbf4665925011ae9e543c8dcc715",
+    "semantic_hash": "4bfbcbf4665925011ae9e543c8dcc715"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\remotion\\src\\index.ts": {
+    "mtime": 1783443650.8225982,
+    "ast_hash": "ae309a76b0191af50e6e2fb05c305667",
+    "semantic_hash": "ae309a76b0191af50e6e2fb05c305667"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\remotion\\src\\scenes-a.tsx": {
+    "mtime": 1783443427.810194,
+    "ast_hash": "de91cc7d7919e8074fceb37dde9c4a56",
+    "semantic_hash": "de91cc7d7919e8074fceb37dde9c4a56"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\remotion\\src\\scenes-b.tsx": {
+    "mtime": 1783443554.2671094,
+    "ast_hash": "6cca4c680917060f37d9fffa506d1136",
+    "semantic_hash": "6cca4c680917060f37d9fffa506d1136"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\remotion\\src\\theme.tsx": {
+    "mtime": 1783443252.2459164,
+    "ast_hash": "6d97a757c71cdb79276dda2af8b7e26f",
+    "semantic_hash": "6d97a757c71cdb79276dda2af8b7e26f"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\remotion\\tsconfig.json": {
+    "mtime": 1783443158.512753,
+    "ast_hash": "9a63a4a9ff93612d287839a7671b84fe",
+    "semantic_hash": "9a63a4a9ff93612d287839a7671b84fe"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\SERVICES.md": {
+    "mtime": 1783443745.1520276,
+    "ast_hash": "8fadeeb80947c80bbf4511e57a246c17",
+    "semantic_hash": "8fadeeb80947c80bbf4511e57a246c17"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\stills-check\\aichat.png": {
+    "mtime": 1783443862.1181803,
+    "ast_hash": "03f047ac119f2e66080dfacdb3dbc7b3",
+    "semantic_hash": "03f047ac119f2e66080dfacdb3dbc7b3"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\stills-check\\branchapp.png": {
+    "mtime": 1783443876.4323235,
+    "ast_hash": "1c6185d71bf514fdea5f0fd24e54c3af",
+    "semantic_hash": "1c6185d71bf514fdea5f0fd24e54c3af"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\stills-check\\ecommerce.png": {
+    "mtime": 1783444022.127451,
+    "ast_hash": "c68f1dd7f90ee7308f6c8148ebe7f708",
+    "semantic_hash": "c68f1dd7f90ee7308f6c8148ebe7f708"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\stills-check\\f040.png": {
+    "mtime": 1783443778.1831877,
+    "ast_hash": "1be2b02ae0b46191fcf29664fa809db4",
+    "semantic_hash": "1be2b02ae0b46191fcf29664fa809db4"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\stills-check\\f200.png": {
+    "mtime": 1783443782.4031696,
+    "ast_hash": "173c0ec961277df4d0df8744b2ba0145",
+    "semantic_hash": "173c0ec961277df4d0df8744b2ba0145"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\stills-check\\f330.png": {
+    "mtime": 1783443786.5374937,
+    "ast_hash": "6254bba21d8bce7aa59db679a2cb7ca9",
+    "semantic_hash": "6254bba21d8bce7aa59db679a2cb7ca9"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\stills-check\\inventory.png": {
+    "mtime": 1783444030.3783495,
+    "ast_hash": "5c7393d9a6580c93098ea7311f23d9e6",
+    "semantic_hash": "5c7393d9a6580c93098ea7311f23d9e6"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\stills-check\\mission.png": {
+    "mtime": 1783443867.5630598,
+    "ast_hash": "c4c51e5acc272931cd9e6aee17f6edf9",
+    "semantic_hash": "c4c51e5acc272931cd9e6aee17f6edf9"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\stills-check\\pipeline.png": {
+    "mtime": 1783444018.0150523,
+    "ast_hash": "172e1c3801ef5c7cc2c93ff78a0eb12f",
+    "semantic_hash": "172e1c3801ef5c7cc2c93ff78a0eb12f"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\stills-check\\reports.png": {
+    "mtime": 1783444026.3100767,
+    "ast_hash": "e028f126d5142d84fc847db9053761bf",
+    "semantic_hash": "e028f126d5142d84fc847db9053761bf"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\videos\\ai-business-assistant.mp4": {
+    "mtime": 1783443913.745456,
+    "ast_hash": "0bb90233aae8c5d58bf94ef9e9fe1050",
+    "semantic_hash": "0bb90233aae8c5d58bf94ef9e9fe1050"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\videos\\automated-reports.mp4": {
+    "mtime": 1783443901.3962195,
+    "ast_hash": "77fb4b6186a84518581514ad832cdb1c",
+    "semantic_hash": "77fb4b6186a84518581514ad832cdb1c"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\videos\\branch-operations-app.mp4": {
+    "mtime": 1783443849.6667013,
+    "ast_hash": "7799e18a00c392b22a7a7975b39a2e67",
+    "semantic_hash": "7799e18a00c392b22a7a7975b39a2e67"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\videos\\ecommerce-sync.mp4": {
+    "mtime": 1783443926.7208128,
+    "ast_hash": "eafe0930e1fd05e6a460c2461bc8d82f",
+    "semantic_hash": "eafe0930e1fd05e6a460c2461bc8d82f"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\videos\\finance-vat-reports.mp4": {
+    "mtime": 1783443953.087681,
+    "ast_hash": "c24d03311541a18e21e26b73b9671a41",
+    "semantic_hash": "c24d03311541a18e21e26b73b9671a41"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\videos\\inventory-intelligence.mp4": {
+    "mtime": 1783443861.2981014,
+    "ast_hash": "2ceaf0b46a4e7621e66ce9ef244098b0",
+    "semantic_hash": "2ceaf0b46a4e7621e66ce9ef244098b0"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\videos\\mission-control.mp4": {
+    "mtime": 1783443940.096411,
+    "ast_hash": "cac19dd5e35ba2ce1114f78b3703c63c",
+    "semantic_hash": "cac19dd5e35ba2ce1114f78b3703c63c"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\videos\\product-analytics.mp4": {
+    "mtime": 1783443875.7833273,
+    "ast_hash": "95440c562cc7fd649373225789d8fd4f",
+    "semantic_hash": "95440c562cc7fd649373225789d8fd4f"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\videos\\realtime-dashboards.mp4": {
+    "mtime": 1783443703.602544,
+    "ast_hash": "838ab1bbab43e1fe1a5c39ab97527db1",
+    "semantic_hash": "838ab1bbab43e1fe1a5c39ab97527db1"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\videos\\systems-integration.mp4": {
+    "mtime": 1783443827.4909756,
+    "ast_hash": "79a9ef8704daf6c7d1bdf528c84fc7ed",
+    "semantic_hash": "79a9ef8704daf6c7d1bdf528c84fc7ed"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\videos\\targets-performance.mp4": {
+    "mtime": 1783443888.5078,
+    "ast_hash": "31a8e9f2d7bfa9db5cdabcbcfe76009d",
+    "semantic_hash": "31a8e9f2d7bfa9db5cdabcbcfe76009d"
+  },
+  "C:\\Users\\ALAA-ORANGE\\Desktop\\alaaproject private\\services-package\\videos\\visitor-analytics.mp4": {
+    "mtime": 1783443838.5300834,
+    "ast_hash": "41d4b6019bc3957acc38f899fe2b51d8",
+    "semantic_hash": "41d4b6019bc3957acc38f899fe2b51d8"
+  }
+}

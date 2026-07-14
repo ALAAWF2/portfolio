@@ -53,24 +53,36 @@ const translations = {
     "ind-4-desc": "أتمتة الموافقات وسلسلة الصلاحيات، تتبع المشاريع والمهام التشغيلية، وبناء بوابات الخدمة الذاتية للفريق والعملاء.",
 
     // Services Section
-    "services-title": "الخدمات التي أقدمها",
-    "services-subtitle": "حلول برمجية ذكية مفصلة خصيصاً لتناسب احتياجات شركتك وتزيد من كفاءتها",
-    "srv-1-title": "لوحات متابعة الأداء اللحظية (BI)",
-    "srv-1-desc": "شاشة تحكم واحدة تجمع مبيعات فروعك، أداء موظفيك، وأعداد الزوار لحظة بلحظة، بدلاً من تجميعها يدوياً من ملفات متعددة.",
-    "srv-2-title": "أتمتة المهام والتقارير اليومية",
-    "srv-2-desc": "أتمتة التقارير الدورية (مبيعات، مخزون، تشغيل) لتصلك في دقائق معدودة بدلاً من ساعات عمل يدوية، مع تقليل أخطاء النسخ والتجميع.",
-    "srv-3-title": "ربط المتجر الإلكتروني بالمخازن",
-    "srv-3-desc": "ربط متجرك (سلة، ووكومرس، ترينديول) بنظام المستودعات وERP لتحديث المخزون والطلبات تلقائياً وتقليل البيع بالخطأ.",
-    "srv-4-title": "دمج وتوحيد الأنظمة (Integrations)",
-    "srv-4-desc": "جعل أنظمتك المختلفة (ERP Dynamics 365, POS, GoFrugal) تتحدث مع بعضها كأنها نظام واحد دون تكرار لإدخال البيانات.",
-    "srv-5-title": "أنظمة وتطبيقات داخلية مخصصة",
-    "srv-5-desc": "بناء أدوات داخلية لطلب البضائع للفروع، طلبات الصيانة، تتبع المهام، وإدارة الموافقات حسب صلاحيات كل موظف.",
-    "srv-6-title": "بوتات وإشعارات واتساب التلقائية",
-    "srv-6-desc": "إرسال إشعارات تلقائية عبر واتساب لفريقك أو عملائك: تأكيد طلب، تنبيه انخفاض مخزون، أو تقارير مبيعات سريعة.",
-    "srv-7-title": "دمج الذكاء الاصطناعي بالأعمال",
-    "srv-7-desc": "تزويد نظامك بمساعد ذكي يجيب على أسئلة المدراء حول أرقام المبيعات والتقارير بلغة طبيعية، مع استخلاص البيانات فوراً.",
-    "srv-8-title": "استشارات التحول الرقمي",
-    "srv-8-desc": "تقييم الوضع التقني الحالي لشركتك، ووضع خطة عملية خطوة بخطوة للبدء في رقمنة وأتمتة العمليات بنجاح وبأقل التكاليف.",
+    "services-kicker": "12 نظاماً عملياً من البيانات إلى القرار",
+    "services-title": "خدمات تُرى وهي تعمل",
+    "services-subtitle": "حلول مترابطة تحول عملياتك اليومية إلى أنظمة واضحة، مؤتمتة، وقابلة للقياس",
+    "services-preview-hint": "مرّر المؤشر أو اضغط زر التشغيل لمعاينة كل نظام",
+    "services-live-preview": "معاينة نظام حيّة",
+    "service-video-play": "تشغيل أو إيقاف معاينة الفيديو",
+    "srv-1-title": "لوحات متابعة الأداء اللحظية",
+    "srv-1-desc": "شاشة واحدة تجمع مبيعات الفروع والزوار وأداء الفرق، وتتحدث تلقائياً طوال اليوم لتتخذ قرارك دون انتظار الملفات.",
+    "srv-2-title": "تكامل الأنظمة وخطوط البيانات",
+    "srv-2-desc": "اجعل ERP ونقاط البيع وعدادات الزوار تتحدث كنظام واحد ببيانات موحدة، بلا إدخال يدوي متكرر.",
+    "srv-3-title": "تحليلات الزوار ومعدل التحويل",
+    "srv-3-desc": "اربط عدادات الزوار بالمبيعات لتعرف كم شخصاً دخل، وكم منهم اشترى، ومتى تبدأ ساعات الذروة الحقيقية.",
+    "srv-4-title": "تطبيقات تشغيلية للفروع",
+    "srv-4-desc": "كتالوج داخلي وطلبات رقمية تربط الفروع بالمستودع، مع تتبع لحظي وصلاحيات واضحة لكل دور.",
+    "srv-5-title": "ذكاء المخزون والتنبيهات",
+    "srv-5-desc": "توقّع نفاد الأصناف، واكشف الرواكد مبكراً، واحصل على اقتراحات نقل ذكية بين الفروع قبل فوات الفرصة.",
+    "srv-6-title": "تحليل المنتجات وسلة المشتريات",
+    "srv-6-desc": "اعرف الأكثر مبيعاً، وما يُشترى معاً، وأين تضيع فرص العرض والبيع الإضافي—بالأرقام لا بالتخمين.",
+    "srv-7-title": "إدارة الأهداف وأداء الفرق",
+    "srv-7-desc": "أهداف شهرية واضحة لكل فرع وموظف، توزيع عادل، ولوحة متابعة حية تحافظ على تركيز الفريق.",
+    "srv-8-title": "التقارير التلقائية المجدولة",
+    "srv-8-desc": "تقارير PDF وExcel تُبنى وتُرسل وحدها عبر البريد أو واتساب يومياً، دون تجميع يدوي أو أخطاء نسخ.",
+    "srv-9-title": "مساعد أعمال بالذكاء الاصطناعي",
+    "srv-9-desc": "اسأل بياناتك بالعربية واحصل فوراً على إجابات موثوقة من نظامك بصلاحيات قراءة آمنة.",
+    "srv-10-title": "ربط المتاجر والمنصات الإلكترونية",
+    "srv-10-desc": "زامن الطلبات والمخزون والفواتير بين متجرك والمنصات وERP تلقائياً ومن دون تدخل يدوي.",
+    "srv-11-title": "لوحة تحكم إدارية موحّدة",
+    "srv-11-desc": "غرفة عمليات واحدة تراقب الخوادم والمزامنة والأجهزة، وتنبهك إلى الخلل قبل أن يؤثر في العمل.",
+    "srv-12-title": "اللوحة المالية وتقارير الضريبة",
+    "srv-12-desc": "أرقامك المالية وتقارير ضريبة القيمة المضافة جاهزة ومطابقة لنقاط البيع، مع تصدير مباشر للمحاسب.",
 
     // Workflow Section
     "workflow-title": "كيف أعمل معك؟",
@@ -135,6 +147,14 @@ const translations = {
     "proj-6-tech-3": "PWA Ready",
     "proj-6-tech-4": "PDF Export Engine",
 
+    "proj-7-tag": "نظام جرد وتطبيقات PWA",
+    "proj-7-title": "نظام جرد المستودعات الذكي بالباركود (Barcode Scan)",
+    "proj-7-desc": "نظام جرد متكامل يربط الهواتف الذكية بقاعدة بيانات جداول جوجل (Google Sheets) للمسح الضوئي المباشر للباركود، مع دعم كامل للعمل بدون اتصال (PWA) ومحاكي لوحة تحكم.",
+    "proj-7-tech-1": "Html5-Qrcode",
+    "proj-7-tech-2": "Vanilla JS",
+    "proj-7-tech-3": "Google Apps Script",
+    "proj-7-tech-4": "PWA (Service Worker)",
+
     // Case Study Expandable Labels & Content
     "case-lbl-challenge": "التحدي التشغيلي:",
     "case-lbl-solution": "الحل التقني المنفذ:",
@@ -179,6 +199,12 @@ const translations = {
     "proj-6-impact": "تثبيت وتشغيل النظام للعميل خلال ساعات قليلة، وتقليل كبير في الوقت المستهلك يومياً في تجميع الحسابات يدوياً من صاحب المحل.",
     "proj-6-before": "لا رؤية واضحة للمبيعات بدون أنظمة BI مكلفة.",
     "proj-6-after": "لوحة جاهزة خفيفة تعرض المبيعات والأداء فوراً.",
+
+    "proj-7-challenge": "صعوبة وبطء الجرد التقليدي، وتأخر ترحيل البيانات يدوياً إلى جداول البيانات مع ارتفاع نسبة الأخطاء البشرية، فضلاً عن تكلفة شراء أجهزة PDA جرد متخصصة.",
+    "proj-7-solution": "تطوير تطبيق ويب تقدمي (PWA) متجاوب مع الهواتف الذكية يستخدم كاميرا الجوال لمسح الرموز (1D/2D) بشكل متتابع أو فردي، وتصميم سكربت ربط (Google Apps Script) لتحديث جوجل شيت فوراً، مع لوحة تحكم تعرض الفروقات الدفترية والفعلية وسجل العمليات اللحظية.",
+    "proj-7-impact": "تسريع عمليات الجرد في المستودعات بنسبة 70%، وتوفير تكاليف شراء أجهزة PDA، مع دقة 100% في ترحيل بيانات الجرد الفعلي وعرض الفروقات للإدارة بلحظتها.",
+    "proj-7-before": "جرد ورقي بطيء وتأخر في الترحيل، أو أجهزة PDA مكلفة.",
+    "proj-7-after": "جرد فوري بكاميرا الجوال، وتحديث تلقائي لحظي لجوجل شيت.",
 
     // Testimonials Section
     "test-title": "آراء العملاء",
@@ -243,19 +269,24 @@ const translations = {
     "form-lbl-biz": "مجال العمل / الشركة:",
     "form-ph-biz": "مثال: تجزئة، متجر إلكتروني، مطاعم",
     "form-lbl-service": "الخدمة المطلوبة:",
-    "form-opt-select": "اختر الخدمة الأكثر ملاءمة...",
-    "form-opt-1": "لوحة تحكم وتحليلات فورية",
-    "form-opt-2": "أتمتة المهام والتقارير",
-    "form-opt-3": "ربط متجر إلكتروني وبوابات شحن",
-    "form-opt-4": "دمج وتوحيد أنظمة متعددة",
-    "form-opt-5": "تتطوير تطبيقات داخلية مخصصة",
-    "form-opt-6": "بوت وإشعارات واتساب",
-    "form-opt-7": "دمج تقنيات الذكاء الاصطناعي",
-    "form-opt-8": "استشارة تحول رقمي كاملة",
+    "form-opt-select": "اختر الخدمة الأكثر ملاءمة…",
+    "form-opt-1": "لوحات متابعة الأداء اللحظية",
+    "form-opt-2": "تكامل الأنظمة وخطوط البيانات",
+    "form-opt-3": "تحليلات الزوار ومعدل التحويل",
+    "form-opt-4": "تطبيقات تشغيلية للفروع",
+    "form-opt-5": "ذكاء المخزون والتنبيهات",
+    "form-opt-6": "تحليل المنتجات وسلة المشتريات",
+    "form-opt-7": "إدارة الأهداف وأداء الفرق",
+    "form-opt-8": "التقارير التلقائية المجدولة",
+    "form-opt-9": "مساعد أعمال بالذكاء الاصطناعي",
+    "form-opt-10": "ربط المتاجر والمنصات الإلكترونية",
+    "form-opt-11": "لوحة تحكم إدارية موحّدة",
+    "form-opt-12": "اللوحة المالية وتقارير الضريبة",
+    "form-opt-13": "استشارة تحول رقمي",
     "form-lbl-msg": "تفاصيل إضافية عن مشروعك:",
-    "form-ph-msg": "اشرح باختصار مشكلتك التشغيلية أو ما ترغب في إنجازه...",
+    "form-ph-msg": "اشرح باختصار مشكلتك التشغيلية أو ما ترغب في إنجازه…",
     "form-btn-submit": "إرسال الطلب",
-    "form-status-sending": "جارٍ الإرسال...",
+    "form-status-sending": "جارٍ الإرسال…",
     "form-status-sent": "تم استلام طلبك، وفتحنا لك واتساب أيضاً. سأرد عليك قريباً.",
     "form-status-error": "تعذّر الإرسال عبر البريد، لكن يمكنك إكمال المحادثة عبر واتساب.",
     "form-status-wa": "فتحنا لك واتساب لإرسال طلبك مباشرة.",
@@ -355,24 +386,36 @@ const translations = {
     "ind-4-desc": "Automate executive approvals, manage internal maintenance workflows, and build self-service portals for employees and clients.",
 
     // Services Section
-    "services-title": "Services Offered",
-    "services-subtitle": "Tailored software solutions designed around how your business actually runs",
-    "srv-1-title": "Live Business Dashboards (BI)",
-    "srv-1-desc": "One screen showcasing live store sales, branch performance, and visitor conversion rates instead of chasing scattered Excel files.",
-    "srv-2-title": "Task & Report Automation",
-    "srv-2-desc": "Repetitive daily, weekly, or monthly sales and operational reports generated in minutes and delivered on schedule, with far fewer manual errors.",
-    "srv-3-title": "E-Commerce & Inventory Linkage",
-    "srv-3-desc": "Connect your online store (WooCommerce, Trendyol, Salla) with your actual warehouse stock and shipping channels to reduce overselling.",
-    "srv-4-title": "Systems Integration (API)",
-    "srv-4-desc": "Unify your disparate databases, POS systems, and ERPs (Dynamics 365, GoFrugal) so they sync automatically without double entry.",
-    "srv-5-title": "Custom Internal Tools",
-    "srv-5-desc": "Web tools for warehouse replenishment, branch maintenance tickets, staff targets, and approval workflows with strict role-based access.",
-    "srv-6-title": "Automated WhatsApp Alerts",
-    "srv-6-desc": "Instant, automated WhatsApp notifications for your team or customers, like stock limits, order completions, or daily summaries.",
-    "srv-7-title": "AI-Powered Business Solutions",
-    "srv-7-desc": "Integrate natural language chatbots that let decision-makers query sales tables and inventory databases using regular text.",
-    "srv-8-title": "Digital Transformation Roadmap",
-    "srv-8-desc": "Evaluate your current IT landscape and define a step-by-step, budget-conscious roadmap to automate and digitize manual workflows.",
+    "services-kicker": "12 working systems—from data to decisions",
+    "services-title": "Services You Can See Working",
+    "services-subtitle": "Connected solutions that turn daily operations into clear, automated, measurable systems",
+    "services-preview-hint": "Hover or press play to preview each system",
+    "services-live-preview": "Live system preview",
+    "service-video-play": "Play or pause the service video preview",
+    "srv-1-title": "Realtime Performance Dashboards",
+    "srv-1-desc": "One live screen for branch sales, visitors, and team performance—refreshing all day so decisions never wait for spreadsheets.",
+    "srv-2-title": "Systems Integration & Data Pipelines",
+    "srv-2-desc": "Your ERP, POS, and visitor counters working as one system with unified data and no repeated manual entry.",
+    "srv-3-title": "Footfall & Conversion Analytics",
+    "srv-3-desc": "Connect people counters to sales to see who walked in, who bought, and when your true peak hours begin.",
+    "srv-4-title": "Branch Operations Apps",
+    "srv-4-desc": "Internal catalogs and digital ordering that connect branches to the warehouse with live tracking and role-based access.",
+    "srv-5-title": "Inventory Intelligence & Alerts",
+    "srv-5-desc": "Predict stock-outs, catch slow movers early, and receive smart transfer suggestions between branches.",
+    "srv-6-title": "Product & Basket Analytics",
+    "srv-6-desc": "Know your real best-sellers, what sells together, and where cross-sell opportunities are being missed—by data, not guesswork.",
+    "srv-7-title": "Targets & Team Performance",
+    "srv-7-desc": "Clear monthly targets for every branch and employee, fair distribution, and a live view that keeps teams focused.",
+    "srv-8-title": "Automated Scheduled Reports",
+    "srv-8-desc": "PDF and Excel reports build and deliver themselves by email or WhatsApp every day—without manual compiling or copy errors.",
+    "srv-9-title": "AI Business Assistant",
+    "srv-9-desc": "Ask your data in plain language and get instant, reliable answers from your own systems with safe read-only access.",
+    "srv-10-title": "E-commerce & Marketplace Sync",
+    "srv-10-desc": "Automatically sync orders, stock, and invoices between your store, marketplaces, and ERP.",
+    "srv-11-title": "Unified Mission Control",
+    "srv-11-desc": "One operations room monitoring servers, syncs, and devices—with alerts before an issue disrupts the business.",
+    "srv-12-title": "Finance & VAT Reporting",
+    "srv-12-desc": "Financial and VAT reports stay ready and reconciled with POS records, with direct export for your accountant.",
 
     // Workflow Section
     "workflow-title": "How I Work With You",
@@ -437,6 +480,14 @@ const translations = {
     "proj-6-tech-3": "PWA Ready",
     "proj-6-tech-4": "PDF Export Engine",
 
+    "proj-7-tag": "PWA & Inventory Automation",
+    "proj-7-title": "Smart Barcode Inventory System (Barcode Scan)",
+    "proj-7-desc": "An integrated inventory management system connecting mobile browsers directly with online Google Sheets for barcode scanning, featuring full offline support (PWA) and an interactive dashboard simulator.",
+    "proj-7-tech-1": "Html5-Qrcode",
+    "proj-7-tech-2": "Vanilla JS",
+    "proj-7-tech-3": "Google Apps Script",
+    "proj-7-tech-4": "PWA Ready",
+
     // Case Study Expandable Labels & Content
     "case-lbl-challenge": "Operational Challenge:",
     "case-lbl-solution": "Technical Solution Deployed:",
@@ -481,6 +532,12 @@ const translations = {
     "proj-6-impact": "Enabled quick dashboard deployments within a few hours per client, and significantly reduced the time owners spent on daily manual bookkeeping.",
     "proj-6-before": "No clear sales visibility without costly BI systems.",
     "proj-6-after": "A lightweight ready dashboard showing sales and performance instantly.",
+
+    "proj-7-challenge": "Slow and tedious manual warehouse auditing, delayed data entry into databases, high human error rates, and the high cost of buying specialized PDA scanning hardware.",
+    "proj-7-solution": "Developed a responsive Progressive Web App (PWA) utilizing mobile device cameras for continuous or single barcode/QR scanning, connected via Google Apps Script directly to Google Sheets, combined with a real-time dashboard displaying book vs. physical quantities and audit logs.",
+    "proj-7-impact": "Accelerated stock auditing by 70%, eliminated PDA device costs, ensured 100% accuracy in stock updates, and gave management real-time visibility into inventory discrepancies.",
+    "proj-7-before": "Slow paper-based stocktaking or expensive PDA units, delayed updates.",
+    "proj-7-after": "Instant mobile scanning, automatically updating Google Sheets in real-time.",
 
     // Testimonials Section
     "test-title": "Client Testimonials",
@@ -545,19 +602,24 @@ const translations = {
     "form-lbl-biz": "Industry / Company Name:",
     "form-ph-biz": "e.g., Retail, E-Commerce, F&B",
     "form-lbl-service": "Requested Service:",
-    "form-opt-select": "Select a service...",
-    "form-opt-1": "Live Dashboard & Performance Analytics",
-    "form-opt-2": "Task & Report Automation Run",
-    "form-opt-3": "E-Commerce & Warehouse Channel Linkage",
-    "form-opt-4": "System Integration & API Pipelines",
-    "form-opt-5": "Custom Internal Web Applications",
-    "form-opt-6": "Automated WhatsApp Alerts & Bot Runs",
-    "form-opt-7": "AI-Powered Business Solutions",
-    "form-opt-8": "Complete Digital Transformation Consultation",
+    "form-opt-select": "Select a service…",
+    "form-opt-1": "Realtime Performance Dashboards",
+    "form-opt-2": "Systems Integration & Data Pipelines",
+    "form-opt-3": "Footfall & Conversion Analytics",
+    "form-opt-4": "Branch Operations Apps",
+    "form-opt-5": "Inventory Intelligence & Alerts",
+    "form-opt-6": "Product & Basket Analytics",
+    "form-opt-7": "Targets & Team Performance",
+    "form-opt-8": "Automated Scheduled Reports",
+    "form-opt-9": "AI Business Assistant",
+    "form-opt-10": "E-commerce & Marketplace Sync",
+    "form-opt-11": "Unified Mission Control",
+    "form-opt-12": "Finance & VAT Reporting",
+    "form-opt-13": "Digital Transformation Consultation",
     "form-lbl-msg": "Tell me about your project needs:",
-    "form-ph-msg": "Briefly explain the current operational bottleneck or what you want to achieve...",
+    "form-ph-msg": "Briefly explain the current operational bottleneck or what you want to achieve…",
     "form-btn-submit": "Send Request",
-    "form-status-sending": "Sending...",
+    "form-status-sending": "Sending…",
     "form-status-sent": "Your request was received, and WhatsApp was opened too. I'll reply soon.",
     "form-status-error": "Email delivery failed, but you can continue the chat on WhatsApp.",
     "form-status-wa": "WhatsApp was opened so you can send your request directly.",
@@ -638,6 +700,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Setup Event Listeners
   setupEventListeners();
+
+  // Setup resource-aware service video previews
+  setupServiceVideos();
 
   // Scroll Animations Setup
   setupScrollAnimations();
@@ -839,6 +904,14 @@ function applyLanguage(lang) {
     }
   });
 
+  // Translate accessible labels that are not visible text
+  document.querySelectorAll('[data-i18n-aria-label]').forEach(element => {
+    const key = element.getAttribute('data-i18n-aria-label');
+    if (translations[lang] && translations[lang][key]) {
+      element.setAttribute('aria-label', translations[lang][key]);
+    }
+  });
+
   // Update Case Study buttons text based on their expanded state
   const caseStudyBtns = document.querySelectorAll('.btn-case-study');
   caseStudyBtns.forEach(btn => {
@@ -873,11 +946,134 @@ function translateSelectOptions(lang) {
     const defaultOption = serviceSelect.options[0];
     defaultOption.textContent = translations[lang]["form-opt-select"];
     
-    for (let i = 1; i <= 8; i++) {
-      if (serviceSelect.options[i]) {
-        serviceSelect.options[i].textContent = translations[lang][`form-opt-${i}`];
+    for (let i = 1; i < serviceSelect.options.length; i++) {
+      const key = `form-opt-${i}`;
+      if (translations[lang][key]) {
+        serviceSelect.options[i].textContent = translations[lang][key];
       }
     }
+  }
+}
+
+// Service video previews: one active video, lazy playback, touch-aware behavior
+function setupServiceVideos() {
+  const cards = Array.from(document.querySelectorAll('[data-service-video-card]'));
+  if (!cards.length) return;
+
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+  const canHover = window.matchMedia('(hover: hover) and (pointer: fine)');
+  const saveData = Boolean(navigator.connection && navigator.connection.saveData);
+  const visibilityRatios = new Map(cards.map(card => [card, 0]));
+
+  const setPlayingState = (card, isPlaying) => {
+    const button = card.querySelector('.service-video-toggle');
+    const icon = button ? button.querySelector('i') : null;
+    card.classList.toggle('is-video-playing', isPlaying);
+    if (button) button.setAttribute('aria-pressed', String(isPlaying));
+    if (icon) icon.className = isPlaying ? 'fa-solid fa-pause' : 'fa-solid fa-play';
+  };
+
+  const pauseCard = (card, reset = false) => {
+    const video = card.querySelector('.service-video');
+    if (!video) return;
+    video.pause();
+    if (reset && video.readyState >= 1) {
+      try {
+        video.currentTime = 0;
+      } catch (_) {
+        // Some browsers block seeking before media metadata is fully available.
+      }
+    }
+    setPlayingState(card, false);
+  };
+
+  const pauseOtherCards = activeCard => {
+    cards.forEach(card => {
+      if (card !== activeCard) pauseCard(card);
+    });
+  };
+
+  const playCard = async (card, userInitiated = false) => {
+    if (!userInitiated && (prefersReducedMotion.matches || saveData)) return;
+    const video = card.querySelector('.service-video');
+    if (!video || card.classList.contains('is-video-error')) return;
+
+    pauseOtherCards(card);
+    try {
+      await video.play();
+      setPlayingState(card, true);
+    } catch (_) {
+      setPlayingState(card, false);
+    }
+  };
+
+  cards.forEach(card => {
+    const video = card.querySelector('.service-video');
+    const button = card.querySelector('.service-video-toggle');
+    if (!video || !button) return;
+
+    video.addEventListener('loadedmetadata', () => card.classList.add('is-video-ready'), { once: true });
+    video.addEventListener('play', () => setPlayingState(card, true));
+    video.addEventListener('pause', () => setPlayingState(card, false));
+    video.addEventListener('error', () => {
+      card.classList.add('is-video-error');
+      button.disabled = true;
+    });
+
+    button.addEventListener('click', () => {
+      if (video.paused) {
+        playCard(card, true);
+      } else {
+        pauseCard(card);
+      }
+    });
+
+    card.addEventListener('pointerenter', () => {
+      if (canHover.matches) playCard(card);
+    });
+    card.addEventListener('pointerleave', () => {
+      if (canHover.matches) pauseCard(card, true);
+    });
+    card.addEventListener('focusin', () => {
+      if (canHover.matches) playCard(card);
+    });
+    card.addEventListener('focusout', () => {
+      window.setTimeout(() => {
+        if (!card.contains(document.activeElement) && canHover.matches) pauseCard(card);
+      }, 0);
+    });
+  });
+
+  if ('IntersectionObserver' in window && !canHover.matches && !saveData && !prefersReducedMotion.matches) {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => visibilityRatios.set(entry.target, entry.intersectionRatio));
+      const mostVisible = cards.reduce((best, card) => {
+        return visibilityRatios.get(card) > visibilityRatios.get(best) ? card : best;
+      }, cards[0]);
+
+      if (visibilityRatios.get(mostVisible) >= 0.65 && !prefersReducedMotion.matches) {
+        playCard(mostVisible);
+      } else {
+        cards.forEach(card => pauseCard(card));
+      }
+    }, { threshold: [0, 0.35, 0.65, 0.85] });
+
+    cards.forEach(card => observer.observe(card));
+  }
+
+  const pauseAll = () => cards.forEach(card => pauseCard(card));
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) pauseAll();
+  });
+  window.addEventListener('pagehide', pauseAll);
+  const handleReducedMotionChange = event => {
+    if (event.matches) pauseAll();
+  };
+
+  if (typeof prefersReducedMotion.addEventListener === 'function') {
+    prefersReducedMotion.addEventListener('change', handleReducedMotionChange);
+  } else if (typeof prefersReducedMotion.addListener === 'function') {
+    prefersReducedMotion.addListener(handleReducedMotionChange);
   }
 }
 

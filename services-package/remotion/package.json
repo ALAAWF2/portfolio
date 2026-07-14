@@ -1,0 +1,16 @@
+{
+  "name": "services-videos",
+  "private": true,
+  "description": "Remotion motion-graphics videos for the website services section (fully synthetic, no real data)",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "render-all": "node render-all.mjs"
+  },
+  "dependencies": {
+    "@remotion/cli": "^4.0.486",
+    "@remotion/google-fonts": "^4.0.486",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "^4.0.486"
+  }
+}

@@ -31,6 +31,7 @@
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <link rel="apple-touch-icon" href="./assets/images/icon-192.png">
+  <link rel="icon" type="image/png" href="./assets/images/icon-192.png">
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +39,7 @@
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Stylesheets -->
-  <link rel="stylesheet" href="style.css?v=4">
+  <link rel="stylesheet" href="style.css?v=5">
   
   <!-- FontAwesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -50,9 +51,9 @@
     "@type": "ProfessionalService",
     "name": "علاء وفائي - أتمتة ولوحات بيانات للتجزئة",
     "image": "https://alaa-wafaie.com/assets/images/dashboard_preview.png",
-    "description": "أتمتة التقارير، لوحات البيانات (BI)، ربط أنظمة ERP والمتاجر، وبناء أدوات داخلية لشركات التجزئة متعددة الفروع.",
+    "description": "لوحات أداء لحظية، أتمتة التقارير، تكامل ERP والمتاجر، ذكاء المخزون، تحليلات الزوار، وأدوات تشغيل الفروع لشركات التجزئة.",
     "areaServed": "SA",
-    "knowsAbout": ["Business Intelligence Dashboards", "Report Automation", "ERP Integration", "Inventory & POS Sync", "Internal Web Tools"],
+    "knowsAbout": ["Business Intelligence Dashboards", "Systems Integration", "Footfall and Conversion Analytics", "Branch Operations Apps", "Inventory Intelligence", "Product and Basket Analytics", "Team Performance", "Report Automation", "AI Business Assistants", "E-commerce Sync", "Systems Monitoring", "Finance and VAT Reporting"],
     "founder": {
       "@type": "Person",
       "name": "Alaa Wafaie",
@@ -279,92 +280,216 @@
   <!-- Services Section -->
   <section class="section-padding reveal" id="services" style="background-color: var(--bg-secondary);">
     <div class="container">
-      <div class="text-center">
+      <div class="services-intro text-center">
+        <div class="services-kicker">
+          <span class="services-kicker-dot" aria-hidden="true"></span>
+          <span data-i18n="services-kicker">12 نظاماً عملياً من البيانات إلى القرار</span>
+        </div>
         <h2 class="section-title" data-i18n="services-title">الخدمات التي أقدمها</h2>
-        <p class="section-subtitle" data-i18n="services-subtitle">حلول برمجية ذكية مفصلة خصيصاً لتناسب احتياجات شركتك وتزيد من كفاءتها</p>
+        <p class="section-subtitle" data-i18n="services-subtitle">حلول مترابطة تحول عملياتك اليومية إلى أنظمة واضحة، مؤتمتة، وقابلة للقياس</p>
+        <p class="services-preview-hint">
+          <i class="fa-solid fa-circle-play" aria-hidden="true"></i>
+          <span data-i18n="services-preview-hint">مرّر المؤشر أو اضغط زر التشغيل لمعاينة كل نظام</span>
+        </p>
       </div>
-      
+
       <div class="services-grid">
         <!-- Service 1 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-chart-line"></i>
+        <article class="service-card service-card--video" data-service-video-card>
+          <div class="service-media">
+            <video class="service-video" src="./assets/videos/services/realtime-dashboards.mp4" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+            <div class="service-media-shade" aria-hidden="true"></div>
+            <div class="service-video-bar" aria-hidden="true">
+              <span class="service-video-dots"><i></i><i></i><i></i></span>
+              <span data-i18n="services-live-preview">معاينة نظام حيّة</span>
+            </div>
+            <span class="service-index" aria-hidden="true">01</span>
+            <button class="service-video-toggle" type="button" aria-label="تشغيل معاينة الفيديو" data-i18n-aria-label="service-video-play" aria-pressed="false">
+              <i class="fa-solid fa-play" aria-hidden="true"></i>
+            </button>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-chart-line"></i></div>
           </div>
-          <h3 class="service-title" data-i18n="srv-1-title">لوحات متابعة الأداء اللحظية (BI)</h3>
-          <p class="service-desc" data-i18n="srv-1-desc">
-            شاشة تحكم واحدة تجمع مبيعات فروعك، أداء موظفيك، وأعداد الزوار لحظة بلحظة، بدلاً من تجميعها يدوياً من ملفات متعددة.
-          </p>
-        </div>
+          <div class="service-card-body">
+            <h3 class="service-title" data-i18n="srv-1-title">لوحات متابعة الأداء اللحظية</h3>
+            <p class="service-desc" data-i18n="srv-1-desc">شاشة واحدة تجمع مبيعات الفروع والزوار وأداء الفرق، وتتحدث تلقائياً طوال اليوم لتتخذ قرارك دون انتظار الملفات.</p>
+          </div>
+        </article>
+
         <!-- Service 2 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-arrows-rotate"></i>
+        <article class="service-card service-card--video" data-service-video-card>
+          <div class="service-media">
+            <video class="service-video" src="./assets/videos/services/systems-integration.mp4" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+            <div class="service-media-shade" aria-hidden="true"></div>
+            <div class="service-video-bar" aria-hidden="true"><span class="service-video-dots"><i></i><i></i><i></i></span><span data-i18n="services-live-preview">معاينة نظام حيّة</span></div>
+            <span class="service-index" aria-hidden="true">02</span>
+            <button class="service-video-toggle" type="button" aria-label="تشغيل معاينة الفيديو" data-i18n-aria-label="service-video-play" aria-pressed="false"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-network-wired"></i></div>
           </div>
-          <h3 class="service-title" data-i18n="srv-2-title">أتمتة المهام والتقارير اليومية</h3>
-          <p class="service-desc" data-i18n="srv-2-desc">
-            أتمتة التقارير الدورية (مبيعات، مخزون، تشغيل) لتصلك في دقائق معدودة بدلاً من ساعات عمل يدوية، مع تقليل أخطاء النسخ والتجميع.
-          </p>
-        </div>
+          <div class="service-card-body">
+            <h3 class="service-title" data-i18n="srv-2-title">تكامل الأنظمة وخطوط البيانات</h3>
+            <p class="service-desc" data-i18n="srv-2-desc">اجعل ERP ونقاط البيع وعدادات الزوار تتحدث كنظام واحد ببيانات موحدة، بلا إدخال يدوي متكرر.</p>
+          </div>
+        </article>
+
         <!-- Service 3 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-store"></i>
+        <article class="service-card service-card--video" data-service-video-card>
+          <div class="service-media">
+            <video class="service-video" src="./assets/videos/services/visitor-analytics.mp4" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+            <div class="service-media-shade" aria-hidden="true"></div>
+            <div class="service-video-bar" aria-hidden="true"><span class="service-video-dots"><i></i><i></i><i></i></span><span data-i18n="services-live-preview">معاينة نظام حيّة</span></div>
+            <span class="service-index" aria-hidden="true">03</span>
+            <button class="service-video-toggle" type="button" aria-label="تشغيل معاينة الفيديو" data-i18n-aria-label="service-video-play" aria-pressed="false"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-people-group"></i></div>
           </div>
-          <h3 class="service-title" data-i18n="srv-3-title">ربط المتجر الإلكتروني بالمخازن</h3>
-          <p class="service-desc" data-i18n="srv-3-desc">
-            ربط متجرك (سلة، ووكومرس، ترينديول) بنظام المستودعات وERP لتحديث المخزون والطلبات تلقائياً وتقليل البيع بالخطأ.
-          </p>
-        </div>
+          <div class="service-card-body">
+            <h3 class="service-title" data-i18n="srv-3-title">تحليلات الزوار ومعدل التحويل</h3>
+            <p class="service-desc" data-i18n="srv-3-desc">اربط عدادات الزوار بالمبيعات لتعرف كم شخصاً دخل، وكم منهم اشترى، ومتى تبدأ ساعات الذروة الحقيقية.</p>
+          </div>
+        </article>
+
         <!-- Service 4 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-network-wired"></i>
+        <article class="service-card service-card--video" data-service-video-card>
+          <div class="service-media">
+            <video class="service-video" src="./assets/videos/services/branch-operations-app.mp4" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+            <div class="service-media-shade" aria-hidden="true"></div>
+            <div class="service-video-bar" aria-hidden="true"><span class="service-video-dots"><i></i><i></i><i></i></span><span data-i18n="services-live-preview">معاينة نظام حيّة</span></div>
+            <span class="service-index" aria-hidden="true">04</span>
+            <button class="service-video-toggle" type="button" aria-label="تشغيل معاينة الفيديو" data-i18n-aria-label="service-video-play" aria-pressed="false"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-mobile-screen-button"></i></div>
           </div>
-          <h3 class="service-title" data-i18n="srv-4-title">دمج وتوحيد الأنظمة (Integrations)</h3>
-          <p class="service-desc" data-i18n="srv-4-desc">
-            جعل أنظمتك المختلفة (ERP Dynamics 365, POS, GoFrugal) تتحدث مع بعضها كأنها نظام واحد دون تكرار لإدخال البيانات.
-          </p>
-        </div>
+          <div class="service-card-body">
+            <h3 class="service-title" data-i18n="srv-4-title">تطبيقات تشغيلية للفروع</h3>
+            <p class="service-desc" data-i18n="srv-4-desc">كتالوج داخلي وطلبات رقمية تربط الفروع بالمستودع، مع تتبع لحظي وصلاحيات واضحة لكل دور.</p>
+          </div>
+        </article>
+
         <!-- Service 5 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-laptop-code"></i>
+        <article class="service-card service-card--video" data-service-video-card>
+          <div class="service-media">
+            <video class="service-video" src="./assets/videos/services/inventory-intelligence.mp4" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+            <div class="service-media-shade" aria-hidden="true"></div>
+            <div class="service-video-bar" aria-hidden="true"><span class="service-video-dots"><i></i><i></i><i></i></span><span data-i18n="services-live-preview">معاينة نظام حيّة</span></div>
+            <span class="service-index" aria-hidden="true">05</span>
+            <button class="service-video-toggle" type="button" aria-label="تشغيل معاينة الفيديو" data-i18n-aria-label="service-video-play" aria-pressed="false"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-boxes-stacked"></i></div>
           </div>
-          <h3 class="service-title" data-i18n="srv-5-title">أنظمة وتطبيقات داخلية مخصصة</h3>
-          <p class="service-desc" data-i18n="srv-5-desc">
-            بناء أدوات داخلية لطلب البضائع للفروع، طلبات الصيانة، تتبع المهام، وإدارة الموافقات حسب صلاحيات كل موظف.
-          </p>
-        </div>
+          <div class="service-card-body">
+            <h3 class="service-title" data-i18n="srv-5-title">ذكاء المخزون والتنبيهات</h3>
+            <p class="service-desc" data-i18n="srv-5-desc">توقّع نفاد الأصناف، واكشف الرواكد مبكراً، واحصل على اقتراحات نقل ذكية بين الفروع قبل فوات الفرصة.</p>
+          </div>
+        </article>
+
         <!-- Service 6 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-brands fa-whatsapp"></i>
+        <article class="service-card service-card--video" data-service-video-card>
+          <div class="service-media">
+            <video class="service-video" src="./assets/videos/services/product-analytics.mp4" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+            <div class="service-media-shade" aria-hidden="true"></div>
+            <div class="service-video-bar" aria-hidden="true"><span class="service-video-dots"><i></i><i></i><i></i></span><span data-i18n="services-live-preview">معاينة نظام حيّة</span></div>
+            <span class="service-index" aria-hidden="true">06</span>
+            <button class="service-video-toggle" type="button" aria-label="تشغيل معاينة الفيديو" data-i18n-aria-label="service-video-play" aria-pressed="false"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-basket-shopping"></i></div>
           </div>
-          <h3 class="service-title" data-i18n="srv-6-title">بوتات وإشعارات واتساب التلقائية</h3>
-          <p class="service-desc" data-i18n="srv-6-desc">
-            إرسال إشعارات تلقائية عبر واتساب لفريقك أو عملائك: تأكيد طلب، تنبيه انخفاض مخزون، أو تقارير مبيعات سريعة.
-          </p>
-        </div>
+          <div class="service-card-body">
+            <h3 class="service-title" data-i18n="srv-6-title">تحليل المنتجات وسلة المشتريات</h3>
+            <p class="service-desc" data-i18n="srv-6-desc">اعرف الأكثر مبيعاً، وما يُشترى معاً، وأين تضيع فرص العرض والبيع الإضافي—بالأرقام لا بالتخمين.</p>
+          </div>
+        </article>
+
         <!-- Service 7 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-brain"></i>
+        <article class="service-card service-card--video" data-service-video-card>
+          <div class="service-media">
+            <video class="service-video" src="./assets/videos/services/targets-performance.mp4" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+            <div class="service-media-shade" aria-hidden="true"></div>
+            <div class="service-video-bar" aria-hidden="true"><span class="service-video-dots"><i></i><i></i><i></i></span><span data-i18n="services-live-preview">معاينة نظام حيّة</span></div>
+            <span class="service-index" aria-hidden="true">07</span>
+            <button class="service-video-toggle" type="button" aria-label="تشغيل معاينة الفيديو" data-i18n-aria-label="service-video-play" aria-pressed="false"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-bullseye"></i></div>
           </div>
-          <h3 class="service-title" data-i18n="srv-7-title">دمج الذكاء الاصطناعي بالأعمال</h3>
-          <p class="service-desc" data-i18n="srv-7-desc">
-            تزويد نظامك بمساعد ذكي يجيب على أسئلة المدراء حول أرقام المبيعات والتقارير بلغة طبيعية، مع استخلاص البيانات فوراً.
-          </p>
-        </div>
+          <div class="service-card-body">
+            <h3 class="service-title" data-i18n="srv-7-title">إدارة الأهداف وأداء الفرق</h3>
+            <p class="service-desc" data-i18n="srv-7-desc">أهداف شهرية واضحة لكل فرع وموظف، توزيع عادل، ولوحة متابعة حية تحافظ على تركيز الفريق.</p>
+          </div>
+        </article>
+
         <!-- Service 8 -->
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fa-solid fa-handshake-angle"></i>
+        <article class="service-card service-card--video" data-service-video-card>
+          <div class="service-media">
+            <video class="service-video" src="./assets/videos/services/automated-reports.mp4" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+            <div class="service-media-shade" aria-hidden="true"></div>
+            <div class="service-video-bar" aria-hidden="true"><span class="service-video-dots"><i></i><i></i><i></i></span><span data-i18n="services-live-preview">معاينة نظام حيّة</span></div>
+            <span class="service-index" aria-hidden="true">08</span>
+            <button class="service-video-toggle" type="button" aria-label="تشغيل معاينة الفيديو" data-i18n-aria-label="service-video-play" aria-pressed="false"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-paper-plane"></i></div>
           </div>
-          <h3 class="service-title" data-i18n="srv-8-title">استشارات التحول الرقمي</h3>
-          <p class="service-desc" data-i18n="srv-8-desc">
-            تقييم الوضع التقني الحالي لشركتك، ووضع خطة عملية خطوة بخطوة للبدء في رقمنة وأتمتة العمليات بنجاح وبأقل التكاليف.
-          </p>
-        </div>
+          <div class="service-card-body">
+            <h3 class="service-title" data-i18n="srv-8-title">التقارير التلقائية المجدولة</h3>
+            <p class="service-desc" data-i18n="srv-8-desc">تقارير PDF وExcel تُبنى وتُرسل وحدها عبر البريد أو واتساب يومياً، دون تجميع يدوي أو أخطاء نسخ.</p>
+          </div>
+        </article>
+
+        <!-- Service 9 -->
+        <article class="service-card service-card--video" data-service-video-card>
+          <div class="service-media">
+            <video class="service-video" src="./assets/videos/services/ai-business-assistant.mp4" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+            <div class="service-media-shade" aria-hidden="true"></div>
+            <div class="service-video-bar" aria-hidden="true"><span class="service-video-dots"><i></i><i></i><i></i></span><span data-i18n="services-live-preview">معاينة نظام حيّة</span></div>
+            <span class="service-index" aria-hidden="true">09</span>
+            <button class="service-video-toggle" type="button" aria-label="تشغيل معاينة الفيديو" data-i18n-aria-label="service-video-play" aria-pressed="false"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-robot"></i></div>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-title" data-i18n="srv-9-title">مساعد أعمال بالذكاء الاصطناعي</h3>
+            <p class="service-desc" data-i18n="srv-9-desc">اسأل بياناتك بالعربية واحصل فوراً على إجابات موثوقة من نظامك بصلاحيات قراءة آمنة.</p>
+          </div>
+        </article>
+
+        <!-- Service 10 -->
+        <article class="service-card service-card--video" data-service-video-card>
+          <div class="service-media">
+            <video class="service-video" src="./assets/videos/services/ecommerce-sync.mp4" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+            <div class="service-media-shade" aria-hidden="true"></div>
+            <div class="service-video-bar" aria-hidden="true"><span class="service-video-dots"><i></i><i></i><i></i></span><span data-i18n="services-live-preview">معاينة نظام حيّة</span></div>
+            <span class="service-index" aria-hidden="true">10</span>
+            <button class="service-video-toggle" type="button" aria-label="تشغيل معاينة الفيديو" data-i18n-aria-label="service-video-play" aria-pressed="false"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-store"></i></div>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-title" data-i18n="srv-10-title">ربط المتاجر والمنصات الإلكترونية</h3>
+            <p class="service-desc" data-i18n="srv-10-desc">زامن الطلبات والمخزون والفواتير بين متجرك والمنصات وERP تلقائياً ومن دون تدخل يدوي.</p>
+          </div>
+        </article>
+
+        <!-- Service 11 -->
+        <article class="service-card service-card--video" data-service-video-card>
+          <div class="service-media">
+            <video class="service-video" src="./assets/videos/services/mission-control.mp4" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+            <div class="service-media-shade" aria-hidden="true"></div>
+            <div class="service-video-bar" aria-hidden="true"><span class="service-video-dots"><i></i><i></i><i></i></span><span data-i18n="services-live-preview">معاينة نظام حيّة</span></div>
+            <span class="service-index" aria-hidden="true">11</span>
+            <button class="service-video-toggle" type="button" aria-label="تشغيل معاينة الفيديو" data-i18n-aria-label="service-video-play" aria-pressed="false"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-shield-halved"></i></div>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-title" data-i18n="srv-11-title">لوحة تحكم إدارية موحّدة</h3>
+            <p class="service-desc" data-i18n="srv-11-desc">غرفة عمليات واحدة تراقب الخوادم والمزامنة والأجهزة، وتنبهك إلى الخلل قبل أن يؤثر في العمل.</p>
+          </div>
+        </article>
+
+        <!-- Service 12 -->
+        <article class="service-card service-card--video" data-service-video-card>
+          <div class="service-media">
+            <video class="service-video" src="./assets/videos/services/finance-vat-reports.mp4" muted loop playsinline preload="metadata" aria-hidden="true" tabindex="-1" disablepictureinpicture></video>
+            <div class="service-media-shade" aria-hidden="true"></div>
+            <div class="service-video-bar" aria-hidden="true"><span class="service-video-dots"><i></i><i></i><i></i></span><span data-i18n="services-live-preview">معاينة نظام حيّة</span></div>
+            <span class="service-index" aria-hidden="true">12</span>
+            <button class="service-video-toggle" type="button" aria-label="تشغيل معاينة الفيديو" data-i18n-aria-label="service-video-play" aria-pressed="false"><i class="fa-solid fa-play" aria-hidden="true"></i></button>
+            <div class="service-icon" aria-hidden="true"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+          </div>
+          <div class="service-card-body">
+            <h3 class="service-title" data-i18n="srv-12-title">اللوحة المالية وتقارير الضريبة</h3>
+            <p class="service-desc" data-i18n="srv-12-desc">أرقامك المالية وتقارير ضريبة القيمة المضافة جاهزة ومطابقة لنقاط البيع، مع تصدير مباشر للمحاسب.</p>
+          </div>
+        </article>
       </div>
     </div>
   </section>
@@ -435,12 +560,12 @@
             <p class="project-desc" data-i18n="proj-1-desc">
               نظام تحليلات متكامل يربط مبيعات 52 فرعاً لحظة بلحظة مع ربط ERP (Dynamics 365) وأجهزة قياس الزوار ومعدلات التحويل التشغيلية.
             </p>
-            
+
             <button class="btn-case-study" data-project="1" aria-label="Toggle Case Study Details">
               <span class="btn-text" data-i18n="btn-view-case">تفاصيل دراسة الحالة</span>
               <i class="fa-solid fa-chevron-down"></i>
             </button>
-            
+
             <div class="case-study-details" id="case-details-1">
               <div class="case-study-sec">
                 <h4 data-i18n="case-lbl-challenge">التحدي التشغيلي:</h4>
@@ -499,12 +624,12 @@
             <p class="project-desc" data-i18n="proj-2-desc">
               نظام ربط ومزامنة ثنائي الاتجاه يربط المتاجر الإلكترونية (Trendyol, WooCommerce) مع نظام المستودعات والـ ERP للتحديث اللحظي للطلبات والمخزون.
             </p>
-            
+
             <button class="btn-case-study" data-project="2" aria-label="Toggle Case Study Details">
               <span class="btn-text" data-i18n="btn-view-case">تفاصيل دراسة الحالة</span>
               <i class="fa-solid fa-chevron-down"></i>
             </button>
-            
+
             <div class="case-study-details" id="case-details-2">
               <div class="case-study-sec">
                 <h4 data-i18n="case-lbl-challenge">التحدي التشغيلي:</h4>
@@ -791,6 +916,70 @@
               <span data-i18n="proj-6-tech-2">Bootstrap</span>
               <span data-i18n="proj-6-tech-3">PWA Ready</span>
               <span data-i18n="proj-6-tech-4">PDF Export Engine</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 7 -->
+        <div class="project-card">
+          <div class="project-image-box">
+            <div class="laptop-mockup">
+              <div class="laptop-frame">
+                <div class="laptop-top-bar">
+                  <div class="hero-card-dots">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <div class="hero-card-title" style="font-size: 0.65rem;">Smart Barcode Inventory System</div>
+                  <div></div>
+                </div>
+                <img src="./assets/images/barcodescan.webp" alt="نظام جرد المستودعات الذكي بالباركود" class="laptop-preview-img" id="project-img-preview-7" width="1024" height="1024" loading="lazy" decoding="async">
+              </div>
+            </div>
+          </div>
+          <div class="project-details">
+            <span class="project-tag" data-i18n="proj-7-tag">نظام جرد وتطبيقات PWA</span>
+            <h3 class="project-title" data-i18n="proj-7-title">نظام جرد المستودعات الذكي بالباركود</h3>
+            <p class="project-desc" data-i18n="proj-7-desc">
+              نظام جرد متكامل يربط الهواتف الذكية بقاعدة بيانات جداول جوجل (Google Sheets) للمسح الضوئي المباشر للباركود، مع دعم كامل للعمل بدون اتصال (PWA) وتوليد تلقائي للفروقات.
+            </p>
+
+            <button class="btn-case-study" data-project="7" aria-label="Toggle Case Study Details">
+              <span class="btn-text" data-i18n="btn-view-case">تفاصيل دراسة الحالة</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </button>
+
+            <div class="case-study-details" id="case-details-7">
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-challenge">التحدي التشغيلي:</h4>
+                <p data-i18n="proj-7-challenge">صعوبة وبطء الجرد التقليدي، وتأخر ترحيل البيانات يدوياً إلى جداول البيانات مع ارتفاع نسبة الأخطاء البشرية، فضلاً عن تكلفة شراء أجهزة PDA جرد متخصصة.</p>
+              </div>
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-solution">الحل التقني المنفذ:</h4>
+                <p data-i18n="proj-7-solution">تطوير تطبيق ويب تقدمي (PWA) متجاوب مع الهواتف الذكية يستخدم كاميرا الجوال لمسح الرموز (1D/2D) بشكل متتابع أو فردي، وتصميم سكربت ربط (Google Apps Script) لتحديث جوجل شيت فوراً، مع لوحة تحكم تعرض الفروقات الدفترية والفعلية وسجل العمليات اللحظية.</p>
+              </div>
+              <div class="case-study-sec">
+                <h4 data-i18n="case-lbl-impact">الأثر التشغيلي:</h4>
+                <p data-i18n="proj-7-impact">تسريع عمليات الجرد في المستودعات بنسبة 70%، وتوفير تكاليف شراء أجهزة PDA، مع دقة 100% في ترحيل بيانات الجرد الفعلي وعرض الفروقات للإدارة بلحظتها.</p>
+              </div>
+              <div class="case-study-sec case-baf">
+                <div class="baf-col baf-before">
+                  <span class="baf-tag" data-i18n="case-lbl-before">قبل</span>
+                  <p data-i18n="proj-7-before">جرد ورقي بطيء وتأخر في الترحيل، أو أجهزة PDA مكلفة.</p>
+                </div>
+                <div class="baf-col baf-after">
+                  <span class="baf-tag" data-i18n="case-lbl-after">بعد</span>
+                  <p data-i18n="proj-7-after">جرد فوري بكاميرا الجوال، وتحديث تلقائي لحظي لجوجل شيت.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-tech" style="margin-top: 20px;">
+              <span data-i18n="proj-7-tech-1">Html5-Qrcode</span>
+              <span data-i18n="proj-7-tech-2">Vanilla JS</span>
+              <span data-i18n="proj-7-tech-3">Google Apps Script</span>
+              <span data-i18n="proj-7-tech-4">PWA (Service Worker)</span>
             </div>
           </div>
         </div>
@@ -1134,41 +1323,46 @@
           <h3 data-i18n="contact-form-head" style="margin-bottom: 24px;">أرسل طلباً مخصصاً للمشروع</h3>
           <form class="contact-form" id="contact-form">
             <!-- Honeypot anti-spam field (kept off-screen, must stay empty) -->
-            <input type="text" name="_gotcha" id="contact-gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; left:-9999px; width:1px; height:1px; opacity:0;">
+            <input type="text" name="_gotcha" id="contact-gotcha" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0, 0, 0, 0); white-space:nowrap; border:0;">
             <div class="form-row">
               <div class="form-group">
                 <label for="contact-name" data-i18n="form-lbl-name">الاسم الكريم:</label>
-                <input type="text" id="contact-name" data-i18n="form-ph-name" placeholder="أدخل اسمك الكامل" required>
+                <input type="text" id="contact-name" name="name" autocomplete="name" data-i18n="form-ph-name" placeholder="أدخل اسمك الكامل" required>
               </div>
               <div class="form-group">
                 <label for="contact-email" data-i18n="form-lbl-email">البريد الإلكتروني:</label>
-                <input type="email" id="contact-email" data-i18n="form-ph-email" placeholder="name@company.com" required>
+                <input type="email" id="contact-email" name="email" autocomplete="email" inputmode="email" spellcheck="false" data-i18n="form-ph-email" placeholder="name@company.com" required>
               </div>
             </div>
             
             <div class="form-group">
               <label for="contact-biz" data-i18n="form-lbl-biz">مجال العمل / الشركة:</label>
-              <input type="text" id="contact-biz" data-i18n="form-ph-biz" placeholder="مثال: تجزئة، متجر إلكتروني، مطاعم" required>
+              <input type="text" id="contact-biz" name="business" autocomplete="organization" data-i18n="form-ph-biz" placeholder="مثال: تجزئة، متجر إلكتروني، مطاعم" required>
             </div>
             
             <div class="form-group">
               <label for="contact-service" data-i18n="form-lbl-service">الخدمة المطلوبة:</label>
-              <select id="contact-service" required>
-                <option value="" disabled selected data-i18n="form-opt-select">اختر الخدمة الأكثر ملاءمة...</option>
-                <option value="1" data-i18n="form-opt-1">لوحة تحكم وتحليلات فورية</option>
-                <option value="2" data-i18n="form-opt-2">أتمتة المهام والتقارير</option>
-                <option value="3" data-i18n="form-opt-3">ربط متجر إلكتروني وبوابات شحن</option>
-                <option value="4" data-i18n="form-opt-4">دمج وتوحيد أنظمة متعددة</option>
-                <option value="5" data-i18n="form-opt-5">تطوير تطبيقات داخلية مخصصة</option>
-                <option value="6" data-i18n="form-opt-6">بوت وإشعارات واتساب</option>
-                <option value="7" data-i18n="form-opt-7">دمج تقنيات الذكاء الاصطناعي</option>
-                <option value="8" data-i18n="form-opt-8">استشارة تحول رقمي كاملة</option>
+              <select id="contact-service" name="service" autocomplete="off" required>
+                <option value="" disabled selected data-i18n="form-opt-select">اختر الخدمة الأكثر ملاءمة…</option>
+                <option value="1" data-i18n="form-opt-1">لوحات متابعة الأداء اللحظية</option>
+                <option value="2" data-i18n="form-opt-2">تكامل الأنظمة وخطوط البيانات</option>
+                <option value="3" data-i18n="form-opt-3">تحليلات الزوار ومعدل التحويل</option>
+                <option value="4" data-i18n="form-opt-4">تطبيقات تشغيلية للفروع</option>
+                <option value="5" data-i18n="form-opt-5">ذكاء المخزون والتنبيهات</option>
+                <option value="6" data-i18n="form-opt-6">تحليل المنتجات وسلة المشتريات</option>
+                <option value="7" data-i18n="form-opt-7">إدارة الأهداف وأداء الفرق</option>
+                <option value="8" data-i18n="form-opt-8">التقارير التلقائية المجدولة</option>
+                <option value="9" data-i18n="form-opt-9">مساعد أعمال بالذكاء الاصطناعي</option>
+                <option value="10" data-i18n="form-opt-10">ربط المتاجر والمنصات الإلكترونية</option>
+                <option value="11" data-i18n="form-opt-11">لوحة تحكم إدارية موحّدة</option>
+                <option value="12" data-i18n="form-opt-12">اللوحة المالية وتقارير الضريبة</option>
+                <option value="13" data-i18n="form-opt-13">استشارة تحول رقمي</option>
               </select>
             </div>
             
             <div class="form-group">
               <label for="contact-msg" data-i18n="form-lbl-msg">تفاصيل إضافية عن مشروعك:</label>
-              <textarea id="contact-msg" rows="4" data-i18n="form-ph-msg" placeholder="اشرح باختصار مشكلتك التشغيلية أو ما ترغب في إنجازه..." required></textarea>
+              <textarea id="contact-msg" name="message" rows="4" autocomplete="off" data-i18n="form-ph-msg" placeholder="اشرح باختصار مشكلتك التشغيلية أو ما ترغب في إنجازه…" required></textarea>
             </div>
             
             <button type="submit" class="btn btn-primary" id="form-submit-btn">
@@ -1228,6 +1422,6 @@
   </footer>
 
   <!-- Scripts -->
-  <script src="script.js?v=4"></script>
+  <script src="script.js?v=5"></script>
 </body>
 </html>
