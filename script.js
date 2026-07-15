@@ -701,14 +701,11 @@ document.addEventListener('DOMContentLoaded', () => {
   // Setup Event Listeners
   setupEventListeners();
 
-  // Setup resource-aware service video previews
-  setupServiceVideos();
+  // Setup the large, resource-aware service showreel
+  setupServiceShowreel();
 
   // Scroll Animations Setup
   setupScrollAnimations();
-
-  // Run initial calculations
-  calculateKPIs();
 
   // Register Service Worker
   if ('serviceWorker' in navigator) {
@@ -729,7 +726,6 @@ function setupEventListeners() {
       currentLang = currentLang === 'ar' ? 'en' : 'ar';
       localStorage.setItem('alaa_portfolio_lang', currentLang);
       applyLanguage(currentLang);
-      calculateKPIs(); // Refresh values inside calc
     });
   }
 
@@ -749,7 +745,8 @@ function setupEventListeners() {
   const navMenu = document.getElementById('nav-menu');
   if (menuBtn && navMenu) {
     menuBtn.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
+      const isOpen = navMenu.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', String(isOpen));
       const icon = menuBtn.querySelector('i');
       if (icon) {
         icon.classList.toggle('fa-bars');
@@ -761,6 +758,7 @@ function setupEventListeners() {
     navMenu.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
         navMenu.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded', 'false');
         const icon = menuBtn.querySelector('i');
         if (icon) {
           icon.classList.add('fa-bars');
@@ -809,8 +807,8 @@ function setupEventListeners() {
     });
   });
 
-  // Case Study Details Toggle
-  const caseStudyBtns = document.querySelectorAll('.btn-case-study');
+  // Featured case study details
+  const caseStudyBtns = document.querySelectorAll('.case-toggle');
   caseStudyBtns.forEach(btn => {
     btn.addEventListener('click', () => {
       const projId = btn.getAttribute('data-project');
@@ -823,10 +821,10 @@ function setupEventListeners() {
         // Close all other case studies to keep layout clean
         document.querySelectorAll('.case-study-details').forEach(el => {
           el.classList.remove('open');
-          el.style.maxHeight = null;
         });
-        document.querySelectorAll('.btn-case-study').forEach(el => {
+        document.querySelectorAll('.case-toggle').forEach(el => {
           el.classList.remove('active');
+          el.setAttribute('aria-expanded', 'false');
           const span = el.querySelector('.btn-text');
           if (span) {
             span.setAttribute('data-i18n', 'btn-view-case');
@@ -837,7 +835,7 @@ function setupEventListeners() {
         if (!isOpen) {
           details.classList.add('open');
           btn.classList.add('active');
-          details.style.maxHeight = details.scrollHeight + 40 + "px";
+          btn.setAttribute('aria-expanded', 'true');
           if (btnTextSpan) {
             btnTextSpan.setAttribute('data-i18n', 'btn-hide-case');
             btnTextSpan.textContent = translations[currentLang]["btn-hide-case"];
@@ -845,7 +843,7 @@ function setupEventListeners() {
         } else {
           details.classList.remove('open');
           btn.classList.remove('active');
-          details.style.maxHeight = null;
+          btn.setAttribute('aria-expanded', 'false');
           if (btnTextSpan) {
             btnTextSpan.setAttribute('data-i18n', 'btn-view-case');
             btnTextSpan.textContent = translations[currentLang]["btn-view-case"];
@@ -913,7 +911,7 @@ function applyLanguage(lang) {
   });
 
   // Update Case Study buttons text based on their expanded state
-  const caseStudyBtns = document.querySelectorAll('.btn-case-study');
+  const caseStudyBtns = document.querySelectorAll('.case-toggle');
   caseStudyBtns.forEach(btn => {
     const projId = btn.getAttribute('data-project');
     const details = document.getElementById(`case-details-${projId}`);
@@ -937,6 +935,9 @@ function applyLanguage(lang) {
 
   // Fix form options translation dynamically
   translateSelectOptions(lang);
+
+  // Keep the selected showreel service synchronized with the active language
+  syncActiveServiceCopy();
 }
 
 // Translate Contact Form Select Dropdown Options
@@ -955,126 +956,125 @@ function translateSelectOptions(lang) {
   }
 }
 
-// Service video previews: one active video, lazy playback, touch-aware behavior
-function setupServiceVideos() {
-  const cards = Array.from(document.querySelectorAll('[data-service-video-card]'));
-  if (!cards.length) return;
+let activeServiceIndex = 1;
 
-  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
-  const canHover = window.matchMedia('(hover: hover) and (pointer: fine)');
+function syncActiveServiceCopy() {
+  const title = document.getElementById('showreel-title');
+  const desc = document.getElementById('showreel-desc');
+  const titleKey = `srv-${activeServiceIndex}-title`;
+  const descKey = `srv-${activeServiceIndex}-desc`;
+
+  if (title && translations[currentLang][titleKey]) {
+    title.setAttribute('data-i18n', titleKey);
+    title.textContent = translations[currentLang][titleKey];
+  }
+  if (desc && translations[currentLang][descKey]) {
+    desc.setAttribute('data-i18n', descKey);
+    desc.textContent = translations[currentLang][descKey];
+  }
+}
+
+// A single large stage makes the catalogue cinematic and avoids loading 12 videos together.
+function setupServiceShowreel() {
+  const selectors = Array.from(document.querySelectorAll('[data-service-selector]'));
+  const video = document.getElementById('service-showreel-video');
+  const stage = document.getElementById('showreel-stage');
+  const playButton = document.getElementById('showreel-play');
+  const counter = document.getElementById('showreel-counter');
+  const number = document.getElementById('showreel-number');
+  if (!selectors.length || !video || !stage || !playButton) return;
+
+  const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const saveData = Boolean(navigator.connection && navigator.connection.saveData);
-  const visibilityRatios = new Map(cards.map(card => [card, 0]));
 
-  const setPlayingState = (card, isPlaying) => {
-    const button = card.querySelector('.service-video-toggle');
-    const icon = button ? button.querySelector('i') : null;
-    card.classList.toggle('is-video-playing', isPlaying);
-    if (button) button.setAttribute('aria-pressed', String(isPlaying));
-    if (icon) icon.className = isPlaying ? 'fa-solid fa-pause' : 'fa-solid fa-play';
+  const setPlaybackState = playing => {
+    stage.classList.toggle('is-playing', playing);
+    playButton.setAttribute('aria-pressed', String(playing));
+    playButton.setAttribute('aria-label', playing
+      ? (currentLang === 'ar' ? 'إيقاف معاينة الخدمة' : 'Pause service preview')
+      : translations[currentLang]['service-video-play']);
+    const icon = playButton.querySelector('i');
+    if (icon) icon.className = playing ? 'fa-solid fa-pause' : 'fa-solid fa-play';
   };
 
-  const pauseCard = (card, reset = false) => {
-    const video = card.querySelector('.service-video');
-    if (!video) return;
-    video.pause();
-    if (reset && video.readyState >= 1) {
-      try {
-        video.currentTime = 0;
-      } catch (_) {
-        // Some browsers block seeking before media metadata is fully available.
-      }
-    }
-    setPlayingState(card, false);
-  };
-
-  const pauseOtherCards = activeCard => {
-    cards.forEach(card => {
-      if (card !== activeCard) pauseCard(card);
-    });
-  };
-
-  const playCard = async (card, userInitiated = false) => {
-    if (!userInitiated && (prefersReducedMotion.matches || saveData)) return;
-    const video = card.querySelector('.service-video');
-    if (!video || card.classList.contains('is-video-error')) return;
-
-    pauseOtherCards(card);
+  const playVideo = async userInitiated => {
+    if (!userInitiated && (reducedMotion.matches || saveData)) return;
     try {
       await video.play();
-      setPlayingState(card, true);
+      setPlaybackState(true);
     } catch (_) {
-      setPlayingState(card, false);
+      setPlaybackState(false);
     }
   };
 
-  cards.forEach(card => {
-    const video = card.querySelector('.service-video');
-    const button = card.querySelector('.service-video-toggle');
-    if (!video || !button) return;
+  const selectService = selector => {
+    const nextIndex = Number(selector.dataset.index);
+    const nextSrc = selector.dataset.video;
+    const nextPoster = selector.dataset.poster;
+    if (!nextIndex || !nextSrc) return;
 
-    video.addEventListener('loadedmetadata', () => card.classList.add('is-video-ready'), { once: true });
-    video.addEventListener('play', () => setPlayingState(card, true));
-    video.addEventListener('pause', () => setPlayingState(card, false));
-    video.addEventListener('error', () => {
-      card.classList.add('is-video-error');
-      button.disabled = true;
+    selectors.forEach(item => {
+      const selected = item === selector;
+      item.classList.toggle('is-active', selected);
+      item.setAttribute('aria-pressed', String(selected));
     });
 
-    button.addEventListener('click', () => {
-      if (video.paused) {
-        playCard(card, true);
-      } else {
-        pauseCard(card);
-      }
-    });
+    activeServiceIndex = nextIndex;
+    syncActiveServiceCopy();
+    if (counter) counter.textContent = `${String(nextIndex).padStart(2, '0')} / 12`;
+    if (number) number.textContent = String(nextIndex).padStart(2, '0');
 
-    card.addEventListener('pointerenter', () => {
-      if (canHover.matches) playCard(card);
-    });
-    card.addEventListener('pointerleave', () => {
-      if (canHover.matches) pauseCard(card, true);
-    });
-    card.addEventListener('focusin', () => {
-      if (canHover.matches) playCard(card);
-    });
-    card.addEventListener('focusout', () => {
-      window.setTimeout(() => {
-        if (!card.contains(document.activeElement) && canHover.matches) pauseCard(card);
-      }, 0);
-    });
-  });
+    const currentPath = new URL(video.getAttribute('src'), window.location.href).href;
+    const nextPath = new URL(nextSrc, window.location.href).href;
+    if (currentPath !== nextPath) {
+      stage.classList.add('is-switching');
+      video.pause();
+      setPlaybackState(false);
+      video.poster = nextPoster || '';
+      video.src = nextSrc;
+      video.load();
+      video.addEventListener('loadeddata', () => stage.classList.remove('is-switching'), { once: true });
+    } else {
+      stage.classList.remove('is-switching');
+    }
 
-  if ('IntersectionObserver' in window && !canHover.matches && !saveData && !prefersReducedMotion.matches) {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => visibilityRatios.set(entry.target, entry.intersectionRatio));
-      const mostVisible = cards.reduce((best, card) => {
-        return visibilityRatios.get(card) > visibilityRatios.get(best) ? card : best;
-      }, cards[0]);
-
-      if (visibilityRatios.get(mostVisible) >= 0.65 && !prefersReducedMotion.matches) {
-        playCard(mostVisible);
-      } else {
-        cards.forEach(card => pauseCard(card));
-      }
-    }, { threshold: [0, 0.35, 0.65, 0.85] });
-
-    cards.forEach(card => observer.observe(card));
-  }
-
-  const pauseAll = () => cards.forEach(card => pauseCard(card));
-  document.addEventListener('visibilitychange', () => {
-    if (document.hidden) pauseAll();
-  });
-  window.addEventListener('pagehide', pauseAll);
-  const handleReducedMotionChange = event => {
-    if (event.matches) pauseAll();
+    // play() starts loading even when preload is metadata-only.
+    playVideo(false);
   };
 
-  if (typeof prefersReducedMotion.addEventListener === 'function') {
-    prefersReducedMotion.addEventListener('change', handleReducedMotionChange);
-  } else if (typeof prefersReducedMotion.addListener === 'function') {
-    prefersReducedMotion.addListener(handleReducedMotionChange);
+  selectors.forEach(selector => selector.addEventListener('click', () => selectService(selector)));
+
+  playButton.addEventListener('click', () => {
+    if (video.paused) playVideo(true);
+    else video.pause();
+  });
+
+  video.addEventListener('play', () => {
+    stage.classList.remove('is-switching');
+    setPlaybackState(true);
+  });
+  video.addEventListener('pause', () => setPlaybackState(false));
+  video.addEventListener('ended', () => setPlaybackState(false));
+  video.addEventListener('error', () => {
+    stage.classList.remove('is-switching');
+    setPlaybackState(false);
+  });
+
+  document.addEventListener('visibilitychange', () => {
+    if (document.hidden) video.pause();
+  });
+  window.addEventListener('pagehide', () => video.pause());
+
+  const handleReducedMotion = event => {
+    if (event.matches) video.pause();
+  };
+  if (typeof reducedMotion.addEventListener === 'function') {
+    reducedMotion.addEventListener('change', handleReducedMotion);
+  } else if (typeof reducedMotion.addListener === 'function') {
+    reducedMotion.addListener(handleReducedMotion);
   }
+
+  selectService(selectors[0]);
 }
 
 // Update Sun/Moon icon in theme button
@@ -1092,6 +1092,12 @@ function updateThemeIcon(theme) {
 // Scroll Animation Triggers using IntersectionObserver
 function setupScrollAnimations() {
   const revealElements = document.querySelectorAll('.reveal');
+  if (!('IntersectionObserver' in window)) {
+    revealElements.forEach(el => el.classList.add('active'));
+    animateStatsCounters();
+    return;
+  }
+
   const observerOptions = {
     root: null,
     threshold: 0.15,

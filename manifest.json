@@ -4,8 +4,8 @@
   "description": "Enterprise Systems & Automation Architect Portfolio and Freelance Services.",
   "start_url": "./index.html",
   "display": "standalone",
-  "background_color": "#1a1a2e",
-  "theme_color": "#fe7900",
+  "background_color": "#09090c",
+  "theme_color": "#ff5c00",
   "orientation": "portrait-primary",
   "icons": [
     {

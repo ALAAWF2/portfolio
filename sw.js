@@ -1,4 +1,4 @@
-const CACHE_NAME = 'alaa-wafaie-portfolio-v5';
+const CACHE_NAME = 'alaa-wafaie-portfolio-v6';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
